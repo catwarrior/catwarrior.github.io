@@ -7,4 +7,5 @@ tags:
 ## Just hold a place to put links I collect before.
 
 MS[ScottGu's Blog](http://weblogs.asp.net/scottgu)
-[F# for fun](http://fsharpforfunandprofit.com/)
+[F# for fun](http://fsharpforfunandprofit.com/)MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
+[Structuring a .NET Application For Easy Deployment](https://msdn.microsoft.com/en-us/library/ms973920.aspx)
