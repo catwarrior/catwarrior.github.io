@@ -10,3 +10,6 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 [F# for fun](http://fsharpforfunandprofit.com/)
 [F# offical](http://fsharp.org/about/learning.html)
 [Structuring a .NET Application For Easy Deployment](https://msdn.microsoft.com/en-us/library/ms973920.aspx)
+
+## Tools
+[Chocolatey NuGet is a Machine Package Manager](http://chocolatey.org/)
