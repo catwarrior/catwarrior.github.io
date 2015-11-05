@@ -8,7 +8,7 @@ tags:
 - dailywork
 ---
 
-# Realize you forgot to add the changes from xxx.ext
+## Realize you forgot to add the changes from xxx.ext
 {% codeblock lang:git %}
 git add xxx.ext
 git commit --amend --no-edit

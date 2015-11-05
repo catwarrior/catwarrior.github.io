@@ -17,7 +17,17 @@
 		 </div> <!-- alert -->
 	  <% } %>		
 
-	  <%- item.content %>	  
+	  <%- item.content %>
+
+	  <% if (page.updated) { %>
+	  	<p class="bg-info">
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated <%= page.updated.startOf('day').fromNow() %></span>
+		</p>
+  	  <% } %>	  
+	</div>
+
+	<div>
+	  
 	</div>
 
 	<div>
