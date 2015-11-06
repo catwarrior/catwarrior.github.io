@@ -16,3 +16,6 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 
 ## Javascript
 [Helping you select an MV* framework](http://todomvc.com/)
+
+## Happy internet
+[shadowsocks](https://portal.shadowsocks.com)
