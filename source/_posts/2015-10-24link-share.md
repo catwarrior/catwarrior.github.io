@@ -19,3 +19,4 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 
 ## Happy internet
 [shadowsocks](https://portal.shadowsocks.com)
+[Shadowsocks + ChnRoute OpenWRT](https://cokebar.info/archives/664)
