@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Rocking the world]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://catwarrior.github.io/"/>
+  <updated>2015-11-19T05:19:37.253Z</updated>
+  <id>http://catwarrior.github.io/</id>
+  
+  <author>
+    <name><![CDATA[stephan]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[how to know the install status for a msi installer]]></title>
+    <link href="http://catwarrior.github.io/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/"/>
+    <id>http://catwarrior.github.io/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/</id>
+    <published>2015-11-18T04:12:48.000Z</published>
+    <updated>2015-11-19T05:19:37.253Z</updated>
+    <content type="html"><![CDATA[<p>Refer to <a href="http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi" target="_blank" rel="external">http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Refer to <a href="http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi" target]]>
+    </summary>
+    
+      <category term="msi" scheme="http://catwarrior.github.io/tags/msi/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[upgrade npm on windows]]></title>
+    <link href="http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/"/>
+    <id>http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/</id>
+    <published>2015-11-05T08:18:04.000Z</published>
+    <updated>2015-11-19T05:19:37.252Z</updated>
+    <content type="html"><![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted -Scope CurrentUser -Force</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-windows-upgrade</span><br><span class="line">npm-windows-upgrade</span><br></pre></td></tr></table></figure>
+<p>or Want to upgrade to specific version?</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-windows-upgrade --version:<span class="number">3.1</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://www.npmjs.com/package/npm-windows-upgrade" target="_blank" rel="external">Reference from npmjs.</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br]]>
+    </summary>
+    
+      <category term="node" scheme="http://catwarrior.github.io/tags/node/"/>
+    
+      <category term="npm" scheme="http://catwarrior.github.io/tags/npm/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[How to change console back color on windows?]]></title>
+    <link href="http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/"/>
+    <id>http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/</id>
+    <published>2015-11-05T06:53:05.000Z</published>
+    <updated>2015-11-19T05:19:37.252Z</updated>
+    <content type="html"><![CDATA[<h2 id="Samples">Samples</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@rem Is black and white</span></span><br><span class="line"><span class="built_in">Color</span> <span class="number">0</span>F</span><br></pre></td></tr></table></figure>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@rem Is black and green</span></span><br><span class="line"><span class="built_in">Color</span> <span class="number">0</span>A</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Samples">Samples</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="li]]>
+    </summary>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[git-tips-for-daily-work]]></title>
+    <link href="http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/"/>
+    <id>http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/</id>
+    <published>2015-10-30T02:02:53.000Z</published>
+    <updated>2015-11-19T05:19:37.252Z</updated>
+    <content type="html"><![CDATA[<h2 id="Realize_you_forgot_to_add_the_changes_from_xxx-ext">Realize you forgot to add the changes from xxx.ext</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add xxx.ext&#10;git commit --amend --no-edit</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Realize_you_forgot_to_add_the_changes_from_xxx-ext">Realize you forgot to add the changes from xxx.ext</h2><figure class="highlight"]]>
+    </summary>
+    
+      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
+    
+      <category term="git" scheme="http://catwarrior.github.io/tags/git/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Keep learning]]></title>
+    <link href="http://catwarrior.github.io/2015/10/30/reading/"/>
+    <id>http://catwarrior.github.io/2015/10/30/reading/</id>
+    <published>2015-10-29T16:18:56.000Z</published>
+    <updated>2015-11-19T05:19:37.252Z</updated>
+    <content type="html"><![CDATA[<blockquote><p>“Optimising your notation to not confuse people in the first 10 minutes of seeing it but to hinder readability ever after is a really bad mistake.”</p>
+<footer><strong>David MacIver - </strong><cite><a href="http://rickyclarkson.blogspot.co.uk/2008/01/in-defence-of-0l-in-scala.html" target="_blank" rel="external">a post about Scala syntax</a></cite></footer></blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote><p>“Optimising your notation to not confuse people in the first 10 minutes of seeing it but to hinder readability ever after is ]]>
+    </summary>
+    
+      <category term="words" scheme="http://catwarrior.github.io/tags/words/"/>
+    
+      <category term="reading" scheme="http://catwarrior.github.io/categories/reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Share source file in .Net]]></title>
+    <link href="http://catwarrior.github.io/2015/10/27/share-source-file-in-net/"/>
+    <id>http://catwarrior.github.io/2015/10/27/share-source-file-in-net/</id>
+    <published>2015-10-27T02:51:00.000Z</published>
+    <updated>2015-11-19T05:19:37.251Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projects-solutions-in-visual-studio" target="_blank" rel="external">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Compile Include="..\MySisterProject\**\*.cs"&gt;</span><br><span class="line">  &lt;Link&gt;_Inlined\MySisterProject\%(RecursiveDir)%(Filename)%(Extension)&lt;/Link&gt;</span><br><span class="line">  &lt;Visible&gt;false&lt;/Visible&gt;</span><br><span class="line">&lt;/Compile&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projec]]>
+    </summary>
+    
+      <category term=".NET" scheme="http://catwarrior.github.io/tags/NET/"/>
+    
+      <category term="Programing" scheme="http://catwarrior.github.io/categories/Programing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Userful links]]></title>
+    <link href="http://catwarrior.github.io/2015/10/24/link-share/"/>
+    <id>http://catwarrior.github.io/2015/10/24/link-share/</id>
+    <published>2015-10-23T18:46:06.000Z</published>
+    <updated>2015-11-19T05:19:37.251Z</updated>
+    <content type="html"><![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="external">ScottGu’s Blog</a><br><a href="http://fsharpforfunandprofit.com/" target="_blank" rel="external">F# for fun</a><br><a href="http://fsharp.org/about/learning.html" target="_blank" rel="external">F# offical</a><br><a href="https://msdn.microsoft.com/en-us/library/ms973920.aspx" target="_blank" rel="external">Structuring a .NET Application For Easy Deployment</a></p>
+<h2 id="Tools">Tools</h2><p><a href="http://chocolatey.org/" target="_blank" rel="external">Chocolatey NuGet is a Machine Package Manager</a></p>
+<h2 id="Javascript">Javascript</h2><p><a href="http://todomvc.com/" target="_blank" rel="external">Helping you select an MV* framework</a></p>
+<h2 id="Happy_internet">Happy internet</h2><p><a href="https://portal.shadowsocks.com" target="_blank" rel="external">shadowsocks</a><br><a href="https://cokebar.info/archives/664" target="_blank" rel="external">Shadowsocks + ChnRoute OpenWRT</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs]]>
+    </summary>
+    
+      <category term="stuff" scheme="http://catwarrior.github.io/tags/stuff/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Gossip]]></title>
+    <link href="http://catwarrior.github.io/2015/10/23/Gossip/"/>
+    <id>http://catwarrior.github.io/2015/10/23/Gossip/</id>
+    <published>2015-10-22T16:30:29.000Z</published>
+    <updated>2015-11-19T05:19:37.251Z</updated>
+    <content type="html"><![CDATA[<p>Today, I’m trying to move all my personal stuff to a new blog, which created via HEXO, host on github.<br>Basically, I want to keep my daily things to a fix place, as people says, learn from the past.<br>Then I meet a kid, a young programer, all of sudden, I feel I have a lot things to learn, there is a lot space to move on.</p>
+<p>Here just do a mark, warn myself.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Today, I’m trying to move all my personal stuff to a new blog, which created via HEXO, host on github.<br>Basically, I want to keep my da]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Write Simple Code]]></title>
+    <link href="http://catwarrior.github.io/2015/10/22/First-Post/"/>
+    <id>http://catwarrior.github.io/2015/10/22/First-Post/</id>
+    <published>2015-10-22T12:07:49.000Z</published>
+    <updated>2015-11-19T05:19:37.251Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Only one indentation level per method</li>
+<li>Do not use else</li>
+<li>Wrap primitive types, if they contain behavior</li>
+<li>Only one per line</li>
+<li>Do not abbreviate</li>
+<li>Keep your classes small</li>
+<li>Limit your instance variables to less then 5</li>
+<li>Use ﬁrst class collections</li>
+<li>Use getters and setters</li>
+<li>Document your code</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li>Only one indentation level per method</li>
+<li>Do not use else</li>
+<li>Wrap primitive types, if they contain behavior</li>
+<li>Onl]]>
+    </summary>
+    
+      <category term="BestPractice" scheme="http://catwarrior.github.io/tags/BestPractice/"/>
+    
+      <category term="Ohters" scheme="http://catwarrior.github.io/tags/Ohters/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://catwarrior.github.io/2015/10/22/hello-world/"/>
+    <id>http://catwarrior.github.io/2015/10/22/hello-world/</id>
+    <published>2015-10-21T16:00:00.000Z</published>
+    <updated>2015-11-19T05:19:37.251Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
