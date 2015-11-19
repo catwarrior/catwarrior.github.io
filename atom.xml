@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2015-11-19T07:58:45.278Z</updated>
+  <updated>2015-11-19T08:13:40.686Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[void to input username and password when using git]]></title>
+    <link href="http://catwarrior.github.io/2015/11/19/void-to-input-username-and-password-when-using-git/"/>
+    <id>http://catwarrior.github.io/2015/11/19/void-to-input-username-and-password-when-using-git/</id>
+    <published>2015-11-19T08:10:28.000Z</published>
+    <updated>2015-11-19T08:13:40.686Z</updated>
+    <content type="html"><![CDATA[<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
+<p><code>git config credential.https://git.oschina.net.username myusername [--global]</code><br><code>git config credential.helper store --file=~/.git-credentials [--global]</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
+<p><code>git config credentia]]>
+    </summary>
+    
+      <category term="git" scheme="http://catwarrior.github.io/tags/git/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="tools" scheme="http://catwarrior.github.io/tags/tools/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[how to fix file is open in another program on windows]]></title>

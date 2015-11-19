@@ -4,6 +4,14 @@
   
     
     <entry>
+      <title><![CDATA[void to input username and password when using git]]></title>
+      <url>http://catwarrior.github.io/2015/11/19/void-to-input-username-and-password-when-using-git/</url>
+      <content type="html"><![CDATA[<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
+<p><code>git config credential.https://git.oschina.net.username myusername [--global]</code><br><code>git config credential.helper store --file=~/.git-credentials [--global]</code></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[how to fix file is open in another program on windows]]></title>
       <url>http://catwarrior.github.io/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/</url>
       <content type="html"><![CDATA[<p>Why can’t I delete or move a file or folder?<br>What program is stopping me from deleting or moving a file or folder?<br>You really what to find the “Stupid guy” who is ocuppying the file?</p>
