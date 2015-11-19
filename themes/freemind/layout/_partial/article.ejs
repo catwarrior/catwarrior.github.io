@@ -19,11 +19,14 @@
 
 	  <%- item.content %>
 
+	  <!--
 	  <% if (page.updated) { %>
 	  	<p class="bg-info">
-	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated <%= page.updated.startOf('day').fromNow() %></span>
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated <%= page.updated.format(config.date_format)  %></span>
 		</p>
-  	  <% } %>	  
+  	  <% } %>	
+  	  --> 
+  	   
 	</div>
 
 	<div>
