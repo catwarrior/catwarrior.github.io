@@ -4,6 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[how to fix file is open in another program on windows]]></title>
+      <url>http://catwarrior.github.io/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/</url>
+      <content type="html"><![CDATA[<p>Why can’t I delete or move a file or folder?<br>What program is stopping me from deleting or moving a file or folder?<br>You really what to find the “Stupid guy” who is ocuppying the file?</p>
+<p>Here you go! Boo.. There is an application called <code>Microsoft Process Explorer</code>.<br>Run it.<br>Go the menu bar of <code>Microsoft Process Explorer</code>.<br><code>Find</code> =&gt; <code>Here input the folder/file which you cannot delete.</code></p>
+<p>It will show you which process ocupy it.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[how to know the install status for a msi installer]]></title>
       <url>http://catwarrior.github.io/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/</url>
       <content type="html"><![CDATA[<p>Refer to <a href="http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi" target="_blank" rel="external">http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi</a></p>

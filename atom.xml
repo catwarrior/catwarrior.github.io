@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2015-11-19T05:19:37.253Z</updated>
+  <updated>2015-11-19T07:58:45.278Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[how to fix file is open in another program on windows]]></title>
+    <link href="http://catwarrior.github.io/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/"/>
+    <id>http://catwarrior.github.io/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/</id>
+    <published>2015-11-19T05:55:44.000Z</published>
+    <updated>2015-11-19T07:58:45.278Z</updated>
+    <content type="html"><![CDATA[<p>Why can’t I delete or move a file or folder?<br>What program is stopping me from deleting or moving a file or folder?<br>You really what to find the “Stupid guy” who is ocuppying the file?</p>
+<p>Here you go! Boo.. There is an application called <code>Microsoft Process Explorer</code>.<br>Run it.<br>Go the menu bar of <code>Microsoft Process Explorer</code>.<br><code>Find</code> =&gt; <code>Here input the folder/file which you cannot delete.</code></p>
+<p>It will show you which process ocupy it.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Why can’t I delete or move a file or folder?<br>What program is stopping me from deleting or moving a file or folder?<br>You really what ]]>
+    </summary>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="tools" scheme="http://catwarrior.github.io/tags/tools/"/>
+    
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[how to know the install status for a msi installer]]></title>
