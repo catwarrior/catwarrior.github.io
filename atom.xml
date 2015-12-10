@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2015-11-23T05:41:50.386Z</updated>
+  <updated>2015-11-23T05:59:39.367Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -15,14 +15,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[new way to to manage software on windows]]></title>
+    <link href="http://catwarrior.github.io/2015/11/23/new-way-to-to-manage-software-on-windows/"/>
+    <id>http://catwarrior.github.io/2015/11/23/new-way-to-to-manage-software-on-windows/</id>
+    <published>2015-11-23T05:54:15.000Z</published>
+    <updated>2015-11-23T05:59:39.367Z</updated>
+    <content type="html"><![CDATA[<p>In the previous post we mentioned about <code>Chocolatey</code>, this time let’s do some more interest things which related to it.</p>
+<p>After <code>Chocolatey</code> installed.</p>
+<p><code>scriptcs</code> makes it easy to write and execute C# with a simple text editor.</p>
+<p>To install <code>scriptcs</code>, just run scriptcs</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>In the previous post we mentioned about <code>Chocolatey</code>, this time let’s do some more interest things which related to it.</p>
+<p]]>
+    </summary>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="tools" scheme="http://catwarrior.github.io/tags/tools/"/>
+    
+      <category term="life" scheme="http://catwarrior.github.io/categories/life/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[10 tools that change your life]]></title>
     <link href="http://catwarrior.github.io/2015/11/23/10-tools-that-change-your-life/"/>
     <id>http://catwarrior.github.io/2015/11/23/10-tools-that-change-your-life/</id>
     <published>2015-11-23T04:00:24.000Z</published>
-    <updated>2015-11-23T05:41:50.386Z</updated>
+    <updated>2015-11-23T08:05:04.375Z</updated>
     <content type="html"><![CDATA[<blockquote><p>“Productivity is being able to do things that you were never able to do before.”</p>
 <footer><strong>Franz Kafka</strong></footer></blockquote>
-<p>转自 <a href="http://zhuanlan.zhihu.com/always-a-tool/19662365" target="_blank" rel="external">http://zhuanlan.zhihu.com/always-a-tool/19662365</a></p>
+<p>引自 <a href="http://zhuanlan.zhihu.com/always-a-tool/19662365" target="_blank" rel="external">知乎</a> <a href="http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx" target="_blank" rel="external">UltimateDeveloperAndPowerUsersToolListForWindows</a></p>
 <ul>
 <li><a href="http://www.chocolatey.org/" target="_blank" rel="external">Chocolatey</a> - 名字很奇特，但它可是 Windows 上的 apt-get。一旦拥有，别无所求。现在我想装软件的时候，会首先想到它而不是 Google。刚刚我还在用 ‘cinst filezilla’ 和 ‘cinst winscp’ 来安装我想要的东西呢。想想看，利用它你就可以把「装机」变成一个极其简单的事情。不过自己写脚本还是太复杂，对于装机，你应该用……<ul>
 <li><a href="http://boxstarter.org/" target="_blank" rel="external">Boxstarter</a> - Matt Wrock 利用 Chocolatey 和 Nuget 构建了这个神奇的东西。它可以大幅简化你在更新电脑时候的工作，也可以在远程机器或者虚拟机上进行无人值守的环境部署。</li>
@@ -259,8 +283,9 @@
     <link href="http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/"/>
     <id>http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/</id>
     <published>2015-10-30T02:02:53.000Z</published>
-    <updated>2015-11-19T05:19:37.252Z</updated>
+    <updated>2015-12-10T05:51:44.755Z</updated>
     <content type="html"><![CDATA[<h2 id="Realize_you_forgot_to_add_the_changes_from_xxx-ext">Realize you forgot to add the changes from xxx.ext</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add xxx.ext&#10;git commit --amend --no-edit</span><br></pre></td></tr></table></figure>
+<h2 id="The_difference_between_git_reset_and_git_revert">The difference between git reset and git revert</h2><p>git revert 是撤销某次操作，此次操作之前的commit都会被保留<br>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区<br>具体一个例子，假设有三个commit， git st:<br>commit3: add test3.c<br>commit2: add test2.c<br>commit1: add test1.c<br>当执行git revert HEAD~1时， commit2被撤销了<br>git log可以看到：<br>commit1：add test1.c<br>commit3：add test3.c<br>git status 没有任何变化<br>如果换做执行git reset –soft(默认) HEAD~1后，运行git log<br>commit2: add test2.c<br>commit1: add test1.c<br>运行git status， 则test3.c处于暂存区，准备提交。<br>如果换做执行git reset –hard HEAD~1后，<br>显示：HEAD is now at commit2，运行git log<br>commit2: add test2.c<br>commit1: add test1.c<br>运行git st， 没有任何变化<br>另外：<br>git revert <commit log="" string="">是撤消该commit，作为一个新的commit。</commit></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="Realize_you_forgot_to_add_the_changes_from_xxx-ext">Realize you forgot to add the changes from xxx.ext</h2><figure class="highlight"]]>

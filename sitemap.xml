@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/</loc>
+    <lastmod>2015-12-10T05:51:44.755Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://catwarrior.github.io/2015/11/23/10-tools-that-change-your-life/</loc>
-    <lastmod>2015-11-23T05:41:50.386Z</lastmod>
+    <lastmod>2015-11-23T08:05:04.375Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2015/11/23/new-way-to-to-manage-software-on-windows/</loc>
+    <lastmod>2015-11-23T05:59:39.367Z</lastmod>
   </url>
   
   <url>
@@ -22,11 +32,6 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/categories/index.html</loc>
-    <lastmod>2015-11-19T05:19:37.253Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://catwarrior.github.io/about/index.html</loc>
     <lastmod>2015-11-19T05:19:37.253Z</lastmod>
   </url>
@@ -37,7 +42,12 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/10/30/git-tips-for-daily-work/</loc>
+    <loc>http://catwarrior.github.io/categories/index.html</loc>
+    <lastmod>2015-11-19T05:19:37.253Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/</loc>
     <lastmod>2015-11-19T05:19:37.252Z</lastmod>
   </url>
   
@@ -52,8 +62,13 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/</loc>
-    <lastmod>2015-11-19T05:19:37.252Z</lastmod>
+    <loc>http://catwarrior.github.io/2015/10/27/share-source-file-in-net/</loc>
+    <lastmod>2015-11-19T05:19:37.251Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2015/10/24/link-share/</loc>
+    <lastmod>2015-11-19T05:19:37.251Z</lastmod>
   </url>
   
   <url>
@@ -68,16 +83,6 @@
   
   <url>
     <loc>http://catwarrior.github.io/2015/10/22/First-Post/</loc>
-    <lastmod>2015-11-19T05:19:37.251Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://catwarrior.github.io/2015/10/24/link-share/</loc>
-    <lastmod>2015-11-19T05:19:37.251Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://catwarrior.github.io/2015/10/27/share-source-file-in-net/</loc>
     <lastmod>2015-11-19T05:19:37.251Z</lastmod>
   </url>
   
