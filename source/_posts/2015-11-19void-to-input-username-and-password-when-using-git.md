@@ -15,3 +15,4 @@ vim ~/.get-credentials
 `git config credential.https://git.oschina.net.username myusername [--global]`
 `git config credential.helper store --file=~/.git-credentials [--global]`
 
+`git config credential.helper store`
