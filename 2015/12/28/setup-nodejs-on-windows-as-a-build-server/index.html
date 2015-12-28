@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>upgrade npm on windows | Rocking the world</title>
+  <title>setup nodejs on windows as a build server | Rocking the world</title>
   <meta name="author" content="stephan">
   
-  <meta name="description" content="Powershell Run as Administrator1Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
-12npm install -g npm-windows-upgradenpm-windows-upgrade
-or ">
+  <meta name="description" content="Installing NodeJSJenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.
+Download latest stable version (e.g. 0.10.35) from">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="upgrade npm on windows"/>
+  <meta property="og:title" content="setup nodejs on windows as a build server"/>
   <meta property="og:site_name" content="Rocking the world"/>
 
   
@@ -92,7 +91,7 @@ or ">
 
 	
 		<div class="page-header">		
-			<h1> upgrade npm on windows</h1>
+			<h1> setup nodejs on windows as a build server</h1>
 		</div>		
 	
 
@@ -109,17 +108,22 @@ or ">
 	<div class="mypage">		
 	  		
 
-	  <p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted -Scope CurrentUser -Force</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-windows-upgrade</span><br><span class="line">npm-windows-upgrade</span><br></pre></td></tr></table></figure>
-<p>or Want to upgrade to specific version?</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-windows-upgrade --version:<span class="number">3.1</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://www.npmjs.com/package/npm-windows-upgrade" target="_blank" rel="external">Reference from npmjs.</a></p>
+	  <p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
+<p>Download latest stable version (e.g. 0.10.35) from <a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a></p>
+<p>Don’t install to default directory C:\Program Files\nodejs as it requires administration rights, prefer a simpler path like c:\nodejs.</p>
+<p><a href="http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/" target="_blank" rel="external">http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/</a></p>
+<p>Edit C:\nodejs\node_modules\npm\npmrc to replace<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=<span class="variable">$&#123;APPDATA&#125;</span>\npm</span><br></pre></td></tr></table></figure></p>
+<p>by</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=C:\nodejs\node_modules\npm</span><br></pre></td></tr></table></figure>
+<p>Add the ‘C:\nodejs\node_modules\npm’ folder to the PATH environment variable, remove the one that was added by the installer: ‘C:\Users<user>\AppData\Roaming\npm’</user></p>
+<p>npm may require git, install it from <a href="http://msysgit.github.io/" target="_blank" rel="external">http://msysgit.github.io/</a></p>
+<p>Add bower and grunt:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower grunt-cli</span><br><span class="line">bower --version</span><br><span class="line">grunt --version</span><br></pre></td></tr></table></figure></p>
 
 
 	  <!--
 	  
 	  	<p class="bg-info">
-	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2015-11-19</span>
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2015-12-28</span>
 		</p>
   	  	
   	  --> 
@@ -135,14 +139,14 @@ or ">
 	<div class="pagination">
 <ul class="pagination">
 	 
-				
-    	<li class="prev"><a href="/2015/11/11/wmi-query/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
-  		
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+        
 
         <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
-		   <li class="next"><a href="/2015/11/05/change-console-back-color-on-windows/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+		   <li class="next"><a href="/2015/12/27/notes-of-powershell/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
 	
 </ul>
@@ -157,7 +161,7 @@ or ">
   <h2 class="title">Comments</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2015/11/05/upgrade-npm-on-windows/" data-title="upgrade npm on windows" data-url="http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/"></div>  
+  	 <div class="ds-thread" data-thread-key="2015/12/28/setup-nodejs-on-windows-as-a-build-server/" data-title="setup nodejs on windows as a build server" data-url="http://catwarrior.github.io/2015/12/28/setup-nodejs-on-windows-as-a-build-server/"></div>  
   
 </section>
 
@@ -171,7 +175,7 @@ or ">
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2015-11-05 
+	2015-12-28 
 	</div>
 	
 
@@ -195,7 +199,7 @@ or ">
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/node/">node<span>1</span></a></li> <li><a href="/tags/npm/">npm<span>1</span></a></li> <li><a href="/tags/tips/">tips<span>10</span></a></li> <li><a href="/tags/windows/">windows<span>5</span></a></li>
+  <li><a href="/tags/dailywork/">dailywork<span>3</span></a></li> <li><a href="/tags/nodejs/">nodejs<span>1</span></a></li> <li><a href="/tags/tips/">tips<span>10</span></a></li> <li><a href="/tags/windows/">windows<span>5</span></a></li>
     </ul>
 	</div>
 		

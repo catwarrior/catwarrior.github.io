@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2015-11-23T05:59:39.367Z</updated>
+  <updated>2015-12-28T02:39:54.835Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -13,6 +13,61 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[setup nodejs on windows as a build server]]></title>
+    <link href="http://catwarrior.github.io/2015/12/28/setup-nodejs-on-windows-as-a-build-server/"/>
+    <id>http://catwarrior.github.io/2015/12/28/setup-nodejs-on-windows-as-a-build-server/</id>
+    <published>2015-12-28T02:37:08.000Z</published>
+    <updated>2015-12-28T02:39:54.835Z</updated>
+    <content type="html"><![CDATA[<p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
+<p>Download latest stable version (e.g. 0.10.35) from <a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a></p>
+<p>Don’t install to default directory C:\Program Files\nodejs as it requires administration rights, prefer a simpler path like c:\nodejs.</p>
+<p><a href="http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/" target="_blank" rel="external">http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/</a></p>
+<p>Edit C:\nodejs\node_modules\npm\npmrc to replace<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=<span class="variable">$&#123;APPDATA&#125;</span>\npm</span><br></pre></td></tr></table></figure></p>
+<p>by</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=C:\nodejs\node_modules\npm</span><br></pre></td></tr></table></figure>
+<p>Add the ‘C:\nodejs\node_modules\npm’ folder to the PATH environment variable, remove the one that was added by the installer: ‘C:\Users<user>\AppData\Roaming\npm’</user></p>
+<p>npm may require git, install it from <a href="http://msysgit.github.io/" target="_blank" rel="external">http://msysgit.github.io/</a></p>
+<p>Add bower and grunt:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower grunt-cli</span><br><span class="line">bower --version</span><br><span class="line">grunt --version</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
+<p>Download latest stable ver]]>
+    </summary>
+    
+      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
+    
+      <category term="nodejs" scheme="http://catwarrior.github.io/tags/nodejs/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[notes of powershell]]></title>
+    <link href="http://catwarrior.github.io/2015/12/27/notes-of-powershell/"/>
+    <id>http://catwarrior.github.io/2015/12/27/notes-of-powershell/</id>
+    <published>2015-12-27T08:12:00.000Z</published>
+    <updated>2015-12-28T02:35:46.528Z</updated>
+    <content type="html"><![CDATA[<h2 id="using_where_in_pipeline">using where in pipeline</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Clear-Host</span><br><span class="line"><span class="variable">$objNetwork</span> = <span class="built_in">Get-WmiObject</span> -List | Where &#123;<span class="variable">$_</span>.name <span class="operator">-Match</span> <span class="string">"Network"</span>&#125;</span><br><span class="line"><span class="variable">$objNetwork</span> | <span class="built_in">Format-Table</span> name</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="using_where_in_pipeline">using where in pipeline</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span c]]>
+    </summary>
+    
+      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
+    
+      <category term="powershell" scheme="http://catwarrior.github.io/tags/powershell/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[new way to to manage software on windows]]></title>
@@ -82,9 +137,10 @@
     <link href="http://catwarrior.github.io/2015/11/19/void-to-input-username-and-password-when-using-git/"/>
     <id>http://catwarrior.github.io/2015/11/19/void-to-input-username-and-password-when-using-git/</id>
     <published>2015-11-19T08:10:28.000Z</published>
-    <updated>2015-11-19T08:13:40.686Z</updated>
+    <updated>2015-12-28T02:35:46.528Z</updated>
     <content type="html"><![CDATA[<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
 <p><code>git config credential.https://git.oschina.net.username myusername [--global]</code><br><code>git config credential.helper store --file=~/.git-credentials [--global]</code></p>
+<p><code>git config credential.helper store</code></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
@@ -343,11 +399,12 @@
     <link href="http://catwarrior.github.io/2015/10/24/link-share/"/>
     <id>http://catwarrior.github.io/2015/10/24/link-share/</id>
     <published>2015-10-23T18:46:06.000Z</published>
-    <updated>2015-11-19T05:19:37.251Z</updated>
+    <updated>2015-12-28T02:35:46.528Z</updated>
     <content type="html"><![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="external">ScottGu’s Blog</a><br><a href="http://fsharpforfunandprofit.com/" target="_blank" rel="external">F# for fun</a><br><a href="http://fsharp.org/about/learning.html" target="_blank" rel="external">F# offical</a><br><a href="https://msdn.microsoft.com/en-us/library/ms973920.aspx" target="_blank" rel="external">Structuring a .NET Application For Easy Deployment</a></p>
 <h2 id="Tools">Tools</h2><p><a href="http://chocolatey.org/" target="_blank" rel="external">Chocolatey NuGet is a Machine Package Manager</a></p>
 <h2 id="Javascript">Javascript</h2><p><a href="http://todomvc.com/" target="_blank" rel="external">Helping you select an MV* framework</a></p>
 <h2 id="Happy_internet">Happy internet</h2><p><a href="https://portal.shadowsocks.com" target="_blank" rel="external">shadowsocks</a><br><a href="https://cokebar.info/archives/664" target="_blank" rel="external">Shadowsocks + ChnRoute OpenWRT</a></p>
+<h2 id="Githubs">Githubs</h2><p><a href="https://github.com/google" target="_blank" rel="external">Google developers</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs]]>

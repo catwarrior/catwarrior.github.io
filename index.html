@@ -106,6 +106,58 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2015-12-28 </div>
+			<div class="article-title"><a href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/" >setup nodejs on windows as a build server</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
+<p>Download latest stable version (e.g. 0.10.35) from <a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a></p>
+<p>Don’t install to default directory C:\Program Files\nodejs as it requires administration rights, prefer a simpler path like c:\nodejs.</p>
+<p><a href="http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/" target="_blank" rel="external">http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/</a></p>
+<p>Edit C:\nodejs\node_modules\npm\npmrc to replace<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=<span class="variable">$&#123;APPDATA&#125;</span>\npm</span><br></pre></td></tr></table></figure></p>
+<p>by</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=C:\nodejs\node_modules\npm</span><br></pre></td></tr></table></figure>
+<p>Add the ‘C:\nodejs\node_modules\npm’ folder to the PATH environment variable, remove the one that was added by the installer: ‘C:\Users<user>\AppData\Roaming\npm’</user></p>
+<p>npm may require git, install it from <a href="http://msysgit.github.io/" target="_blank" rel="external">http://msysgit.github.io/</a></p>
+<p>Add bower and grunt:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower grunt-cli</span><br><span class="line">bower --version</span><br><span class="line">grunt --version</span><br></pre></td></tr></table></figure></p>
+
+	
+	</div>
+  <a type="button" href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2015-12-27 </div>
+			<div class="article-title"><a href="/2015/12/27/notes-of-powershell/" >notes of powershell</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="using_where_in_pipeline">using where in pipeline</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Clear-Host</span><br><span class="line"><span class="variable">$objNetwork</span> = <span class="built_in">Get-WmiObject</span> -List | Where &#123;<span class="variable">$_</span>.name <span class="operator">-Match</span> <span class="string">"Network"</span>&#125;</span><br><span class="line"><span class="variable">$objNetwork</span> | <span class="built_in">Format-Table</span> name</span><br></pre></td></tr></table></figure>
+	
+	</div>
+  <a type="button" href="/2015/12/27/notes-of-powershell/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2015-11-23 </div>
 			<div class="article-title"><a href="/2015/11/23/new-way-to-to-manage-software-on-windows/" >new way to to manage software on windows</a></div>						
 		</h3>
@@ -183,6 +235,7 @@
 	
 		<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
 <p><code>git config credential.https://git.oschina.net.username myusername [--global]</code><br><code>git config credential.helper store --file=~/.git-credentials [--global]</code></p>
+<p><code>git config credential.helper store</code></p>
 
 	
 	</div>
@@ -346,52 +399,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-05 </div>
-			<div class="article-title"><a href="/2015/11/05/change-console-back-color-on-windows/" >How to change console back color on windows?</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="Samples">Samples</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@rem Is black and white</span></span><br><span class="line"><span class="built_in">Color</span> <span class="number">0</span>F</span><br></pre></td></tr></table></figure>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">@rem Is black and green</span></span><br><span class="line"><span class="built_in">Color</span> <span class="number">0</span>A</span><br></pre></td></tr></table></figure>
-
-	
-	</div>
-  <a type="button" href="/2015/11/05/change-console-back-color-on-windows/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-10-30 </div>
-			<div class="article-title"><a href="/2015/10/30/git-tips-for-daily-work/" >git-tips-for-daily-work</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="Realize_you_forgot_to_add_the_changes_from_xxx-ext">Realize you forgot to add the changes from xxx.ext</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add xxx.ext&#10;git commit --amend --no-edit</span><br></pre></td></tr></table></figure>
-<h2 id="The_difference_between_git_reset_and_git_revert">The difference between git reset and git revert</h2><p>git revert 是撤销某次操作，此次操作之前的commit都会被保留<br>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区<br>具体一个例子，假设有三个commit， git st:<br>commit3: add test3.c<br>commit2: add test2.c<br>commit1: add test1.c<br>当执行git revert HEAD~1时， commit2被撤销了<br>git log可以看到：<br>commit1：add test1.c<br>commit3：add test3.c<br>git status 没有任何变化<br>如果换做执行git reset –soft(默认) HEAD~1后，运行git log<br>commit2: add test2.c<br>commit1: add test1.c<br>运行git status， 则test3.c处于暂存区，准备提交。<br>如果换做执行git reset –hard HEAD~1后，<br>显示：HEAD is now at commit2，运行git log<br>commit2: add test2.c<br>commit1: add test1.c<br>运行git st， 没有任何变化<br>另外：<br>git revert <commit log="" string="">是撤消该commit，作为一个新的commit。</commit></p>
-
-	
-	</div>
-  <a type="button" href="/2015/10/30/git-tips-for-daily-work/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -444,7 +451,7 @@
 		
 			<li><a href="/categories/Programing/">Programing<span>1</span></a></li>
 		
-			<li><a href="/categories/coding/">coding<span>6</span></a></li>
+			<li><a href="/categories/coding/">coding<span>8</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
@@ -459,37 +466,41 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/tips/">tips<span>8</span></a></li>
+			<li><a href="/tags/msi/">msi<span>1</span></a></li>
+		
+			<li><a href="/tags/nodejs/">nodejs<span>1</span></a></li>
+		
+			<li><a href="/tags/NET/">.NET<span>2</span></a></li>
+		
+			<li><a href="/tags/WCF/">WCF<span>1</span></a></li>
+		
+			<li><a href="/tags/words/">words<span>1</span></a></li>
+		
+			<li><a href="/tags/WMI/">WMI<span>1</span></a></li>
+		
+			<li><a href="/tags/BestPractice/">BestPractice<span>1</span></a></li>
+		
+			<li><a href="/tags/windows/">windows<span>5</span></a></li>
 		
 			<li><a href="/tags/tools/">tools<span>4</span></a></li>
 		
 			<li><a href="/tags/Ohters/">Ohters<span>1</span></a></li>
 		
-			<li><a href="/tags/dailywork/">dailywork<span>1</span></a></li>
-		
-			<li><a href="/tags/msi/">msi<span>1</span></a></li>
-		
-			<li><a href="/tags/words/">words<span>1</span></a></li>
-		
-			<li><a href="/tags/windows/">windows<span>4</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/git/">git<span>2</span></a></li>
-		
-			<li><a href="/tags/BestPractice/">BestPractice<span>1</span></a></li>
-		
-			<li><a href="/tags/NET/">.NET<span>2</span></a></li>
-		
-			<li><a href="/tags/Windows/">Windows<span>2</span></a></li>
+			<li><a href="/tags/node/">node<span>1</span></a></li>
 		
 			<li><a href="/tags/stuff/">stuff<span>1</span></a></li>
 		
-			<li><a href="/tags/WCF/">WCF<span>1</span></a></li>
+			<li><a href="/tags/Windows/">Windows<span>2</span></a></li>
 		
-			<li><a href="/tags/node/">node<span>1</span></a></li>
+			<li><a href="/tags/tips/">tips<span>10</span></a></li>
 		
-			<li><a href="/tags/WMI/">WMI<span>1</span></a></li>
+			<li><a href="/tags/npm/">npm<span>1</span></a></li>
+		
+			<li><a href="/tags/powershell/">powershell<span>1</span></a></li>
+		
+			<li><a href="/tags/git/">git<span>2</span></a></li>
+		
+			<li><a href="/tags/dailywork/">dailywork<span>3</span></a></li>
 		
 		 
 		</ul>
@@ -503,6 +514,14 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/" ><i class="fa fa-file-o"></i>setup nodejs on windows as ...</a>
+      </li>
+    
+      <li>
+        <a href="/2015/12/27/notes-of-powershell/" ><i class="fa fa-file-o"></i>notes of powershell...</a>
+      </li>
+    
+      <li>
         <a href="/2015/11/23/new-way-to-to-manage-software-on-windows/" ><i class="fa fa-file-o"></i>new way to to manage softwa...</a>
       </li>
     
@@ -512,14 +531,6 @@
     
       <li>
         <a href="/2015/11/19/void-to-input-username-and-password-when-using-git/" ><i class="fa fa-file-o"></i>void to input username and ...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/" ><i class="fa fa-file-o"></i>how to fix file is open in ...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/" ><i class="fa fa-file-o"></i>how to know the install sta...</a>
       </li>
     
   </ul>
