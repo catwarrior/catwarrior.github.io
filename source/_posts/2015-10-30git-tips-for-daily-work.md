@@ -37,3 +37,14 @@ commit1: add test1.c
 运行git st， 没有任何变化
 另外：
 git revert <commit log string>是撤消该commit，作为一个新的commit。
+
+## Change bash indicator.
+go to git install dir.
+ex: C:\Program Files\Git\etc
+open bash.bashrc
+find PS1 section.
+it should be something like
+{% codeblock lang:bash %}
+# Set a default prompt of: user@host, MSYSTEM variable, and current_directory
+#PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n \e[33m\]>>\e[0m\] '
+{% endcodeblock%}
