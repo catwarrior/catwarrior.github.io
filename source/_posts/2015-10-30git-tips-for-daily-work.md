@@ -48,3 +48,9 @@ it should be something like
 # Set a default prompt of: user@host, MSYSTEM variable, and current_directory
 #PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n \e[33m\]>>\e[0m\] '
 {% endcodeblock%}
+
+## force push (will sync remote by local)
+helps if you push something by mistake.
+{% codeblock lang:bash %}
+ git push origin master:master `--force`
+{% endcodeblock%}
