@@ -3,9 +3,9 @@ date: 2015-11-12 18:57:25
 categories:
 - Coding
 tags:
-- Windows
-- WCF
-- .NET
+- windows
+- wcf
+- .net
 ---
 
 ## A good start for wcf client programing.

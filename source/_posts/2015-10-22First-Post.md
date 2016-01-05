@@ -1,8 +1,8 @@
 ﻿title: Write Simple Code
 date: 2015-10-22 20:07:49
 tags: 
-- Ohters
-- BestPractice
+- ohters
+- bestpractice
 ---
 
 - Only one indentation level per method
