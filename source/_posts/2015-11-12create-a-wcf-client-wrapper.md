@@ -1,7 +1,7 @@
 title: Create a smart wcf client wrapper
 date: 2015-11-12 18:57:25
 categories:
-- Coding
+- coding
 tags:
 - windows
 - wcf

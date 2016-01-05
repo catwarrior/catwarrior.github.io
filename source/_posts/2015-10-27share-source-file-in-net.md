@@ -1,6 +1,6 @@
 title: Share source file in .Net
 date: 2015-10-27 10:51:00
-category: Programing
+category: programing
 tags: 
 - .net
 ---
