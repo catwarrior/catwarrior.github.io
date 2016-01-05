@@ -6,7 +6,7 @@ tags:
 - tips
 - windows
 - npm
-- node
+- nodejs
 ---
 
 Powershell Run as Administrator
