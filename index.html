@@ -106,6 +106,78 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2016-01-12 </div>
+			<div class="article-title"><a href="/2016/01/12/exception-handling-best-practise-in-net/" >exception handling best practise in .net</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET</a></p>
+<ul>
+<li>Plan for the worst</li>
+<li>Check it early</li>
+<li>Don’t trust external data</li>
+<li>The only reliable devices are: the video, the mouse and keyboard.</li>
+<li>Writes can fail, too</li>
+<li>Code Safely</li>
+<li>Don’t throw new Exception()</li>
+<li>Don’t put important exception information on the Message field</li>
+<li>Put a single catch (Exception ex) per thread</li>
+<li>Generic Exceptions caught should be published</li>
+<li>Log Exception.ToString(); never log only Exception.Message!</li>
+<li>Don’t catch (Exception) more than once per thread</li>
+<li>Don’t ever swallow exceptions</li>
+<li>Cleanup code should be put in finally blocks</li>
+<li>Use “using” everywhere</li>
+<li>Don’t return special values on error conditions</li>
+<li>Don’t use exceptions to indicate absence of a resource</li>
+<li>Don’t use exception handling as means of returning information from a method</li>
+<li>Use exceptions for errors that should not be ignored</li>
+<li>Don’t clear the stack trace when re-throwing an exception</li>
+<li>Avoid changing exceptions without adding semantic value</li>
+<li>Exceptions should be marked [Serializable]</li>
+<li>When in doubt, don’t Assert, throw an Exception</li>
+<li>Each exception class should have at least the three original constructors</li>
+<li>Be careful when using the AppDomain.UnhandledException event</li>
+<li>Don’t reinvent the wheel</li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2016/01/12/exception-handling-best-practise-in-net/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-05 </div>
+			<div class="article-title"><a href="/2016/01/05/power-shell-tips/" >power shell tips</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><a href="https://technet.microsoft.com/en-us/scriptcenter/dd772285.aspx" target="_blank" rel="external">A Task-Based Guide to Windows PowerShell Cmdlets</a></p>
+
+	
+	</div>
+  <a type="button" href="/2016/01/05/power-shell-tips/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2015-12-28 </div>
 			<div class="article-title"><a href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/" >setup nodejs on windows as a build server</a></div>						
 		</h3>
@@ -351,54 +423,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-11 </div>
-			<div class="article-title"><a href="/2015/11/11/wmi-query/" >WMI Query</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>The following WMI queries can be used as inspiration when working with driveres and other OS Deployment stuff…<br>IMPORTANT: If you copy/paste these queries, you might need to replace the quotes, as they often change format when you copy them from a website</p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/11/wmi-query/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-05 </div>
-			<div class="article-title"><a href="/2015/11/05/upgrade-npm-on-windows/" >upgrade npm on windows</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted -Scope CurrentUser -Force</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-windows-upgrade</span><br><span class="line">npm-windows-upgrade</span><br></pre></td></tr></table></figure>
-<p>or Want to upgrade to specific version?</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-windows-upgrade --version:<span class="number">3.1</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://www.npmjs.com/package/npm-windows-upgrade" target="_blank" rel="external">Reference from npmjs.</a></p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/05/upgrade-npm-on-windows/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -447,13 +471,15 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/Coding/">Coding<span>2</span></a></li>
+			<li><a href="/categories/Coding/">Coding<span>0</span></a></li>
 		
-			<li><a href="/categories/Programing/">Programing<span>1</span></a></li>
+			<li><a href="/categories/Programing/">Programing<span>0</span></a></li>
 		
-			<li><a href="/categories/coding/">coding<span>8</span></a></li>
+			<li><a href="/categories/coding/">coding<span>12</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
+		
+			<li><a href="/categories/programing/">programing<span>1</span></a></li>
 		
 			<li><a href="/categories/reading/">reading<span>1</span></a></li>
 		
@@ -466,42 +492,48 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/NET/">.NET<span>2</span></a></li>
+			<li><a href="/tags/tips/">tips<span>11</span></a></li>
 		
-			<li><a href="/tags/stuff/">stuff<span>1</span></a></li>
-		
-			<li><a href="/tags/WCF/">WCF<span>1</span></a></li>
-		
-			<li><a href="/tags/BestPractice/">BestPractice<span>1</span></a></li>
-		
-			<li><a href="/tags/Windows/">Windows<span>2</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/words/">words<span>1</span></a></li>
-		
-			<li><a href="/tags/powershell/">powershell<span>1</span></a></li>
-		
-			<li><a href="/tags/node/">node<span>1</span></a></li>
+			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
 		
 			<li><a href="/tags/git/">git<span>2</span></a></li>
 		
-			<li><a href="/tags/nodejs/">nodejs<span>1</span></a></li>
+			<li><a href="/tags/BestPractice/">BestPractice<span>0</span></a></li>
 		
-			<li><a href="/tags/windows/">windows<span>5</span></a></li>
+			<li><a href="/tags/stuff/">stuff<span>1</span></a></li>
+		
+			<li><a href="/tags/Windows/">Windows<span>0</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/nodejs/">nodejs<span>2</span></a></li>
+		
+			<li><a href="/tags/dailywork/">dailywork<span>4</span></a></li>
+		
+			<li><a href="/tags/NET/">.NET<span>0</span></a></li>
+		
+			<li><a href="/tags/c/">c#<span>1</span></a></li>
+		
+			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
+		
+			<li><a href="/tags/WCF/">WCF<span>0</span></a></li>
+		
+			<li><a href="/tags/net/">.net<span>3</span></a></li>
+		
+			<li><a href="/tags/WMI/">WMI<span>0</span></a></li>
+		
+			<li><a href="/tags/wcf/">wcf<span>1</span></a></li>
+		
+			<li><a href="/tags/node/">node<span>0</span></a></li>
 		
 			<li><a href="/tags/tools/">tools<span>4</span></a></li>
 		
-			<li><a href="/tags/WMI/">WMI<span>1</span></a></li>
+			<li><a href="/tags/Ohters/">Ohters<span>0</span></a></li>
 		
-			<li><a href="/tags/Ohters/">Ohters<span>1</span></a></li>
+			<li><a href="/tags/windows/">windows<span>7</span></a></li>
 		
-			<li><a href="/tags/tips/">tips<span>10</span></a></li>
 		
-			<li><a href="/tags/msi/">msi<span>1</span></a></li>
-		
-			<li><a href="/tags/dailywork/">dailywork<span>3</span></a></li>
-		
+		   <li><a href="/tags">...<span>25</span></a></li>
 		 
 		</ul>
 	</div>
@@ -514,6 +546,14 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2016/01/12/exception-handling-best-practise-in-net/" ><i class="fa fa-file-o"></i>exception handling best pra...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/01/05/power-shell-tips/" ><i class="fa fa-file-o"></i>power shell tips...</a>
+      </li>
+    
+      <li>
         <a href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/" ><i class="fa fa-file-o"></i>setup nodejs on windows as ...</a>
       </li>
     
@@ -523,14 +563,6 @@
     
       <li>
         <a href="/2015/11/23/new-way-to-to-manage-software-on-windows/" ><i class="fa fa-file-o"></i>new way to to manage softwa...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/11/23/10-tools-that-change-your-life/" ><i class="fa fa-file-o"></i>10 tools that change your l...</a>
-      </li>
-    
-      <li>
-        <a href="/2015/11/19/void-to-input-username-and-password-when-using-git/" ><i class="fa fa-file-o"></i>void to input username and ...</a>
       </li>
     
   </ul>

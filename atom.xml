@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2015-12-28T02:39:54.835Z</updated>
+  <updated>2016-01-12T01:51:09.987Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -13,6 +13,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[exception handling best practise in .net]]></title>
+    <link href="http://catwarrior.github.io/2016/01/12/exception-handling-best-practise-in-net/"/>
+    <id>http://catwarrior.github.io/2016/01/12/exception-handling-best-practise-in-net/</id>
+    <published>2016-01-12T01:42:03.000Z</published>
+    <updated>2016-01-12T01:51:09.987Z</updated>
+    <content type="html"><![CDATA[<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET</a></p>
+<ul>
+<li>Plan for the worst</li>
+<li>Check it early</li>
+<li>Don’t trust external data</li>
+<li>The only reliable devices are: the video, the mouse and keyboard.</li>
+<li>Writes can fail, too</li>
+<li>Code Safely</li>
+<li>Don’t throw new Exception()</li>
+<li>Don’t put important exception information on the Message field</li>
+<li>Put a single catch (Exception ex) per thread</li>
+<li>Generic Exceptions caught should be published</li>
+<li>Log Exception.ToString(); never log only Exception.Message!</li>
+<li>Don’t catch (Exception) more than once per thread</li>
+<li>Don’t ever swallow exceptions</li>
+<li>Cleanup code should be put in finally blocks</li>
+<li>Use “using” everywhere</li>
+<li>Don’t return special values on error conditions</li>
+<li>Don’t use exceptions to indicate absence of a resource</li>
+<li>Don’t use exception handling as means of returning information from a method</li>
+<li>Use exceptions for errors that should not be ignored</li>
+<li>Don’t clear the stack trace when re-throwing an exception</li>
+<li>Avoid changing exceptions without adding semantic value</li>
+<li>Exceptions should be marked [Serializable]</li>
+<li>When in doubt, don’t Assert, throw an Exception</li>
+<li>Each exception class should have at least the three original constructors</li>
+<li>Be careful when using the AppDomain.UnhandledException event</li>
+<li>Don’t reinvent the wheel</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http]]>
+    </summary>
+    
+      <category term=".net" scheme="http://catwarrior.github.io/tags/net/"/>
+    
+      <category term="c#" scheme="http://catwarrior.github.io/tags/c/"/>
+    
+      <category term="exception" scheme="http://catwarrior.github.io/tags/exception/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[power shell tips]]></title>
+    <link href="http://catwarrior.github.io/2016/01/05/power-shell-tips/"/>
+    <id>http://catwarrior.github.io/2016/01/05/power-shell-tips/</id>
+    <published>2016-01-05T15:21:47.000Z</published>
+    <updated>2016-01-12T01:57:50.309Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://technet.microsoft.com/en-us/scriptcenter/dd772285.aspx" target="_blank" rel="external">A Task-Based Guide to Windows PowerShell Cmdlets</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://technet.microsoft.com/en-us/scriptcenter/dd772285.aspx" target="_blank" rel="external">A Task-Based Guide to Windows Pow]]>
+    </summary>
+    
+      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
+    
+      <category term="powershell" scheme="http://catwarrior.github.io/tags/powershell/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[setup nodejs on windows as a build server]]></title>
@@ -208,7 +280,7 @@
     <link href="http://catwarrior.github.io/2015/11/12/create-a-wcf-client-wrapper/"/>
     <id>http://catwarrior.github.io/2015/11/12/create-a-wcf-client-wrapper/</id>
     <published>2015-11-12T10:57:25.000Z</published>
-    <updated>2015-11-13T03:05:57.899Z</updated>
+    <updated>2016-01-12T01:57:50.308Z</updated>
     <content type="html"><![CDATA[<h2 id="A_good_start_for_wcf_client_programing-">A good start for wcf client programing.</h2><p>In the last article we presented a solution for calling WCF services that needed only a single line of code and no using statements.  But it had many limitations including</p>
 <ul>
 <li>Reliance on a static class</li>
@@ -255,13 +327,13 @@
     <![CDATA[<h2 id="A_good_start_for_wcf_client_programing-">A good start for wcf client programing.</h2><p>In the last article we presented a solution ]]>
     </summary>
     
-      <category term=".NET" scheme="http://catwarrior.github.io/tags/NET/"/>
+      <category term=".net" scheme="http://catwarrior.github.io/tags/net/"/>
     
-      <category term="WCF" scheme="http://catwarrior.github.io/tags/WCF/"/>
+      <category term="wcf" scheme="http://catwarrior.github.io/tags/wcf/"/>
     
-      <category term="Windows" scheme="http://catwarrior.github.io/tags/Windows/"/>
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
     
-      <category term="Coding" scheme="http://catwarrior.github.io/categories/Coding/"/>
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
     
   </entry>
   
@@ -270,18 +342,18 @@
     <link href="http://catwarrior.github.io/2015/11/11/wmi-query/"/>
     <id>http://catwarrior.github.io/2015/11/11/wmi-query/</id>
     <published>2015-11-11T07:50:25.000Z</published>
-    <updated>2015-11-13T03:05:11.269Z</updated>
+    <updated>2016-01-12T01:57:50.308Z</updated>
     <content type="html"><![CDATA[<p>The following WMI queries can be used as inspiration when working with driveres and other OS Deployment stuff…<br>IMPORTANT: If you copy/paste these queries, you might need to replace the quotes, as they often change format when you copy them from a website</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>The following WMI queries can be used as inspiration when working with driveres and other OS Deployment stuff…<br>IMPORTANT: If you copy/]]>
     </summary>
     
-      <category term="WMI" scheme="http://catwarrior.github.io/tags/WMI/"/>
+      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
     
-      <category term="Windows" scheme="http://catwarrior.github.io/tags/Windows/"/>
+      <category term="wmi" scheme="http://catwarrior.github.io/tags/wmi/"/>
     
-      <category term="Coding" scheme="http://catwarrior.github.io/categories/Coding/"/>
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
     
   </entry>
   
@@ -290,7 +362,7 @@
     <link href="http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/"/>
     <id>http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/</id>
     <published>2015-11-05T08:18:04.000Z</published>
-    <updated>2015-11-19T05:19:37.252Z</updated>
+    <updated>2016-01-12T01:57:50.308Z</updated>
     <content type="html"><![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted -Scope CurrentUser -Force</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-windows-upgrade</span><br><span class="line">npm-windows-upgrade</span><br></pre></td></tr></table></figure>
 <p>or Want to upgrade to specific version?</p>
@@ -301,7 +373,7 @@
     <![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br]]>
     </summary>
     
-      <category term="node" scheme="http://catwarrior.github.io/tags/node/"/>
+      <category term="nodejs" scheme="http://catwarrior.github.io/tags/nodejs/"/>
     
       <category term="npm" scheme="http://catwarrior.github.io/tags/npm/"/>
     
@@ -383,16 +455,16 @@
     <link href="http://catwarrior.github.io/2015/10/27/share-source-file-in-net/"/>
     <id>http://catwarrior.github.io/2015/10/27/share-source-file-in-net/</id>
     <published>2015-10-27T02:51:00.000Z</published>
-    <updated>2015-11-19T05:19:37.251Z</updated>
+    <updated>2016-01-12T01:57:50.307Z</updated>
     <content type="html"><![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projects-solutions-in-visual-studio" target="_blank" rel="external">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Compile Include="..\MySisterProject\**\*.cs"&gt;</span><br><span class="line">  &lt;Link&gt;_Inlined\MySisterProject\%(RecursiveDir)%(Filename)%(Extension)&lt;/Link&gt;</span><br><span class="line">  &lt;Visible&gt;false&lt;/Visible&gt;</span><br><span class="line">&lt;/Compile&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projec]]>
     </summary>
     
-      <category term=".NET" scheme="http://catwarrior.github.io/tags/NET/"/>
+      <category term=".net" scheme="http://catwarrior.github.io/tags/net/"/>
     
-      <category term="Programing" scheme="http://catwarrior.github.io/categories/Programing/"/>
+      <category term="programing" scheme="http://catwarrior.github.io/categories/programing/"/>
     
   </entry>
   
@@ -436,7 +508,7 @@
     <link href="http://catwarrior.github.io/2015/10/22/First-Post/"/>
     <id>http://catwarrior.github.io/2015/10/22/First-Post/</id>
     <published>2015-10-22T12:07:49.000Z</published>
-    <updated>2015-11-19T05:19:37.251Z</updated>
+    <updated>2016-01-12T01:57:50.306Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>Only one indentation level per method</li>
 <li>Do not use else</li>
@@ -458,9 +530,9 @@
 <li>Onl]]>
     </summary>
     
-      <category term="BestPractice" scheme="http://catwarrior.github.io/tags/BestPractice/"/>
+      <category term="bestpractice" scheme="http://catwarrior.github.io/tags/bestpractice/"/>
     
-      <category term="Ohters" scheme="http://catwarrior.github.io/tags/Ohters/"/>
+      <category term="ohters" scheme="http://catwarrior.github.io/tags/ohters/"/>
     
   </entry>
   

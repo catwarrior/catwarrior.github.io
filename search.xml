@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title><![CDATA[exception handling best practise in .net]]></title>
+      <url>http://catwarrior.github.io/2016/01/12/exception-handling-best-practise-in-net/</url>
+      <content type="html"><![CDATA[<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET</a></p>
+<ul>
+<li>Plan for the worst</li>
+<li>Check it early</li>
+<li>Don’t trust external data</li>
+<li>The only reliable devices are: the video, the mouse and keyboard.</li>
+<li>Writes can fail, too</li>
+<li>Code Safely</li>
+<li>Don’t throw new Exception()</li>
+<li>Don’t put important exception information on the Message field</li>
+<li>Put a single catch (Exception ex) per thread</li>
+<li>Generic Exceptions caught should be published</li>
+<li>Log Exception.ToString(); never log only Exception.Message!</li>
+<li>Don’t catch (Exception) more than once per thread</li>
+<li>Don’t ever swallow exceptions</li>
+<li>Cleanup code should be put in finally blocks</li>
+<li>Use “using” everywhere</li>
+<li>Don’t return special values on error conditions</li>
+<li>Don’t use exceptions to indicate absence of a resource</li>
+<li>Don’t use exception handling as means of returning information from a method</li>
+<li>Use exceptions for errors that should not be ignored</li>
+<li>Don’t clear the stack trace when re-throwing an exception</li>
+<li>Avoid changing exceptions without adding semantic value</li>
+<li>Exceptions should be marked [Serializable]</li>
+<li>When in doubt, don’t Assert, throw an Exception</li>
+<li>Each exception class should have at least the three original constructors</li>
+<li>Be careful when using the AppDomain.UnhandledException event</li>
+<li>Don’t reinvent the wheel</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[power shell tips]]></title>
+      <url>http://catwarrior.github.io/2016/01/05/power-shell-tips/</url>
+      <content type="html"><![CDATA[<p><a href="https://technet.microsoft.com/en-us/scriptcenter/dd772285.aspx" target="_blank" rel="external">A Task-Based Guide to Windows PowerShell Cmdlets</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[setup nodejs on windows as a build server]]></title>
       <url>http://catwarrior.github.io/2015/12/28/setup-nodejs-on-windows-as-a-build-server/</url>
       <content type="html"><![CDATA[<p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
