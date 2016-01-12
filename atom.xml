@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2016-01-12T01:51:09.987Z</updated>
+  <updated>2016-01-12T01:57:50.487Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://catwarrior.github.io/2016/01/12/exception-handling-best-practise-in-net/"/>
     <id>http://catwarrior.github.io/2016/01/12/exception-handling-best-practise-in-net/</id>
     <published>2016-01-12T01:42:03.000Z</published>
-    <updated>2016-01-12T01:51:09.987Z</updated>
+    <updated>2016-01-12T01:57:50.487Z</updated>
     <content type="html"><![CDATA[<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET</a></p>
 <ul>
 <li>Plan for the worst</li>
