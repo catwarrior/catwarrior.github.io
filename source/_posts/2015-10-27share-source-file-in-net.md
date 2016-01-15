@@ -1,7 +1,7 @@
 title: Share source file in .Net
 date: 2015-10-27 10:51:00
 category: programing
-tags: 
+tags:
 - .net
 ---
 
@@ -11,3 +11,6 @@ tags:
   <Visible>false</Visible>
 </Compile>
 {% endcodeblock %}
+
+## linq samples
+[101 linq sample](http://blog.csdn.net/smartsmile2012/article/details/44873251)
