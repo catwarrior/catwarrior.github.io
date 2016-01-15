@@ -23,3 +23,6 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 
 ## Githubs
 [Google developers](https://github.com/google)
+
+## blogs
+[yaozhenfa-cnblogs](http://www.cnblogs.com/yaozhenfa/p/functional_cache.html)
