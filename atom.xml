@@ -455,8 +455,9 @@
     <link href="http://catwarrior.github.io/2015/10/27/share-source-file-in-net/"/>
     <id>http://catwarrior.github.io/2015/10/27/share-source-file-in-net/</id>
     <published>2015-10-27T02:51:00.000Z</published>
-    <updated>2016-01-12T01:57:50.307Z</updated>
+    <updated>2016-01-15T00:17:15.573Z</updated>
     <content type="html"><![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projects-solutions-in-visual-studio" target="_blank" rel="external">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Compile Include="..\MySisterProject\**\*.cs"&gt;</span><br><span class="line">  &lt;Link&gt;_Inlined\MySisterProject\%(RecursiveDir)%(Filename)%(Extension)&lt;/Link&gt;</span><br><span class="line">  &lt;Visible&gt;false&lt;/Visible&gt;</span><br><span class="line">&lt;/Compile&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="linq_samples">linq samples</h2><p><a href="http://blog.csdn.net/smartsmile2012/article/details/44873251" target="_blank" rel="external">101 linq sample</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projec]]>
@@ -473,12 +474,13 @@
     <link href="http://catwarrior.github.io/2015/10/24/link-share/"/>
     <id>http://catwarrior.github.io/2015/10/24/link-share/</id>
     <published>2015-10-23T18:46:06.000Z</published>
-    <updated>2015-12-28T02:35:46.528Z</updated>
+    <updated>2016-01-15T00:10:44.896Z</updated>
     <content type="html"><![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="external">ScottGu’s Blog</a><br><a href="http://fsharpforfunandprofit.com/" target="_blank" rel="external">F# for fun</a><br><a href="http://fsharp.org/about/learning.html" target="_blank" rel="external">F# offical</a><br><a href="https://msdn.microsoft.com/en-us/library/ms973920.aspx" target="_blank" rel="external">Structuring a .NET Application For Easy Deployment</a></p>
 <h2 id="Tools">Tools</h2><p><a href="http://chocolatey.org/" target="_blank" rel="external">Chocolatey NuGet is a Machine Package Manager</a></p>
 <h2 id="Javascript">Javascript</h2><p><a href="http://todomvc.com/" target="_blank" rel="external">Helping you select an MV* framework</a></p>
 <h2 id="Happy_internet">Happy internet</h2><p><a href="https://portal.shadowsocks.com" target="_blank" rel="external">shadowsocks</a><br><a href="https://cokebar.info/archives/664" target="_blank" rel="external">Shadowsocks + ChnRoute OpenWRT</a></p>
 <h2 id="Githubs">Githubs</h2><p><a href="https://github.com/google" target="_blank" rel="external">Google developers</a></p>
+<h2 id="blogs">blogs</h2><p><a href="http://www.cnblogs.com/yaozhenfa/p/functional_cache.html" target="_blank" rel="external">yaozhenfa-cnblogs</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs]]>
