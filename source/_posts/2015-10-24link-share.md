@@ -28,7 +28,7 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 [yaozhenfa-cnblogs](http://www.cnblogs.com/yaozhenfa/p/functional_cache.html)
 
 ## wintellect jeffreyr
-[jeffreyr](http://www.wintellect.com/devcenter/jeffreyr
+[jeffreyr](http://www.wintellect.com/devcenter/jeffreyr)
 
 ## 廖雪峰 several programming language tutorial
 [liaoxuefeng](http://www.liaoxuefeng.com/)
