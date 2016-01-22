@@ -10,9 +10,7 @@ tags:
 ## Reading book `Effective java`
 
 ## Environment
-- Sprint
-- Sprint boot
-- Groovy
+-- Groovy
   AST transform
 - Gradle
 - PsGet
@@ -20,3 +18,6 @@ tags:
   Set-ExecutionPolicy RemoteSigned
   (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
   Get-PsGetModuleInfo Posh*
+- Sprint
+- Sprint boot
+  http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-introducing-spring-boot
