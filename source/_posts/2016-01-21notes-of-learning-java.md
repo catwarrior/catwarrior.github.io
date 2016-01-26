@@ -3,7 +3,7 @@ date: 2016-01-21 14:04:24
 categories:
 - coding
 tags:
-- Java
+- java
 ---
 ## Reading book `Think in Java`
 
