@@ -22,3 +22,5 @@ tags:
 - Sprint boot
   http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-introducing-spring-boot
   http://blog.csdn.net/z69183787/article/category/5580807
+
+  spring boot on eclipse, would better install [`Spring Tool Suite`](http://spring.io/tools/sts/all)

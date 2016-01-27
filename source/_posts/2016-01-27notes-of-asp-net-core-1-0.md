@@ -9,3 +9,6 @@ tags:
 [ASP.NET 5 Documentation](https://docs.asp.net/en/latest/)
 [Azure Service Fabric](https://azure.microsoft.com/en-us/documentation/services/service-fabric/)
 [Azure Friday](https://azure.microsoft.com/en-us/documentation/videos/azure-friday/)
+
+
+## Modern Application Lifecycle Management and `DevOps`
