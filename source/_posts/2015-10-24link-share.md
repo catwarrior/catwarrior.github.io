@@ -32,3 +32,5 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 
 ## 廖雪峰 several programming language tutorial
 [liaoxuefeng](http://www.liaoxuefeng.com/)
+
+[Using Atom - Introduction](http://www.cnblogs.com/Darren_code/p/atom.html)
