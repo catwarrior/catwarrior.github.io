@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>.net based applications are slow to load | Rocking the world</title>
+  <meta name="author" content="stephan">
+  
+  <meta name="description" content=".NET bases applications are slow to load or certain in-app tasks are slow
+This behaviour will occur with any .NET 1.1 and 2.0 assembly that is authent">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content=".net based applications are slow to load"/>
+  <meta property="og:site_name" content="Rocking the world"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.pn" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Rocking the world</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> .net based applications are slow to load</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p><a href="http://austintovey.blogspot.com/2012/01/net-bases-applications-are-slow-to-load.html" target="_blank" rel="external">.NET bases applications are slow to load or certain in-app tasks are slow</a></p>
+<p>This behaviour will occur with any .NET 1.1 and 2.0 assembly that is authenticode-signed, not only Measurement Studio assemblies. Digital signing is also referred to as code signing. Code signing a .NET library is strongly recommended by Microsoft, and Measurement Studio signs all of our ActiveX and .NET components.</p>
+<p>Code signing of assemblies makes components tamper-proof and ensures that you know the identity of the component publisher.</p>
+<p>The reason why this problem is occurring is because of the mechanism used by the .NET Common Language Runtime (CLR) to verify code-signed .NET assemblies. Part of the verification process requires an online look-up to check whether the certificate with which the assembly is signed has been revoked and is no longer valid. Windows does this by downloading a CRL (Certificate Revocation List). The first time a code-signed assembly is loaded by the .NET CLR, the CRL is downloaded from the certificate provider’s server and cached on the system.</p>
+<p>When the .NET CLR loads a code-signed assembly and is unable to reach the CRL distribution point, it records the failure as an inability to provide the assembly evidence that it was code-signed. So the assembly is allowed to load, but is not marked as being digitally signed. There is a 15 second delay for CRL retrievals. This is how long the CLR will keep on re-trying to download the CRL before it finally times out. So the delay in loading the .NET assembly occurs because Windows is unable to download the CRL and keeps trying to download it for 15 seconds before timing out.</p>
+<p>This behavior is by design.</p>
+<p>The .NET CLR will not indicate any error or throw any security exception when verifying a signed assembly if the CRL distribution point cannot be reached. An error here from WinVerifyTrust(), the API used by the .NET CLR to verify a code signed assembly, prevents the assembly from being marked as code signed. Note that this does not apply to assemblies loaded thru the Internet Explorer hosting interface.</p>
+<p>You could manually download the CRL and install it on your system. But the CRL is valid only for 10-15 days, so unless your system is able to update the file after this time, you will run into the same problem again.</p>
+<p>Microsoft recommends disabling CRL checking as a workaround by disabling this option in Internet Explorer. Use the following steps to disable the CRL checking in Internet Explorer:<br>Select Start»Control Panel.<br>Double-click Internet Options.<br>Select the Advanced tab.<br>In the Security section, uncheck the Check for publisher’s certificate revocation option.<br>By disabling the CRL checking using the Internet Options, you are not exposing yourself to a security threat because this check is not working. The reason why this problem is showing up is because your network settings are not allowing Windows to access the CRL.</p>
+<p>In addition, it is possible to programmatically set the CRL verification. When the Check for publisher’s certificate revocation is unchecked, a setting in the registry is changed. To turn off CRL verification, set HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State  from 0x00023c00 to 0x00023e00. To turn CRL Checking on again, reset the State key to 0x00023c00</p>
+<p><a href="http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted" target="_blank" rel="external">http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted</a><br><a href="http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/" target="_blank" rel="external">http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/</a><br><a href="http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s" target="_blank" rel="external">http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s</a></p>
+
+
+	  <!--
+	  
+	  	<p class="bg-info">
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-02-05</span>
+		</p>
+  	  	
+  	  --> 
+  	   
+	</div>
+
+	<div>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/02/03/java-multithreading-guide/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/01/27/notes-of-asp-net-core-1-0/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/01/29/net-based-applications-are-slow-to-load/" data-title=".net based applications are slow to load" data-url="http://catwarrior.github.io/2016/01/29/net-based-applications-are-slow-to-load/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-01-29 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/coding/">coding<span>18</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'catwarrior' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 stephan
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
