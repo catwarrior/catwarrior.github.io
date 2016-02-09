@@ -34,3 +34,6 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 [liaoxuefeng](http://www.liaoxuefeng.com/)
 
 [Using Atom - Introduction](http://www.cnblogs.com/Darren_code/p/atom.html)
+
+## Neal Ford
+[Neal Ford - a great software architecture](http://nealford.com/bio.html)
