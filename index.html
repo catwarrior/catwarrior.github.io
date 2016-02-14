@@ -106,6 +106,31 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2016-02-14 </div>
+			<div class="article-title"><a href="/2016/02/14/lazy-initialize-in-net/" >lazy initialize in .net</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>Lazy initialization of an object means that its creation is deferred until it is first used.<br>|Type              |     Description<br>|   —————|—————–<br>| Lazy<t>          |    A wrapper class that provides lazy initialization semantics for any class library or user-defined type.<br>| ThreadLocal<t>   |    Resembles Lazy<t> except that it provides lazy initialization semantics on a  thread-local basis. Every thread has access to its own unique value.<br>| LazyInitializer  |    Provides advanced static (Shared in Visual Basic) methods for lazy initialization of objects without the overhead of a class.</t></t></t></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lazy&lt;Orders&gt; _orders = <span class="keyword">new</span> Lazy&lt;Orders&gt;(() =&gt; <span class="keyword">new</span> Orders(<span class="number">100</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ThreadLocal&lt;<span class="keyword">int</span>&gt; betterCounter = <span class="keyword">new</span> ThreadLocal&lt;<span class="keyword">int</span>&gt;(() =&gt; <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Assume that _orders contains null values, and</span></span><br><span class="line"><span class="comment">// we only need to initialize them if displayOrderInfo is true</span></span><br><span class="line"><span class="keyword">if</span>(displayOrderInfo == <span class="keyword">true</span>)</span><br><span class="line">&#123;</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; _orders.Length; i++)</span><br><span class="line"> &#123;</span><br><span class="line">     <span class="comment">// Lazily initialize the orders without wrapping them in a Lazy&lt;T&gt;</span></span><br><span class="line">     LazyInitializer.EnsureInitialized(<span class="keyword">ref</span> _orders[i], () =&gt;</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="comment">// Returns the value that will be placed in the ref parameter.</span></span><br><span class="line">             <span class="keyword">return</span> GetOrderForIndex(i);</span><br><span class="line">         &#125;);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2016/02/14/lazy-initialize-in-net/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2016-02-03 </div>
 			<div class="article-title"><a href="/2016/02/03/work-comfortable-on-mac/" >work comfortable on mac</a></div>						
 		</h3>
@@ -400,37 +425,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-12-28 </div>
-			<div class="article-title"><a href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/" >setup nodejs on windows as a build server</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>Installing NodeJS<br>Jenkins NodeJS plugin does not work on Windows, so we’ll do a manual installation.</p>
-<p>Download latest stable version (e.g. 0.10.35) from <a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a></p>
-<p>Don’t install to default directory C:\Program Files\nodejs as it requires administration rights, prefer a simpler path like c:\nodejs.</p>
-<p><a href="http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/" target="_blank" rel="external">http://blog.majgis.com/npm-nodejs-fails-when-run-from-jenkins-on-windows/</a></p>
-<p>Edit C:\nodejs\node_modules\npm\npmrc to replace<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=<span class="variable">$&#123;APPDATA&#125;</span>\npm</span><br></pre></td></tr></table></figure></p>
-<p>by</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prefix=C:\nodejs\node_modules\npm</span><br></pre></td></tr></table></figure>
-<p>Add the ‘C:\nodejs\node_modules\npm’ folder to the PATH environment variable, remove the one that was added by the installer: ‘C:\Users<user>\AppData\Roaming\npm’</user></p>
-<p>npm may require git, install it from <a href="http://msysgit.github.io/" target="_blank" rel="external">http://msysgit.github.io/</a></p>
-<p>Add bower and grunt:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower grunt-cli</span><br><span class="line">bower --version</span><br><span class="line">grunt --version</span><br></pre></td></tr></table></figure></p>
-
-	
-	</div>
-  <a type="button" href="/2015/12/28/setup-nodejs-on-windows-as-a-build-server/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -479,7 +473,7 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/coding/">coding<span>18</span></a></li>
+			<li><a href="/categories/coding/">coding<span>19</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
@@ -496,45 +490,45 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/wmi/">wmi<span>1</span></a></li>
-		
-			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/git/">git<span>2</span></a></li>
-		
-			<li><a href="/tags/c/">c#<span>1</span></a></li>
-		
-			<li><a href="/tags/wcf/">wcf<span>1</span></a></li>
-		
-			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
-		
 			<li><a href="/tags/msi/">msi<span>1</span></a></li>
-		
-			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
-		
-			<li><a href="/tags/dailywork/">dailywork<span>5</span></a></li>
-		
-			<li><a href="/tags/net/">.net<span>3</span></a></li>
-		
-			<li><a href="/tags/java/">java<span>2</span></a></li>
-		
-			<li><a href="/tags/windows/">windows<span>7</span></a></li>
-		
-			<li><a href="/tags/tools/">tools<span>4</span></a></li>
-		
-			<li><a href="/tags/words/">words<span>1</span></a></li>
-		
-			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
 		
 			<li><a href="/tags/bestpractice/">bestpractice<span>1</span></a></li>
 		
-			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
+		
+			<li><a href="/tags/net/">.net<span>4</span></a></li>
+		
+			<li><a href="/tags/git/">git<span>2</span></a></li>
+		
+			<li><a href="/tags/wcf/">wcf<span>1</span></a></li>
+		
+			<li><a href="/tags/tools/">tools<span>4</span></a></li>
+		
+			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
+		
+			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
 		
 			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
 		
 			<li><a href="/tags/javascript/">javascript<span>1</span></a></li>
+		
+			<li><a href="/tags/dailywork/">dailywork<span>5</span></a></li>
+		
+			<li><a href="/tags/wmi/">wmi<span>1</span></a></li>
+		
+			<li><a href="/tags/c/">c#<span>1</span></a></li>
+		
+			<li><a href="/tags/java/">java<span>2</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/words/">words<span>1</span></a></li>
+		
+			<li><a href="/tags/tips/">tips<span>12</span></a></li>
+		
+			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
+		
+			<li><a href="/tags/windows/">windows<span>7</span></a></li>
 		
 		
 		   <li><a href="/tags">...<span>22</span></a></li>
@@ -550,6 +544,10 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2016/02/14/lazy-initialize-in-net/" ><i class="fa fa-file-o"></i>lazy initialize in .net...</a>
+      </li>
+    
+      <li>
         <a href="/2016/02/03/work-comfortable-on-mac/" ><i class="fa fa-file-o"></i>work comfortable on mac...</a>
       </li>
     
@@ -563,10 +561,6 @@
     
       <li>
         <a href="/2016/01/27/notes-of-asp-net-core-1-0/" ><i class="fa fa-file-o"></i>notes of asp.net core 1.0 &amp;...</a>
-      </li>
-    
-      <li>
-        <a href="/2016/01/26/notes-of-MEAN-practice/" ><i class="fa fa-file-o"></i>notes of MEAN practice...</a>
       </li>
     
   </ul>

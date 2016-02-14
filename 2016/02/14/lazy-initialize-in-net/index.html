@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>notes of MEAN practice | Rocking the world</title>
+  <title>lazy initialize in .net | Rocking the world</title>
   <meta name="author" content="stephan">
   
-  <meta name="description" content="Learn to Build Modern Web Apps with MEANNode JS For Side Projects微软开源Chakra，并计划在上面运行Node.js">
+  <meta name="description" content="Lazy initialization of an object means that its creation is deferred until it is first used.|Type              |     Description|   —————|—————–| Lazy">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="notes of MEAN practice"/>
+  <meta property="og:title" content="lazy initialize in .net"/>
   <meta property="og:site_name" content="Rocking the world"/>
 
   
@@ -90,7 +90,7 @@
 
 	
 		<div class="page-header">		
-			<h1> notes of MEAN practice</h1>
+			<h1> lazy initialize in .net</h1>
 		</div>		
 	
 
@@ -107,13 +107,16 @@
 	<div class="mypage">		
 	  		
 
-	  <p><a href="https://thinkster.io/mean-stack-tutorial" target="_blank" rel="external">Learn to Build Modern Web Apps with MEAN</a><br><a href="http://jkchu.com/2015/06/23/node-js-for-side-projects/" target="_blank" rel="external">Node JS For Side Projects</a><br><a href="http://www.infoq.com/cn/news/2016/01/chakracore" target="_blank" rel="external">微软开源Chakra，并计划在上面运行Node.js</a></p>
+	  <p>Lazy initialization of an object means that its creation is deferred until it is first used.<br>|Type              |     Description<br>|   —————|—————–<br>| Lazy<t>          |    A wrapper class that provides lazy initialization semantics for any class library or user-defined type.<br>| ThreadLocal<t>   |    Resembles Lazy<t> except that it provides lazy initialization semantics on a  thread-local basis. Every thread has access to its own unique value.<br>| LazyInitializer  |    Provides advanced static (Shared in Visual Basic) methods for lazy initialization of objects without the overhead of a class.</t></t></t></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lazy&lt;Orders&gt; _orders = <span class="keyword">new</span> Lazy&lt;Orders&gt;(() =&gt; <span class="keyword">new</span> Orders(<span class="number">100</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ThreadLocal&lt;<span class="keyword">int</span>&gt; betterCounter = <span class="keyword">new</span> ThreadLocal&lt;<span class="keyword">int</span>&gt;(() =&gt; <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Assume that _orders contains null values, and</span></span><br><span class="line"><span class="comment">// we only need to initialize them if displayOrderInfo is true</span></span><br><span class="line"><span class="keyword">if</span>(displayOrderInfo == <span class="keyword">true</span>)</span><br><span class="line">&#123;</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; _orders.Length; i++)</span><br><span class="line"> &#123;</span><br><span class="line">     <span class="comment">// Lazily initialize the orders without wrapping them in a Lazy&lt;T&gt;</span></span><br><span class="line">     LazyInitializer.EnsureInitialized(<span class="keyword">ref</span> _orders[i], () =&gt;</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="comment">// Returns the value that will be placed in the ref parameter.</span></span><br><span class="line">             <span class="keyword">return</span> GetOrderForIndex(i);</span><br><span class="line">         &#125;);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 	  <!--
 	  
 	  	<p class="bg-info">
-	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-02-05</span>
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-02-14</span>
 		</p>
   	  	
   	  --> 
@@ -129,14 +132,14 @@
 	<div class="pagination">
 <ul class="pagination">
 	 
-				
-    	<li class="prev"><a href="/2016/01/27/notes-of-asp-net-core-1-0/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
-  		
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+        
 
         <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
-		   <li class="next"><a href="/2016/01/21/notes-of-learning-java/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+		   <li class="next"><a href="/2016/02/03/work-comfortable-on-mac/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
 	
 </ul>
@@ -151,7 +154,7 @@
   <h2 class="title">Comments</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2016/01/26/notes-of-MEAN-practice/" data-title="notes of MEAN practice" data-url="http://catwarrior.github.io/2016/01/26/notes-of-MEAN-practice/"></div>  
+  	 <div class="ds-thread" data-thread-key="2016/02/14/lazy-initialize-in-net/" data-title="lazy initialize in .net" data-url="http://catwarrior.github.io/2016/02/14/lazy-initialize-in-net/"></div>  
   
 </section>
 
@@ -165,7 +168,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2016-01-26 
+	2016-02-14 
 	</div>
 	
 
@@ -189,7 +192,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/javascript/">javascript<span>1</span></a></li> <li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
+  <li><a href="/tags/net/">.net<span>4</span></a></li>
     </ul>
 	</div>
 		

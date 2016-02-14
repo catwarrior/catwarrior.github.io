@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[lazy initialize in .net]]></title>
+      <url>http://catwarrior.github.io/2016/02/14/lazy-initialize-in-net/</url>
+      <content type="html"><![CDATA[<p>Lazy initialization of an object means that its creation is deferred until it is first used.<br>|Type              |     Description<br>|   —————|—————–<br>| Lazy<t>          |    A wrapper class that provides lazy initialization semantics for any class library or user-defined type.<br>| ThreadLocal<t>   |    Resembles Lazy<t> except that it provides lazy initialization semantics on a  thread-local basis. Every thread has access to its own unique value.<br>| LazyInitializer  |    Provides advanced static (Shared in Visual Basic) methods for lazy initialization of objects without the overhead of a class.</t></t></t></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Lazy&lt;Orders&gt; _orders = <span class="keyword">new</span> Lazy&lt;Orders&gt;(() =&gt; <span class="keyword">new</span> Orders(<span class="number">100</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ThreadLocal&lt;<span class="keyword">int</span>&gt; betterCounter = <span class="keyword">new</span> ThreadLocal&lt;<span class="keyword">int</span>&gt;(() =&gt; <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Assume that _orders contains null values, and</span></span><br><span class="line"><span class="comment">// we only need to initialize them if displayOrderInfo is true</span></span><br><span class="line"><span class="keyword">if</span>(displayOrderInfo == <span class="keyword">true</span>)</span><br><span class="line">&#123;</span><br><span class="line"> <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; _orders.Length; i++)</span><br><span class="line"> &#123;</span><br><span class="line">     <span class="comment">// Lazily initialize the orders without wrapping them in a Lazy&lt;T&gt;</span></span><br><span class="line">     LazyInitializer.EnsureInitialized(<span class="keyword">ref</span> _orders[i], () =&gt;</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="comment">// Returns the value that will be placed in the ref parameter.</span></span><br><span class="line">             <span class="keyword">return</span> GetOrderForIndex(i);</span><br><span class="line">         &#125;);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[work comfortable on mac]]></title>
       <url>http://catwarrior.github.io/2016/02/03/work-comfortable-on-mac/</url>
       <content type="html"><![CDATA[<p><a href="http://www.07net01.com/2015/11/962749.html" target="_blank" rel="external">http://www.07net01.com/2015/11/962749.html</a></p>
@@ -361,6 +371,8 @@
 <h2 id="wintellect_jeffreyr">wintellect jeffreyr</h2><p><a href="http://www.wintellect.com/devcenter/jeffreyr" target="_blank" rel="external">jeffreyr</a></p>
 <h2 id="廖雪峰_several_programming_language_tutorial">廖雪峰 several programming language tutorial</h2><p><a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">liaoxuefeng</a></p>
 <p><a href="http://www.cnblogs.com/Darren_code/p/atom.html" target="_blank" rel="external">Using Atom - Introduction</a></p>
+<h2 id="Neal_Ford">Neal Ford</h2><p><a href="http://nealford.com/bio.html" target="_blank" rel="external">Neal Ford - a great software architecture</a></p>
+<h2 id="Something_may_check_later">Something may check later</h2><p><a href="https://segmentfault.com/q/1010000002404545" target="_blank" rel="external">GitHub上整理的一些工具</a></p>
 ]]></content>
     </entry>
     
