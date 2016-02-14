@@ -17,6 +17,9 @@ MS [ScottGu's Blog](http://weblogs.asp.net/scottgu)
 ## Javascript
 [Helping you select an MV* framework](http://todomvc.com/)
 
+## CPP
+[How to Program in C++](http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html)
+
 ## Happy internet
 [shadowsocks](https://portal.shadowsocks.com)
 [Shadowsocks + ChnRoute OpenWRT](https://cokebar.info/archives/664)
