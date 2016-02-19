@@ -20,6 +20,7 @@ tags:
 
 ## CPP
 [How to Program in C++](http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html)
+[Introduce C++](http://cs.fit.edu/~mmahoney/cse1502/introcpp.html)
 
 ## Happy internet
 [shadowsocks](https://portal.shadowsocks.com)
