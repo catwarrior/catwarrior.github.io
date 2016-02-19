@@ -360,11 +360,12 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Userful links]]></title>
+      <title><![CDATA[Useful links]]></title>
       <url>http://catwarrior.github.io/2015/10/24/link-share/</url>
-      <content type="html"><![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><p>MS <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="external">ScottGu’s Blog</a><br><a href="http://fsharpforfunandprofit.com/" target="_blank" rel="external">F# for fun</a><br><a href="http://fsharp.org/about/learning.html" target="_blank" rel="external">F# offical</a><br><a href="https://msdn.microsoft.com/en-us/library/ms973920.aspx" target="_blank" rel="external">Structuring a .NET Application For Easy Deployment</a></p>
+      <content type="html"><![CDATA[<h2 id="Just_hold_a_place_to_put_links_I_collect_before-">Just hold a place to put links I collect before.</h2><h2 id="MS">MS</h2><p><a href="http://weblogs.asp.net/scottgu" target="_blank" rel="external">ScottGu’s Blog</a><br><a href="http://fsharpforfunandprofit.com/" target="_blank" rel="external">F# for fun</a><br><a href="http://fsharp.org/about/learning.html" target="_blank" rel="external">F# offical</a><br><a href="https://msdn.microsoft.com/en-us/library/ms973920.aspx" target="_blank" rel="external">Structuring a .NET Application For Easy Deployment</a></p>
 <h2 id="Tools">Tools</h2><p><a href="http://chocolatey.org/" target="_blank" rel="external">Chocolatey NuGet is a Machine Package Manager</a></p>
 <h2 id="Javascript">Javascript</h2><p><a href="http://todomvc.com/" target="_blank" rel="external">Helping you select an MV* framework</a></p>
+<h2 id="CPP">CPP</h2><p><a href="http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html" target="_blank" rel="external">How to Program in C++</a></p>
 <h2 id="Happy_internet">Happy internet</h2><p><a href="https://portal.shadowsocks.com" target="_blank" rel="external">shadowsocks</a><br><a href="https://cokebar.info/archives/664" target="_blank" rel="external">Shadowsocks + ChnRoute OpenWRT</a></p>
 <h2 id="Githubs">Githubs</h2><p><a href="https://github.com/google" target="_blank" rel="external">Google developers</a></p>
 <h2 id="blogs">blogs</h2><p><a href="http://www.cnblogs.com/yaozhenfa/p/functional_cache.html" target="_blank" rel="external">yaozhenfa-cnblogs</a></p>
@@ -372,7 +373,8 @@
 <h2 id="廖雪峰_several_programming_language_tutorial">廖雪峰 several programming language tutorial</h2><p><a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">liaoxuefeng</a></p>
 <p><a href="http://www.cnblogs.com/Darren_code/p/atom.html" target="_blank" rel="external">Using Atom - Introduction</a></p>
 <h2 id="Neal_Ford">Neal Ford</h2><p><a href="http://nealford.com/bio.html" target="_blank" rel="external">Neal Ford - a great software architecture</a></p>
-<h2 id="Something_may_check_later">Something may check later</h2><p><a href="https://segmentfault.com/q/1010000002404545" target="_blank" rel="external">GitHub上整理的一些工具</a></p>
+<h2 id="淘宝UED官方博客">淘宝UED官方博客</h2><p><a href="http://ued.taobao.org/blog/2012/07/getting-started-with-markdown/" target="_blank" rel="external">taobao UED blog</a></p>
+<h2 id="Something_may_check_later">Something may check later</h2><p><a href="https://segmentfault.com/q/1010000002404545" target="_blank" rel="external">GitHub上整理的一些工具</a><br><a href="http://coolshell.cn/articles/1566.html" target="_blank" rel="external">Cheat sheets</a></p>
 ]]></content>
     </entry>
     
