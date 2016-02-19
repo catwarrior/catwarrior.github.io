@@ -4,7 +4,7 @@ tags:
 - stuff
 ---
 
-## Just hold a place to put links I collect before.
+# Just hold a place to put links I collect before.
 
 ## MS
 [ScottGu's Blog](http://weblogs.asp.net/scottgu)
@@ -49,3 +49,7 @@ tags:
 ## Something may check later
 [GitHub上整理的一些工具](https://segmentfault.com/q/1010000002404545)
 [Cheat sheets](http://coolshell.cn/articles/1566.html)
+
+# My tool box
+chocolatey
+git
