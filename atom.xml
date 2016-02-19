@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2016-02-14T10:08:48.780Z</updated>
+  <updated>2016-02-19T11:05:31.828Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -13,6 +13,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[tips of using linqpad]]></title>
+    <link href="http://catwarrior.github.io/2016/02/19/tips-of-using-linqpad/"/>
+    <id>http://catwarrior.github.io/2016/02/19/tips-of-using-linqpad/</id>
+    <published>2016-02-19T11:00:27.000Z</published>
+    <updated>2016-02-19T11:05:31.828Z</updated>
+    <content type="html"><![CDATA[<h2 id="linqpad_a_very_convenient_tool_for_quick_coding-">linqpad a very convenient tool for quick coding.</h2><p>You could write sql, c# statements.<br>And also it’s very smart to connect to a database, or table storage.<br>    context.EntityX.DeleteOnSubmit(<code>entity</code>);<br>    context.EntityX.DeleteAllOnSubmit(<code>entities</code>);</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="linqpad_a_very_convenient_tool_for_quick_coding-">linqpad a very convenient tool for quick coding.</h2><p>You could write sql, c# st]]>
+    </summary>
+    
+      <category term=".net" scheme="http://catwarrior.github.io/tags/net/"/>
+    
+      <category term="linqpad" scheme="http://catwarrior.github.io/tags/linqpad/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[lazy initialize in .net]]></title>
@@ -579,34 +599,6 @@
       <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
     
       <category term="wmi" scheme="http://catwarrior.github.io/tags/wmi/"/>
-    
-      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[upgrade npm on windows]]></title>
-    <link href="http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/"/>
-    <id>http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/</id>
-    <published>2015-11-05T08:18:04.000Z</published>
-    <updated>2016-01-12T01:57:50.308Z</updated>
-    <content type="html"><![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted -Scope CurrentUser -Force</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-windows-upgrade</span><br><span class="line">npm-windows-upgrade</span><br></pre></td></tr></table></figure>
-<p>or Want to upgrade to specific version?</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-windows-upgrade --version:<span class="number">3.1</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://www.npmjs.com/package/npm-windows-upgrade" target="_blank" rel="external">Reference from npmjs.</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Powershell Run as Administrator<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br]]>
-    </summary>
-    
-      <category term="nodejs" scheme="http://catwarrior.github.io/tags/nodejs/"/>
-    
-      <category term="npm" scheme="http://catwarrior.github.io/tags/npm/"/>
-    
-      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
-    
-      <category term="windows" scheme="http://catwarrior.github.io/tags/windows/"/>
     
       <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
     
