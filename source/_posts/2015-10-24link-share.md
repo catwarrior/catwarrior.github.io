@@ -53,6 +53,10 @@ tags:
 # My tool box
 chocolatey
 git
+nodejs
+ruby
+python
+linqpad
 
 ## web performance
 wrk
