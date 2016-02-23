@@ -38,6 +38,9 @@ tags:
 ## 廖雪峰 several programming language tutorial
 [liaoxuefeng](http://www.liaoxuefeng.com/)
 
+## 张占岭 ddd .net
+[Zhangzhanlin](http://www.cnblogs.com/lori/p/3413730.html)
+
 [Using Atom - Introduction](http://www.cnblogs.com/Darren_code/p/atom.html)
 
 ## Neal Ford
