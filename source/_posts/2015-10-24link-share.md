@@ -52,9 +52,10 @@ tags:
 ## Something may check later
 [GitHub上整理的一些工具](https://segmentfault.com/q/1010000002404545)
 [Cheat sheets](http://coolshell.cn/articles/1566.html)
+### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
 [Azure cheat sheets](http://microsoftazurewebsitescheatsheet.info/)
-
+[Using NLog For Diagnostic Logging In Windows Azure Cloud Services And Writing The Logs To Azure Table Storage](http://www.rhizohm.net/irhetoric/post/2015/11/06/Using-NLog-For-Diagnostic-Logging-In-Windows-Azure-Cloud-Services-And-Writing-The-Logs-To-Azure-Table-Storage.aspx)
 # My tool box
 chocolatey
 git
