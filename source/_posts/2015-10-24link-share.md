@@ -82,3 +82,7 @@ stackservice
 
 ## Asp.net Web API
 [Building ASP.Net Web API RESTful Service](http://bitoftech.net/2013/11/25/building-database-model-entityframework-code-first)
+
+## Ioc container / libraries
+[SimpleInjector](https://github.com/simpleinjector/SimpleInjector)
+[Castle](https://github.com/castleproject)
