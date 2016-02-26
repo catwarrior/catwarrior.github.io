@@ -1,4 +1,4 @@
-slogan: "Yet another bootstrap theme."
+slogan: "Be Happy! Thank you yesterday!"
 
 menu:
   - title: Archives
@@ -36,10 +36,10 @@ widgets:
 - search
 - category
 - tagcloud
-- recent_posts  
+- recent_posts
 - links
 
-rss: 
+rss:
 fancybox: true
 favicon: favicon.pn
 duoshuo_shortname: catwarrior
