@@ -57,12 +57,16 @@ tags:
 [Azure cheat sheets](http://microsoftazurewebsitescheatsheet.info/)
 [Using NLog For Diagnostic Logging In Windows Azure Cloud Services And Writing The Logs To Azure Table Storage](http://www.rhizohm.net/irhetoric/post/2015/11/06/Using-NLog-For-Diagnostic-Logging-In-Windows-Azure-Cloud-Services-And-Writing-The-Logs-To-Azure-Table-Storage.aspx)
 # My tool box
+## environment
 chocolatey
 git
 nodejs
 ruby
 python
 linqpad
+
+## editors
+[maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
 ## Web performance
 ### tools
