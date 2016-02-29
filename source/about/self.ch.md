@@ -95,3 +95,5 @@ LAMP
 `Code Complete` `C# via CLR` 
 
 `黑客与画家` `松本行弘的程序世界` `Ruby元编程`
+
+`Javascript the good parts` `Javascript Ninja` `Javascript design patterns`
