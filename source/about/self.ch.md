@@ -40,7 +40,7 @@
     
   系统部署达到1000万台。
 
-4. PC通知系统的设计和开发
+4. PC消息通知系统的设计和开发
 
    关键词：`Asp.net Web API` `AngularJS` `Sql server` `Azure` `Web job` `Caching` `Ioc` `Entityframework` `Linq` `International`
      
