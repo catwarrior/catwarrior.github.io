@@ -81,14 +81,14 @@
 
 ## 技术能力及爱好
 ### 最顺手的栈
-Windows .NET C# Sql Server PowerShell WinDbg WCF ASP.NET Web API EF 以及各种开源库。
+`Windows` `.NET` `C#` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
 ### 曾经使用过的
 LAMP
 ### 目前非常有兴趣的
 #### Web栈：
 `Spring Boot` `Ruby on Rails` `MEAN` `ASP.NET core`
 #### 语言
-`C#` `F#` `Javascript` `Ruby` `Python` `C++ `Scala`
+`C#` `F#` `Javascript` `Ruby` `Python` `C++` `Scala`
 ### 喜欢的书籍：
 `设计模式` `企业架构设计模式` `重构` `领域驱动设计` `重做`
 
