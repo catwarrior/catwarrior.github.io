@@ -11,6 +11,7 @@ tags:
 [F# for fun](http://fsharpforfunandprofit.com/)
 [F# offical](http://fsharp.org/about/learning.html)
 [Structuring a .NET Application For Easy Deployment](https://msdn.microsoft.com/en-us/library/ms973920.aspx)
+[MS Open Source](http://www.dotnetfoundation.org/projects)
 
 ## Tools
 [Chocolatey NuGet is a Machine Package Manager](http://chocolatey.org/)
