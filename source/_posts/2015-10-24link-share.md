@@ -69,6 +69,9 @@ linqpad
 ## editors
 [maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
+## open library
+cecil - Modify .NET binaries
+
 ## Web performance
 ### tools
 wrk
