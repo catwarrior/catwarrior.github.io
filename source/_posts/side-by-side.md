@@ -68,4 +68,5 @@ docker run hello-world
 ```
 
 # Build
-FAKE - F# Make
+[FAKE - F# Make](http://www.ilker.de/fake-everywhere.html)
+[PSake](https://github.com/psake/psake)
