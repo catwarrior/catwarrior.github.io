@@ -22,6 +22,7 @@ var pubs = from p in PublishedNotifications
 PublishedNotifications.DeleteAllOnSubmit(pubs);
 SubmitChanges();
 ```
+
 EF way.
 ``` cs
 using (var context = new MyDbContext())
@@ -30,4 +31,14 @@ using (var context = new MyDbContext())
     context.MyTables.RemoveRange(itemsToDelete);
     context.SaveChanges();
 }
+```
+linqpad insert
+``` cs
+Employee newEmployee = new Employee
+{
+	FirstName = "Bob",
+	LastName = "Barker"
+};
+Employees.InsertOnSubmit(newEmployee);
+SubmitChanges();
 ```
