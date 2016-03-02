@@ -1,0 +1,38 @@
+## Azure web job.
+ SDK: `Microsoft.Azure.WebJobs` `Microsoft.Azure.WebJobs.Extensions`
+ 
+### Sample:
+entry point
+``` cs
+public static void Main()
+        {
+            var config = new JobHostConfiguration();
+
+            if (config.IsDevelopment)
+            {
+                config.UseDevelopmentSettings();
+            }
+             
+            config.UseTimers(); // timer trigger which is defined in SDK extensions.
+
+            JobHost host = new JobHost(config);
+            host.RunAndBlock();
+        }
+```
+QueueTrigger
+``` cs
+   public static void BindToQueueXXXXXX([QueueTrigger("xxxx")] XObject obj, TextWriter log)
+        {
+           // do stuff here
+            log.Write("balabala ");
+        }
+```
+QueueTrigger
+``` cs
+   public static void BindToBlobsXXXXX([BlobTrigger("xxxx")] XObject obj, TextWriter log)
+        {
+           // do stuff here
+            log.Write("balabala ");
+        }
+```
+ 
