@@ -67,3 +67,5 @@ boot2docker start
 docker run hello-world
 ```
 
+# Build
+FAKE - F# Make
