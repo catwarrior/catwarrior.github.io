@@ -35,4 +35,26 @@ QueueTrigger
             log.Write("balabala ");
         }
 ```
+# DSL in C# Try/NoException
+
+``` cs
+   Func<Action,Action> NoException = (action) =>
+   {
+       Action wapper = () =>
+       {
+           try
+           {
+               action.Invoke();
+           }
+           catch (Exception ex)
+           {
  
+               Console.WriteLine(ex);
+           }
+       };
+ 
+       return wapper;
+   };
+```
+
+
