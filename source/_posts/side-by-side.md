@@ -56,5 +56,14 @@ QueueTrigger
        return wapper;
    };
 ```
+# Docker
+## play with boot2docker 
+```
+boot2docker delete
+boot2docker init
 
+boot2docker start
+
+docker run hello-world
+```
 
