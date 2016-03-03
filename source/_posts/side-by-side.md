@@ -67,6 +67,4 @@ boot2docker start
 docker run hello-world
 ```
 
-# Build
-[FAKE - F# Make](http://www.ilker.de/fake-everywhere.html)
-[PSake](https://github.com/psake/psake)
+
