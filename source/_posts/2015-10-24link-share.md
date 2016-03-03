@@ -66,11 +66,17 @@ ruby
 python
 linqpad
 
+### langs
+[scriptcs](https://github.com/scriptcs) - Write C# apps with a text editor, nuget and the power of Roslyn! http://scriptcs.net
+
 ## editors
 [maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
 ## open library
 cecil - Modify .NET binaries
+
+## automation
+[FluentAutomation](https://github.com/stirno/FluentAutomation) - Simple Fluent API for UI Automation http://fluent.stirno.com
 
 ## Web performance
 ### tools
