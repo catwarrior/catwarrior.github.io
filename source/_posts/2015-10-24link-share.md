@@ -69,6 +69,10 @@ linqpad
 ### langs
 [scriptcs](https://github.com/scriptcs) - Write C# apps with a text editor, nuget and the power of Roslyn! http://scriptcs.net
 
+## Build
+[FAKE - F# Make](http://www.ilker.de/fake-everywhere.html)
+[PSake](https://github.com/psake/psake)
+
 ## editors
 [maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
