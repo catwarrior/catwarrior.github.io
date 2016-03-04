@@ -69,3 +69,5 @@ docker run hello-world
 # Linqpad
 [Some wonderful examples](http://linqpadsamples.codeplex.com/)
 
+# Toolbox
+`Linqpad` `C#` `F#` 
