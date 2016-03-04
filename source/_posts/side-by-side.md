@@ -66,5 +66,6 @@ boot2docker start
 
 docker run hello-world
 ```
-
+# Linqpad
+[Some wonderful examples](http://linqpadsamples.codeplex.com/)
 
