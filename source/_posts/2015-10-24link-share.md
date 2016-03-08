@@ -31,7 +31,8 @@ tags:
 
 ## Githubs
 [Google developers](https://github.com/google)
-
+## Build
+`Fake` `Cake`
 ## Install
 [Squirrel.Windows](https://github.com/catwarrior/Squirrel.Windows)
 [Wix#](https://github.com/oleg-shilo/wixsharp)
