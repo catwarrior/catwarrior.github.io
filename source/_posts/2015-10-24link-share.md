@@ -13,6 +13,7 @@ tags:
 [Structuring a .NET Application For Easy Deployment](https://msdn.microsoft.com/en-us/library/ms973920.aspx)
 [MS Open Source](http://www.dotnetfoundation.org/projects)
 [.net core](http://dotnet.github.io/)
+[Awesome .NET](https://github.com/catwarrior/awesome-dotnet)
 
 ## Tools
 [Chocolatey NuGet is a Machine Package Manager](http://chocolatey.org/)
