@@ -32,24 +32,28 @@ tags:
 ## Githubs
 [Google developers](https://github.com/google)
 
-## blogs
+## Install
+[Squirrel.Windows](https://github.com/catwarrior/Squirrel.Windows)
+[Wix#](https://github.com/oleg-shilo/wixsharp)
+
+### blogs
 [yaozhenfa-cnblogs](http://www.cnblogs.com/yaozhenfa/p/functional_cache.html)
 
-## wintellect jeffreyr
+### wintellect jeffreyr
 [jeffreyr](http://www.wintellect.com/devcenter/jeffreyr)
 
-## 廖雪峰 several programming language tutorial
+### 廖雪峰 several programming language tutorial
 [liaoxuefeng](http://www.liaoxuefeng.com/)
 
-## 张占岭 ddd .net
+### 张占岭 ddd .net
 [Zhangzhanlin](http://www.cnblogs.com/lori/p/3413730.html)
 
 [Using Atom - Introduction](http://www.cnblogs.com/Darren_code/p/atom.html)
 
-## Neal Ford
+### Neal Ford
 [Neal Ford - a great software architecture](http://nealford.com/bio.html)
 
-## 淘宝UED官方博客
+### 淘宝UED官方博客
 [taobao UED blog](http://ued.taobao.org/blog/2012/07/getting-started-with-markdown/)
 
 ## Something may check later
