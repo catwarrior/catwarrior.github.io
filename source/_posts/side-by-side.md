@@ -35,6 +35,22 @@ QueueTrigger
             log.Write("balabala ");
         }
 ```
+## Redis cache
+For better performance
+``` cs
+private static ConnectionMultiplexer connection;
+private static ConnectionMultiplexer Connection 
+{
+    get
+    {
+        if(connection == null || !connection.IsConnected)
+        {
+            connection = ConnectionMultiplexer.Connect("yhdcache0.redis.cache.windows.net,ssl=true,password=...");
+        }
+        return connection;
+    }
+}
+```
 # DSL in C# Try/NoException
 
 ``` cs
