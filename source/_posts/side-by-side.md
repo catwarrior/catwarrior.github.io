@@ -97,3 +97,8 @@ docker run hello-world
 `paket` `fake` `Argu - cli argument parsing`
 https://github.com/fsprojects
 http://fssnip.net/
+
+# Install all stuff with one click
+```bash
+START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt
+```
