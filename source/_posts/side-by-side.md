@@ -88,6 +88,8 @@ docker run hello-world
 # Toolbox
 `Linqpad` `C#` `F#` 
 
+`emacs` `autohotkey`
+
 # .Net
 [Common question for C#/.NET](http://www.c-sharpcorner.com/UploadFile/1492b1/C-Sharp-and-Asp-Net-question-and-answersall-in-one/)
 
