@@ -228,3 +228,14 @@ server :
     }
 ```
 
+usage, just add attribute on the contract, no changes on the client.
+
+``` cs
+[ServiceContract]
+interface IService
+{
+    [OperationContract]
+    [AuthenticationRequired]
+    string SayHelloTo(string name);
+}
+```
