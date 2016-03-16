@@ -97,7 +97,8 @@ docker run hello-world
 
 # Nuget
 ex:
-Install-Package Microsoft.AspNet.WebApi -Version 5.2.2
+`Install-Package Microsoft.AspNet.WebApi -Version 5.2.2`
+`Update-Package Microsoft.AspNet.WebApi -reinstall`
 
 # Fsharp
 `paket` `fake` `Argu - cli argument parsing`
