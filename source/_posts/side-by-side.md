@@ -95,6 +95,10 @@ docker run hello-world
 
 [Awesome dotnet](https://github.com/catwarrior/awesome-dotnet)
 
+# Nuget
+ex:
+Install-Package Microsoft.AspNet.WebApi -Version 5.2.2
+
 # Fsharp
 `paket` `fake` `Argu - cli argument parsing`
 https://github.com/fsprojects
