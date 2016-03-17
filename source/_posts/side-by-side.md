@@ -1,3 +1,14 @@
+# Azure
+## Azure website whitelist
+``` xml
+<system.webServer>
+    <security>
+      <ipSecurity allowUnlisted="false" denyAction="NotFound">
+        <add allowed="true" ipAddress="60.247.xx.xx" subnetMask="255.0.0.0"/>
+      </ipSecurity>
+    </security>
+ </system.webServer>
+```
 ## Azure web job.
  SDK: `Microsoft.Azure.WebJobs` `Microsoft.Azure.WebJobs.Extensions`
  
