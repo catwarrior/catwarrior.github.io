@@ -120,3 +120,7 @@ http://fssnip.net/
 ```bash
 START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt
 ```
+
+# Play with router
+[install python on openrt](https://blog.phpgao.com/xiaomi_router_python.html)
+[sync with baidupan](http://www.syncy.cn/)
