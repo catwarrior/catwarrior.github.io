@@ -84,6 +84,9 @@ linqpad
 ## editors
 [maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
+## doc
+[zeal](https://zealdocs.org/)
+
 ## open library
 cecil - Modify .NET binaries
 
