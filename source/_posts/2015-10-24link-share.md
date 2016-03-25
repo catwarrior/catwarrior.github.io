@@ -84,8 +84,9 @@ linqpad
 ## editors
 [maxiang markdown - flowchart and formula support](https://maxiang.io/)
 
-## doc
+## library doc tools
 [zeal](https://zealdocs.org/)
+`dash` on mac osx
 
 ## open library
 cecil - Modify .NET binaries
