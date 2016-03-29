@@ -53,6 +53,11 @@ http://localhost:40080/phpmyadmin
 
 ### create the website from elgg
 ``` bash
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+``` bash
 cd /path/to/wwwroot/
 composer self-update
 composer global require "fxp/composer-asset-plugin:~1.1.1"
