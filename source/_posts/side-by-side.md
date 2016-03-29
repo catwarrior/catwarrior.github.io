@@ -95,6 +95,7 @@ docker run hello-world
 ``` bash
 
 [a good place show how to use docker in everyday life]https://hub.docker.com/r/tutum/lamp/
+[create dev environment with docker file]http://www.open-open.com/lib/view/open1422533340611.html
 
 ###  查看docker信息（version、info）
 ``` bash
