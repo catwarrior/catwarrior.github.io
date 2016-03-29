@@ -93,6 +93,9 @@ boot2docker start
 
 docker run hello-world
 ``` bash
+
+[a good place show how to use docker in everyday life]https://hub.docker.com/r/tutum/lamp/
+
 ###  查看docker信息（version、info）
 ``` bash
 # 查看docker版本  
