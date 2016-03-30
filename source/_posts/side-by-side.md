@@ -250,6 +250,9 @@ START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/cat
 System.Diagnostics.Process.Start("cmd.exe", "/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\"");
 ```
 
+# windows installer
+`log` http://www.msifaq.com/a/1022.htm
+
 # Play with router
 [install python on openrt](https://blog.phpgao.com/xiaomi_router_python.html)
 [sync with baidupan](http://www.syncy.cn/)
