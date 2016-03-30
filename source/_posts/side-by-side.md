@@ -96,7 +96,6 @@ docker run hello-world
 
 [a good place show how to use docker in everyday life]https://hub.docker.com/r/tutum/lamp/
 [create dev environment with docker file]http://www.open-open.com/lib/view/open1422533340611.html
-
 ###  查看docker信息（version、info）
 ``` bash
 # 查看docker版本  
@@ -121,7 +120,6 @@ $docker rmi image_name
 # 显示一个镜像的历史; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs  
 $docker history image_name  
 ```
-
 ###  启动容器（run）
 docker容器可以理解为在沙盒中运行的进程。这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。
 
@@ -244,6 +242,12 @@ http://fssnip.net/
 # Install all stuff with one click
 ```bash
 START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt
+```
+
+# Windows command
+``` cs 
+#Create directory junction 
+System.Diagnostics.Process.Start("cmd.exe", "/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\"");
 ```
 
 # Play with router
