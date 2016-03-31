@@ -238,6 +238,24 @@ docker start -a -i gst
 https://docs.docker.com/compose
 http://docs.oracle.com/cd/E52668_01/E54669/html/section_vn2_l2z_fp.html
 
+## Docker file
+The instruction keywords define how to create the image:
+
+ADD
+Copy the files my.cnf and run.sh from the /var/docker_projects/mymod/mysql directory to /etc/my.cnf and /opt/run.sh in the container.
+
+ENTRYPOINT
+Specify that the container always runs /opt/run.sh.
+
+ENV
+Define the web proxy in the build environment (as an alternative to modifying /etc/yum.conf).
+
+FROM
+Define oraclelinux:6.6 as a basis for the new image.
+
+RUN
+Install the mysql-server package and make the /opt/run.sh script executable.
+
 # Linqpad
 [Some wonderful examples](http://linqpadsamples.codeplex.com/)
 
