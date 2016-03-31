@@ -237,6 +237,7 @@ docker start -a -i gst
 ## Docker compose
 https://docs.docker.com/compose
 http://docs.oracle.com/cd/E52668_01/E54669/html/section_vn2_l2z_fp.html
+http://www.open-open.com/lib/view/open1435671611966.html
 
 ## Docker file
 The instruction keywords define how to create the image:
