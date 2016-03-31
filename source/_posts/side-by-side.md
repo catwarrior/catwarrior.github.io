@@ -215,6 +215,8 @@ $docker login
 $docker build -t image_name Dockerfile_path  
 ```
 
+## Docker compose
+https://docs.docker.com/compose
 
 # Linqpad
 [Some wonderful examples](http://linqpadsamples.codeplex.com/)
