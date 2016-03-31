@@ -215,6 +215,25 @@ $docker login
 $docker build -t image_name Dockerfile_path  
 ```
 
+## useful command of docker
+``` bash
+# start a named container, run a bash
+docker run -i -t --name gst tutum/lamp:latest /bin/bash
+
+# remove the container after exit.
+# or with -d, run it as a service.
+docker run -i -t --rm tutum/lamp
+
+# run additional command on runing container.
+docker exec -i -t gst bash
+
+# The -a option to docker ps displays all containers that are currently running or that have exited.
+docker ps -a
+
+# You can use docker start to restart a stopped container. After reattaching to it, the contents remain unchanged from the last time that you used the container.
+docker start -a -i gst
+```
+
 ## Docker compose
 https://docs.docker.com/compose
 http://docs.oracle.com/cd/E52668_01/E54669/html/section_vn2_l2z_fp.html
