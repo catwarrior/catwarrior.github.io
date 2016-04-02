@@ -104,8 +104,8 @@ RUN usermod -u 1000 mysql && chown mysql.mysql /var/run/mysqld/
 EXPOSE 3306
 VOLUME ["/opt"]
 ```
-create & start the container with local path `~/root/db` mounted
-and with given mysql password
+create & start the container with local path `~/root/db` mounted, so db data is persisted.
+and with given mysql password.
 ``` bash
 docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -it fan6/mysql
 ```
