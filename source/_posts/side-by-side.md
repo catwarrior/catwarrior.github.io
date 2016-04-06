@@ -321,6 +321,14 @@ START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/cat
 System.Diagnostics.Process.Start("cmd.exe", "/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\"");
 ```
 
+# Shell
+pip in shell via `grep` `awk` `xargs`
+``` bash
+docker ps -a | grep "Exited" | awk '{print $1 }'|xargs docker stop
+docker ps -a | grep "Exited" | awk '{print $1 }'|xargs docker rm
+docker images|grep none|awk '{print $3 }'|xargs docker rmi
+```
+
 # windows installer
 `log` http://www.msifaq.com/a/1022.htm
 
