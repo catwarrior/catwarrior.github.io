@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>play with elgg | Rocking the world</title>
+  <meta name="author" content="stephan">
+  
+  <meta name="description" content="Installing Elgg on Ubuntu LinuxInstall the dependencies:12345sudo apt-get install apache2sudo apt-get install mysql-serversudo apt-get install php5 li">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="play with elgg"/>
+  <meta property="og:site_name" content="Rocking the world"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.pn" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Rocking the world</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> play with elgg</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h2 id="Installing_Elgg_on_Ubuntu_Linux">Installing Elgg on Ubuntu Linux</h2><p>Install the dependencies:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install apache2</span><br><span class="line">sudo apt-get install mysql-server</span><br><span class="line">sudo apt-get install php5 libapache2-mod-php5 php5-mysqlnd</span><br><span class="line">sudo apt-get install phpmyadmin</span><br><span class="line">sudo a2enmod rewrite</span><br></pre></td></tr></table></figure></p>
+<p>Edit /etc/apache2/sites_available/default to enable .htaccess processing (set AllowOverride to All)<br>Restart Apache: sudo /etc/init.d/apache2 restart</p>
+<p><a href="http://learn.elgg.org/en/1.x/intro/install/ubuntu.html" target="_blank" rel="external">Follow the standard installation instructions</a><br><a href="http://learn.elgg.org/en/1.x/intro/install.html" target="_blank" rel="external">Elgg</a><br><a href="https://hub.docker.com/r/tutum/lamp/" target="_blank" rel="external">tutum lamp guide</a></p>
+<h2 id="setup_lamp_with_Docker">setup lamp with Docker</h2><p><code>boot2docker</code> for windows and mac osx<br>To enable access the container from outside, remember the <code>port forward</code> setting on the VM(on windows, via virtual box).<br>Use <code>tutum/lamp</code> as the image base.<br>Use <code>composer</code> to install elgg.</p>
+<h2 id="elgg_install">elgg install</h2><h3 id="port_forward">port forward</h3><p>40080 -&gt; 80<br>43306 -&gt; 3306</p>
+<h3 id="get_db_user_password-">get db user password.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs %containerid%</span><br></pre></td></tr></table></figure>
+<h3 id="change_db_password">change db password</h3><p>login admin account<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET PASSWORD = PASSWORD(<span class="string">'newpassword'</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="create_database_via_phpadmin">create database via phpadmin</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /path/to/wwwroot/</span><br><span class="line">sudo ln <span class="operator">-s</span> /usr/share/phpmyadmin phpmyadmin</span><br></pre></td></tr></table></figure>
+<p><a href="http://localhost:40080/phpmyadmin" target="_blank" rel="external">http://localhost:40080/phpmyadmin</a></p>
+<h3 id="create_the_website_from_elgg">create the website from elgg</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl <span class="operator">-s</span>S https://getcomposer.org/installer | php</span><br><span class="line">sudo mv composer.phar /usr/<span class="built_in">local</span>/bin/composer</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /path/to/wwwroot/</span><br><span class="line">composer self-update</span><br><span class="line">composer global require <span class="string">"fxp/composer-asset-plugin:~1.1.1"</span></span><br><span class="line">composer create-project elgg/starter-project:dev-master .</span><br><span class="line"><span class="comment"># rename folder to elgg</span></span><br><span class="line">mv starter-project elgg </span><br><span class="line"></span><br><span class="line"><span class="comment">### additional settings</span></span><br><span class="line"><span class="comment">#### enable mod-rewrite</span></span><br><span class="line">``` bash</span><br><span class="line">vi /etc/apache2/sites-available/<span class="number">000</span>-default.conf</span><br><span class="line">``` conf</span><br><span class="line">...</span><br><span class="line">&lt;Directory /var/www/elgg&gt;</span><br><span class="line">    AllowOverride All</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h4 id="update_elgg_settings">update elgg settings</h4><p>.htaccess<br>settings.php<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> elgg</span><br><span class="line">cp ../vendor/elgg/elgg/elgg-config/settings.example.php settings.php </span><br><span class="line"><span class="comment"># update the database user password etc.</span></span><br><span class="line">vi settings.php </span><br><span class="line">cp ../vendor/elgg/elgg/install/config/htaccess.dist .htaccess </span><br><span class="line"><span class="comment"># update ??</span></span><br><span class="line">vi .htaccess</span><br></pre></td></tr></table></figure></p>
+<h3 id="launch_the_elgg_web_installer">launch the elgg web installer</h3><p><a href="http://localhost:40080" target="_blank" rel="external">http://localhost:40080</a></p>
+<h2 id="using_docker_with_multi-container">using docker with multi-container</h2><h3 id="mysql_container">mysql container</h3><p><code>fan6/mysql</code><br>Dockerfile<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM mysql:<span class="number">5.6</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Write Permission</span></span><br><span class="line">RUN usermod -u <span class="number">1000</span> mysql &amp;&amp; chown mysql.mysql /var/run/mysqld/</span><br><span class="line"></span><br><span class="line">EXPOSE <span class="number">3306</span></span><br><span class="line">VOLUME [<span class="string">"/opt"</span>]</span><br></pre></td></tr></table></figure></p>
+<p>create &amp; start the container with local path <code>~/root/db</code> mounted, so db data is persisted.<br>and with given mysql password.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p <span class="number">3306</span>:<span class="number">3306</span> -v ~/root/db:/var/lib/mysql <span class="operator">-e</span> MYSQL_ROOT_PASSWORD=<span class="number">123456</span> -it fan6/mysql</span><br></pre></td></tr></table></figure></p>
+
+
+	  <!--
+	  
+	  	<p class="bg-info">
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-04-06</span>
+		</p>
+  	  	
+  	  --> 
+  	   
+	</div>
+
+	<div>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/04/06/side-by-side/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/02/26/my-backlog/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/03/29/play-with-elgg/" data-title="play with elgg" data-url="http://catwarrior.github.io/2016/03/29/play-with-elgg/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-03-29 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/coding/">coding<span>23</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/elgg/">elgg<span>1</span></a></li> <li><a href="/tags/php/">php<span>1</span></a></li> <li><a href="/tags/social/">social<span>1</span></a></li> <li><a href="/tags/web/">web<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'catwarrior' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 stephan
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

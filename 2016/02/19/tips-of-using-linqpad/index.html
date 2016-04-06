@@ -108,12 +108,15 @@
 	  		
 
 	  <h2 id="linqpad_a_very_convenient_tool_for_quick_coding-">linqpad a very convenient tool for quick coding.</h2><p>You could write sql, c# statements.<br>And also it’s very smart to connect to a database, or table storage.<br>    context.EntityX.DeleteOnSubmit(<code>entity</code>);<br>    context.EntityX.DeleteAllOnSubmit(<code>entities</code>);</p>
+<p>##<br>linq pad.<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pubs = <span class="keyword">from</span> p <span class="keyword">in</span> PublishedNotifications </span><br><span class="line">           <span class="keyword">where</span> p.Nid == <span class="number">1301</span></span><br><span class="line">		   <span class="keyword">select</span> p;</span><br><span class="line">PublishedNotifications.DeleteAllOnSubmit(pubs);</span><br><span class="line">SubmitChanges();</span><br></pre></td></tr></table></figure></p>
+<p>EF way.<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> (<span class="keyword">var</span> context = <span class="keyword">new</span> MyDbContext())</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> itemsToDelete = context.Set&lt;MyTable&gt;();</span><br><span class="line">    context.MyTables.RemoveRange(itemsToDelete);</span><br><span class="line">    context.SaveChanges();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>linqpad insert<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Employee newEmployee = <span class="keyword">new</span> Employee</span><br><span class="line">&#123;</span><br><span class="line">	FirstName = <span class="string">"Bob"</span>,</span><br><span class="line">	LastName = <span class="string">"Barker"</span></span><br><span class="line">&#125;;</span><br><span class="line">Employees.InsertOnSubmit(newEmployee);</span><br><span class="line">SubmitChanges();</span><br></pre></td></tr></table></figure></p>
 
 
 	  <!--
 	  
 	  	<p class="bg-info">
-	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-02-19</span>
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-03-29</span>
 		</p>
   	  	
   	  --> 
@@ -129,9 +132,9 @@
 	<div class="pagination">
 <ul class="pagination">
 	 
-		
-          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
-        
+				
+    	<li class="prev"><a href="/2016/02/21/a-better-way-to-secure-your-wcf-services/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
 
         <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
@@ -176,7 +179,7 @@
     <ul id="categorys" class="tag_box list-unstyled collapse in">
           
   <li>
-    <li><a href="/categories/coding/">coding<span>20</span></a></li>
+    <li><a href="/categories/coding/">coding<span>23</span></a></li>
   </li>
 
     </ul>
@@ -189,7 +192,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/net/">.net<span>5</span></a></li> <li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
+  <li><a href="/tags/net/">.net<span>6</span></a></li> <li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
     </ul>
 	</div>
 		

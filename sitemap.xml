@@ -2,13 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://catwarrior.github.io/2016/02/19/tips-of-using-linqpad/</loc>
-    <lastmod>2016-02-19T11:05:31.828Z</lastmod>
+    <loc>http://catwarrior.github.io/2016/04/06/using-git-svn-together/</loc>
+    <lastmod>2016-04-06T04:29:03.073Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/04/06/side-by-side/</loc>
+    <lastmod>2016-04-06T04:15:01.955Z</lastmod>
   </url>
   
   <url>
     <loc>http://catwarrior.github.io/2015/10/24/link-share/</loc>
-    <lastmod>2016-02-19T04:58:33.705Z</lastmod>
+    <lastmod>2016-04-06T04:15:01.955Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/03/29/play-with-elgg/</loc>
+    <lastmod>2016-04-06T04:15:01.955Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/02/21/a-better-way-to-secure-your-wcf-services/</loc>
+    <lastmod>2016-03-29T05:28:08.886Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/02/19/tips-of-using-linqpad/</loc>
+    <lastmod>2016-03-29T05:28:08.886Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/about/self.ch.html</loc>
+    <lastmod>2016-03-29T05:28:08.886Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/02/26/my-backlog/</loc>
+    <lastmod>2016-03-29T05:28:08.886Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2015/11/12/create-a-wcf-client-wrapper/</loc>
+    <lastmod>2016-03-29T05:28:08.885Z</lastmod>
   </url>
   
   <url>
@@ -22,18 +57,13 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2016/02/03/java-multithreading-guide/</loc>
-    <lastmod>2016-02-05T09:17:24.644Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://catwarrior.github.io/2016/01/29/net-based-applications-are-slow-to-load/</loc>
     <lastmod>2016-02-05T09:17:24.644Z</lastmod>
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2016/01/27/notes-of-asp-net-core-1-0/</loc>
-    <lastmod>2016-02-05T09:17:24.642Z</lastmod>
+    <loc>http://catwarrior.github.io/2016/02/03/java-multithreading-guide/</loc>
+    <lastmod>2016-02-05T09:17:24.644Z</lastmod>
   </url>
   
   <url>
@@ -43,6 +73,11 @@
   
   <url>
     <loc>http://catwarrior.github.io/2016/01/21/notes-of-learning-java/</loc>
+    <lastmod>2016-02-05T09:17:24.642Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2016/01/27/notes-of-asp-net-core-1-0/</loc>
     <lastmod>2016-02-05T09:17:24.642Z</lastmod>
   </url>
   
@@ -72,17 +107,12 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/11/11/wmi-query/</loc>
-    <lastmod>2016-01-12T01:57:50.308Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://catwarrior.github.io/2015/11/12/create-a-wcf-client-wrapper/</loc>
-    <lastmod>2016-01-12T01:57:50.308Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://catwarrior.github.io/2015/11/05/upgrade-npm-on-windows/</loc>
+    <lastmod>2016-01-12T01:57:50.308Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://catwarrior.github.io/2015/11/11/wmi-query/</loc>
     <lastmod>2016-01-12T01:57:50.308Z</lastmod>
   </url>
   
@@ -127,12 +157,12 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/categories/index.html</loc>
+    <loc>http://catwarrior.github.io/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/</loc>
     <lastmod>2015-11-19T05:19:37.253Z</lastmod>
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/</loc>
+    <loc>http://catwarrior.github.io/categories/index.html</loc>
     <lastmod>2015-11-19T05:19:37.253Z</lastmod>
   </url>
   
@@ -142,12 +172,12 @@
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/</loc>
+    <loc>http://catwarrior.github.io/2015/10/30/reading/</loc>
     <lastmod>2015-11-19T05:19:37.252Z</lastmod>
   </url>
   
   <url>
-    <loc>http://catwarrior.github.io/2015/10/30/reading/</loc>
+    <loc>http://catwarrior.github.io/2015/11/05/change-console-back-color-on-windows/</loc>
     <lastmod>2015-11-19T05:19:37.252Z</lastmod>
   </url>
   

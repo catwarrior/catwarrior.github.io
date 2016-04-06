@@ -95,12 +95,164 @@
 
 		<div class="slogan">
       <i class="fa fa-heart"></i>
-      Yet another bootstrap theme.
+      Be Happy! Thank you yesterday!
 </div>    
 		<div id="top_search"></div>
 		<div class="mypage">
 		
 		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-27 </div>
+			<div class="article-title"><a href="/2016/01/27/notes-of-asp-net-core-1-0/" >notes of asp.net core 1.0 &amp; azure</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><a href="https://docs.asp.net/en/latest/" target="_blank" rel="external">ASP.NET 5 Documentation</a><br><a href="https://azure.microsoft.com/en-us/documentation/services/service-fabric/" target="_blank" rel="external">Azure Service Fabric</a><br><a href="https://azure.microsoft.com/en-us/documentation/videos/azure-friday/" target="_blank" rel="external">Azure Friday</a></p>
+<p><a href="https://www.youtube.com/watch?v=w6Sq3Ce5ChI&amp;list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF&amp;index=23" target="_blank" rel="external">ASP.NET 5 Community Standup</a></p>
+<h2 id="Modern_Application_Lifecycle_Management_and_DevOps">Modern Application Lifecycle Management and <code>DevOps</code></h2>
+	
+	</div>
+  <a type="button" href="/2016/01/27/notes-of-asp-net-core-1-0/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-26 </div>
+			<div class="article-title"><a href="/2016/01/26/notes-of-MEAN-practice/" >notes of MEAN practice</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><a href="https://thinkster.io/mean-stack-tutorial" target="_blank" rel="external">Learn to Build Modern Web Apps with MEAN</a><br><a href="http://jkchu.com/2015/06/23/node-js-for-side-projects/" target="_blank" rel="external">Node JS For Side Projects</a><br><a href="http://www.infoq.com/cn/news/2016/01/chakracore" target="_blank" rel="external">微软开源Chakra，并计划在上面运行Node.js</a></p>
+
+	
+	</div>
+  <a type="button" href="/2016/01/26/notes-of-MEAN-practice/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-21 </div>
+			<div class="article-title"><a href="/2016/01/21/notes-of-learning-java/" >notes of learning java</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="Reading_book_Think_in_Java">Reading book <code>Think in Java</code></h2><h2 id="Reading_book_Effective_java">Reading book <code>Effective java</code></h2><h2 id="Environment">Environment</h2><p>– Groovy<br>  AST transform</p>
+<ul>
+<li>Gradle</li>
+<li>PsGet<br><a href="http://psget.net/" target="_blank" rel="external">http://psget.net/</a>   (powershell module repository)<br>Set-ExecutionPolicy RemoteSigned<br>(new-object Net.WebClient).DownloadString(“<a href="http://psget.net/GetPsGet.ps1" target="_blank" rel="external">http://psget.net/GetPsGet.ps1</a>“) | iex<br>Get-PsGetModuleInfo Posh*</li>
+<li>Sprint</li>
+<li><p>Sprint boot<br><a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-introducing-spring-boot" target="_blank" rel="external">http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-introducing-spring-boot</a><br><a href="http://blog.csdn.net/z69183787/article/category/5580807" target="_blank" rel="external">http://blog.csdn.net/z69183787/article/category/5580807</a></p>
+<p>spring boot on eclipse, would better install <a href="http://spring.io/tools/sts/all" target="_blank" rel="external"><code>Spring Tool Suite</code></a></p>
+</li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2016/01/21/notes-of-learning-java/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-17 </div>
+			<div class="article-title"><a href="/2016/01/17/generators-in-programming/" >generators in programming</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>I’m reading python recently, the reason is, it is popular and wildly used, and it’s also muture.</p>
+<p>There is concept “generators” in python, which is used to compute a value at runtime.<br>ex.<br>{codeblock}<br>list = [x for x in range(1,100)]<br>{endcodeblock}<br>In fact, this will create a list of 100 items with values, most of the time it’s ok, but when item number<br>is very large, or even unpredictable, you cannot do this.<br>So here comes the generators.</p>
+<p>{codeblock}<br>g = (x for x in range(1,100))<br>{endcodeblock}<br>when you type <code>g</code> in the py commandline, it will tell you <code>g</code> is a generator type, you can call <code>next(g)</code> to<br>iterate the data members.</p>
+<p>you could even create your function act as a generator, the key is the keyword <code>yield</code>.</p>
+<p>{codeblock}<br>def odd():<br>    print(‘step 1’)<br>    yield 1<br>    print(‘step 2’)<br>    yield(3)<br>    print(‘step 3’)<br>    yield(5)<br>{endcodeblock}</p>
+<p>Actually, it’s common concept in programming languages, for example, C# also have <code>yield</code>, exactly the same. </p>
+
+	
+	</div>
+  <a type="button" href="/2016/01/17/generators-in-programming/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-12 </div>
+			<div class="article-title"><a href="/2016/01/12/exception-handling-best-practise-in-net/" >exception handling best practise in .net</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>cite from <a href="http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET" target="_blank" rel="external">http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET</a></p>
+<ul>
+<li>Plan for the worst</li>
+<li>Check it early</li>
+<li>Don’t trust external data</li>
+<li>The only reliable devices are: the video, the mouse and keyboard.</li>
+<li>Writes can fail, too</li>
+<li>Code Safely</li>
+<li>Don’t throw new Exception()</li>
+<li>Don’t put important exception information on the Message field</li>
+<li>Put a single catch (Exception ex) per thread</li>
+<li>Generic Exceptions caught should be published</li>
+<li>Log Exception.ToString(); never log only Exception.Message!</li>
+<li>Don’t catch (Exception) more than once per thread</li>
+<li>Don’t ever swallow exceptions</li>
+<li>Cleanup code should be put in finally blocks</li>
+<li>Use “using” everywhere</li>
+<li>Don’t return special values on error conditions</li>
+<li>Don’t use exceptions to indicate absence of a resource</li>
+<li>Don’t use exception handling as means of returning information from a method</li>
+<li>Use exceptions for errors that should not be ignored</li>
+<li>Don’t clear the stack trace when re-throwing an exception</li>
+<li>Avoid changing exceptions without adding semantic value</li>
+<li>Exceptions should be marked [Serializable]</li>
+<li>When in doubt, don’t Assert, throw an Exception</li>
+<li>Each exception class should have at least the three original constructors</li>
+<li>Be careful when using the AppDomain.UnhandledException event</li>
+<li>Don’t reinvent the wheel</li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2016/01/12/exception-handling-best-practise-in-net/#more" class="btn btn-default more">Read More</a>
+</div>
+
 		
 			
 	
@@ -243,160 +395,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-19 </div>
-			<div class="article-title"><a href="/2015/11/19/void-to-input-username-and-password-when-using-git/" >void to input username and password when using git</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>using git bash.<br>vim ~/.get-credentials<br><code>https://myusername:mypassword@git.oschina.net</code></p>
-<p><code>git config credential.https://git.oschina.net.username myusername [--global]</code><br><code>git config credential.helper store --file=~/.git-credentials [--global]</code></p>
-<p><code>git config credential.helper store</code></p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/19/void-to-input-username-and-password-when-using-git/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-19 </div>
-			<div class="article-title"><a href="/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/" >how to fix file is open in another program on windows</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>Why can’t I delete or move a file or folder?<br>What program is stopping me from deleting or moving a file or folder?<br>You really what to find the “Stupid guy” who is ocuppying the file?</p>
-<p>Here you go! Boo.. There is an application called <code>Microsoft Process Explorer</code>.<br>Run it.<br>Go the menu bar of <code>Microsoft Process Explorer</code>.<br><code>Find</code> =&gt; <code>Here input the folder/file which you cannot delete.</code></p>
-<p>It will show you which process ocupy it.</p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/19/how-to-fix-file-is-open-in-another-program-on-windows/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-18 </div>
-			<div class="article-title"><a href="/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/" >how to know the install status for a msi installer</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>Refer to <a href="http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi" target="_blank" rel="external">http://stackoverflow.com/questions/320921/how-to-add-a-wix-custom-action-that-happens-only-on-uninstall-via-msi</a></p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/18/how-to-know-the-install-status-for-a-msi-installer/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-12 </div>
-			<div class="article-title"><a href="/2015/11/12/create-a-wcf-client-wrapper/" >Create a smart wcf client wrapper</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h2 id="A_good_start_for_wcf_client_programing-">A good start for wcf client programing.</h2><p>In the last article we presented a solution for calling WCF services that needed only a single line of code and no using statements.  But it had many limitations including</p>
-<ul>
-<li>Reliance on a static class</li>
-<li>Testability was low for any code using it</li>
-<li>Reliance on the WCF client rather than the contract</li>
-<li>Not optimized for multiple calls<br>In reality the previous series of articles where all about setting up the infrastructure to support the final solution.  All this infrastructure will be hidden from code when we are done.  Let’s get started.</li>
-</ul>
-<h2 id="Service_Template">Service Template</h2><p>Ultimately we will be using T4 to generate service clients but the templates are complex and we do not yet even have an idea of what we’re building.  For this article we will build the final service client by hand.  In subsequent articles we will convert the code to a template. </p>
-<p>The service client should meet the following goals</p>
-<ul>
-<li>Creatable using a standard new operator with no requirements for specifying any WCF endpoint information.</li>
-<li>Implement the WCF contract interface so instances can be used as parameters such as in an IoC.</li>
-<li>Instances do not need to be disposed.</li>
-<li>Should allow multiple calls to be optimized through the same client.</li>
-<li>Extensible to allow callers to adjust the client if needed.</li>
-</ul>
-<h2 id="ServiceChannelClient">ServiceChannelClient</h2><p>To start we will create a new abstract class that will serve as the base class for service clients.  While we could reuse the ServiceClientWrapper of previous articles that would expose too much WCF infrastructure.  Instead the class will wrap calls to <code>ServiceClientWrapper</code> and <code>ServiceClientFactory</code> from the previous articles.  All the functionality is protected since this is an abstract class.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> abstract <span class="keyword">class</span> ServiceChannelClient&lt;TChannel&gt; where TChannel: <span class="keyword">class</span> </span><br><span class="line">&#123; </span><br><span class="line">   <span class="keyword">protected</span> <span class="keyword">virtual</span> ServiceClientWrapper&lt;TChannel&gt; CreateInstance () </span><br><span class="line">   &#123; <span class="keyword">return</span> ServiceClientFactory.CreateAndWrap&lt;TChannel&gt;(); &#125; </span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">InvokeMethod</span> <span class="params">( Action&lt;TChannel&gt; action )</span> </span><br><span class="line">   </span>&#123; ServiceClientFactory.InvokeMethod&lt;TChannel&gt;(action, CreateInstance); &#125; </span><br><span class="line"></span><br><span class="line">   <span class="keyword">protected</span> <span class="keyword">virtual</span> TResult InvokeMethod&lt;TResult&gt; ( Func&lt;TChannel, TResult&gt; action ) </span><br><span class="line">   &#123; <span class="keyword">return</span> ServiceClientFactory.InvokeMethod&lt;TChannel, TResult&gt;(action, CreateInstance); &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Basically the class just wraps the classes from previous articles.  It is about to get more functionality but first let’s implement a WCF service client using the class.</p>
-<h2 id="Typed_Service_Clients">Typed Service Clients</h2><p>Creating a class to wrap a WCF service is now pretty straightforward (depending upon the size of the interface).  We need only create a derived type and implement the interface using the methods provided in the base class.<br><figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> EmployeeServiceClient : ServiceChannelClient&lt;IEmployeeService&gt; , IEmployeeService </span><br><span class="line">&#123; </span><br><span class="line">   <span class="function"><span class="keyword">public</span> Employee <span class="title">Get</span> <span class="params">( <span class="keyword">int</span> id )</span> </span><br><span class="line">   </span>&#123; <span class="keyword">return</span> InvokeMethod&lt;Employee&gt;(c =&gt; c.Get(id)); &#125; </span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Employee <span class="title">Update</span> <span class="params">( Employee employee )</span> </span><br><span class="line">   </span>&#123; <span class="keyword">return</span> InvokeMethod&lt;Employee&gt;(c =&gt; c.Update(employee)); &#125;  </span><br><span class="line"></span><br><span class="line">   <span class="keyword">public</span> IEnumerable&lt;Employee&gt; GetEmployees () </span><br><span class="line">   &#123; <span class="keyword">return</span> InvokeMethod&lt;IEnumerable&lt;Employee&gt;&gt;(c =&gt; c.GetEmployees()); &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>If we wanted we could make all the methods virtual to allow for extensibility.  We could also mark the type as partial to extend its abilities but the above code is sufficient until we move to T4. </p>
-<p>Switching the application over to use the new client is straightforward.</p>
-<ul>
-<li>Remove the service reference code</li>
-<li>Add the service interface assembly to the project</li>
-<li>Replace all the existing calls with the new type<br>When the service reference code is removed it will remove the configuration entry for the service as well so that information will need to be put back in.  For now ensure the endpoint name matches the class name and that the contract name matches the namespace name of the interface.</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">!—-</span> <span class="attribute">Original</span> <span class="attribute">-</span>–&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">client</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="title">endpoint</span> <span class="attribute">address</span>=<span class="value">"http://localhost:21054/EmployeeService.svc"</span> </span><br><span class="line">                 <span class="attribute">binding</span>=<span class="value">"basicHttpBinding"</span></span><br><span class="line">                 <span class="attribute">bindingConfiguration</span>=<span class="value">"BasicHttpBinding_IEmployeeService"</span> </span><br><span class="line">                 <span class="attribute">contract</span>=<span class="value">"ServiceReference1.IEmployeeService"</span> </span><br><span class="line">                 <span class="attribute">name</span>=<span class="value">"BasicHttpBinding_IEmployeeService"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">client</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">!—-</span> <span class="attribute">New</span> <span class="attribute">-</span>–&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">client</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">endpoint</span> <span class="attribute">address</span>=<span class="value">"http://localhost:21054/EmployeeService.svc"</span> </span><br><span class="line">                 <span class="attribute">binding</span>=<span class="value">"basicHttpBinding"</span> </span><br><span class="line">                 <span class="attribute">bindingConfiguration</span>=<span class="value">"BasicHttpBinding_IEmployeeService"</span> </span><br><span class="line">                 <span class="attribute">contract</span>=<span class="value">"ServiceLib.IEmployeeService"</span></span><br><span class="line">                 <span class="attribute">name</span>=<span class="value">"EmployeeServiceClient"</span> /&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">client</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>The matching of the endpoint name with the client type name is only a convenience.  We can add a constructor that allows the endpoint name to be specified if we want.  Finally we can fix up the calls to the client.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Original </span></span><br><span class="line">ServiceClientFactory.InvokeMethod&lt;ServiceReference1.IEmployeeService&gt;(c =&gt; </span><br><span class="line">&#123; </span><br><span class="line">   dataGridView1.DataSource = c.GetEmployees(); </span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line"><span class="comment">//New </span></span><br><span class="line">dataGridView1.DataSource = Client.GetEmployees(); </span><br><span class="line"></span><br><span class="line"><span class="comment">//Poor man's injection </span></span><br><span class="line"><span class="keyword">private</span> IEmployeeService Client </span><br><span class="line">&#123; </span><br><span class="line">    get &#123; <span class="keyword">return</span> m_client.Value; &#125; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> readonly Lazy&lt;IEmployeeService&gt; m_client = <span class="keyword">new</span> Lazy&lt;IEmployeeService&gt;(() =&gt; <span class="keyword">new</span> EmployeeServiceClient());</span><br></pre></td></tr></table></figure>
-<p>Now that we don’t need to dispose of objects or rely on static classes we can use just the interface which makes testing much easier.</p>
-<h2 id="Multiple_Calls">Multiple Calls</h2><p>We’re almost done but we want to make one more change.  WCF service calls are not cheap so most calls tend to do several things at once rather than focusing on a single task like standard OOP would have you do.  But there are times when multiple calls are needed and the above code would require 2 client connections to be created.  Take, for example, this code in the sample application that creates 2 connections just to update an employee.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnNewEmployee</span> <span class="params">( object sender, EventArgs e )</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">   var dlg = <span class="keyword">new</span> EmployeeForm();  </span><br><span class="line">   <span class="keyword">if</span> (dlg.ShowDialog(<span class="keyword">this</span>) != DialogResult.OK) </span><br><span class="line">      <span class="keyword">return</span>; </span><br><span class="line"></span><br><span class="line">   <span class="comment">//Call the service </span></span><br><span class="line">   Client.Update(dlg.Employee); </span><br><span class="line">   LoadEmployees(); </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">LoadEmployees</span> <span class="params">( )</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">   dataGridView1.DataSource = Client.GetEmployees(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>What we want to do is allow the client to tell us they plan to make multiple calls so we can optimize the client creation.  Since the client needs to be able to define the lifetime of the calls it makes sense to use a using statement.  All we need to do is provide a mechanism for creating a type that controls the lifetime of our client.  We can add this directly to the base client.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> abstract <span class="keyword">class</span> ServiceChannelClient&lt;TChannel&gt; : </span><br><span class="line">     ISupportsPersistentChannel where TChannel: <span class="keyword">class</span> </span><br><span class="line">&#123; </span><br><span class="line">   <span class="keyword">protected</span> <span class="keyword">bool</span> HasOpenChannel </span><br><span class="line">   &#123; </span><br><span class="line">      get &#123; <span class="keyword">return</span> m_channel != null; &#125; </span><br><span class="line">   &#125;  </span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">CloseChannel</span> <span class="params">()</span> </span><br><span class="line">   </span>&#123; </span><br><span class="line">      var channel = Interlocked.Exchange(ref m_channel, null); </span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (channel != null)  </span><br><span class="line">          channel.Close(); </span><br><span class="line">   &#125; </span><br><span class="line"></span><br><span class="line">   <span class="keyword">protected</span> <span class="keyword">virtual</span> ServiceClientWrapper&lt;TChannel&gt; CreateInstance () </span><br><span class="line">   &#123; <span class="keyword">return</span> ServiceClientFactory.CreateAndWrap&lt;TChannel&gt;(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Now the base class can have a temporary or permanent connection open depending upon the caller’s needs.  But how do we expose this to the caller?  Introducing the <code>ISupportsPersistentChannel</code> interface.  The sole purpose of this interface is to expose Open/Close methods.  Notice the methods are not exposed publicly but only through the interface.  This prevents callers from calling these methods accidentally.  Why is this important?  Why do we need an interface?  It’s all about interchangeability.</p>
-<h2 id="Creating_A_Persistent_Channel">Creating A Persistent Channel</h2><p>Remember that one of the requirements is that we want to be able to use the service interface directly without regards to the implementation, including mocks.  Therefore persistence cannot require that we use the client class.  Instead we add an extension to the interface which gives us the ability to open a persisted channel irrelevant of the implementation.  The caller code will work the same whether we’re using our client type or a test mock.  Here’s the implementation.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> EmployeeServiceExtensions </span><br><span class="line">&#123; </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IDisposable <span class="title">OpenPersistentChannel</span> <span class="params">( <span class="keyword">this</span> IEmployeeService source )</span> </span><br><span class="line">   </span>&#123; </span><br><span class="line">      var batch = source as ISupportsPersistentChannel; </span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (batch != null) </span><br><span class="line">      &#123; </span><br><span class="line">         batch.Open();  </span><br><span class="line"></span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">new</span> ActionDisposable(batch.Close); </span><br><span class="line">      &#125;; </span><br><span class="line">       </span><br><span class="line">      <span class="keyword">return</span> Disposable.Empty; </span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>The key is that the extension method will look for the <code>ISupportsPersistentChannel</code> interface.  For types deriving from <code>ServiceChannelClient</code> the interface will exist.  For other types it likely will not.  If the interface does exist then the channel is opened and an instance of a disposable class is returned that will close the channel.  Note the client itself is never returned.  If the interface does not exist then a disposable object is returned that does nothing.  This makes it safe for both production and test code.  Here’s how the caller would use it.</p>
-<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OnNewEmployee</span> <span class="params">( object sender, EventArgs e )</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">   var dlg = <span class="keyword">new</span> EmployeeForm(); </span><br><span class="line">   <span class="keyword">if</span> (dlg.ShowDialog(<span class="keyword">this</span>) != DialogResult.OK) </span><br><span class="line">      <span class="keyword">return</span>; </span><br><span class="line"></span><br><span class="line">   <span class="comment">//Call the service </span></span><br><span class="line">   <span class="keyword">using</span> (var proxy = Client.OpenPersistentChannel())   </span><br><span class="line">   &#123; </span><br><span class="line">      Client.Update(dlg.Employee); </span><br><span class="line">      LoadEmployees(Client);  </span><br><span class="line">   &#125;; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">LoadEmployees</span> <span class="params">( )</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">   LoadEmployees(Client); </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">LoadEmployees</span> <span class="params">( IEmployeeService service )</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">   dataGridView1.DataSource = service.GetEmployees(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Next_Steps">Next Steps</h2><p>We are finally at the point where we have replaced the original service reference logic with a fully testable client that eliminates the dependency on WCF plumbing.  The resultant code is clean and can be mocked.  In the general case of single calls to WCF then the caller does not need to anything special.  For multiple calls the client (can) optimize performance with a <code>using</code> statement and it won’t break any test implementations.  The only issue remaining is the amount of code we’d need to generate for each WCF service.  The example client we created can be converted to a T4 template but it is going to require quite a bit of work.  However once we’re done we won’t have to revisit this code ever again.  We’ll pick up T4 next time.</p>
-<p>Original from :<br><a href="http://blogs.msmvps.com/p3net/2014/03/15/a-smarter-wcf-service-client-part-4/" target="_blank" rel="external">http://blogs.msmvps.com/p3net/2014/03/15/a-smarter-wcf-service-client-part-4/</a><br><a href="http://blogs.msmvps.com/p3net/2014/05/18/a-smarter-wcf-service-client-part-5/" target="_blank" rel="external">http://blogs.msmvps.com/p3net/2014/05/18/a-smarter-wcf-service-client-part-5/</a></p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/12/create-a-wcf-client-wrapper/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-11 </div>
-			<div class="article-title"><a href="/2015/11/11/wmi-query/" >WMI Query</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>The following WMI queries can be used as inspiration when working with driveres and other OS Deployment stuff…<br>IMPORTANT: If you copy/paste these queries, you might need to replace the quotes, as they often change format when you copy them from a website</p>
-
-	
-	</div>
-  <a type="button" href="/2015/11/11/wmi-query/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -445,13 +443,15 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/coding/">coding<span>20</span></a></li>
+			<li><a href="/categories/reading/backlog/">backlog<span>1</span></a></li>
+		
+			<li><a href="/categories/coding/">coding<span>23</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
 			<li><a href="/categories/programing/">programing<span>1</span></a></li>
 		
-			<li><a href="/categories/reading/">reading<span>1</span></a></li>
+			<li><a href="/categories/reading/">reading<span>2</span></a></li>
 		
 		</ul>
 	</div>
@@ -462,48 +462,48 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/tools/">tools<span>4</span></a></li>
-		
-			<li><a href="/tags/windows/">windows<span>7</span></a></li>
-		
-			<li><a href="/tags/c/">c#<span>1</span></a></li>
-		
-			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
-		
 			<li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
-		
-			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
-		
-			<li><a href="/tags/msi/">msi<span>1</span></a></li>
-		
-			<li><a href="/tags/git/">git<span>2</span></a></li>
-		
-			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
-		
-			<li><a href="/tags/exception/">exception<span>1</span></a></li>
-		
-			<li><a href="/tags/wmi/">wmi<span>1</span></a></li>
-		
-			<li><a href="/tags/mac/">mac<span>1</span></a></li>
-		
-			<li><a href="/tags/words/">words<span>1</span></a></li>
-		
-			<li><a href="/tags/wcf/">wcf<span>1</span></a></li>
-		
-			<li><a href="/tags/javascript/">javascript<span>1</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/net/">.net<span>5</span></a></li>
 		
 			<li><a href="/tags/bestpractice/">bestpractice<span>1</span></a></li>
 		
+			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
+		
 			<li><a href="/tags/java/">java<span>2</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/tips/">tips<span>13</span></a></li>
+		
+			<li><a href="/tags/net/">.net<span>6</span></a></li>
+		
+			<li><a href="/tags/web/">web<span>1</span></a></li>
+		
+			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
+		
+			<li><a href="/tags/words/">words<span>2</span></a></li>
+		
+			<li><a href="/tags/elgg/">elgg<span>1</span></a></li>
+		
+			<li><a href="/tags/c/">c#<span>1</span></a></li>
+		
+			<li><a href="/tags/wcf/">wcf<span>2</span></a></li>
 		
 			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
 		
+			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
 		
-		   <li><a href="/tags">...<span>23</span></a></li>
+			<li><a href="/tags/svn/">svn<span>1</span></a></li>
+		
+			<li><a href="/tags/npm/">npm<span>1</span></a></li>
+		
+			<li><a href="/tags/mac/">mac<span>1</span></a></li>
+		
+			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
+		
+			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
+		
+		
+		   <li><a href="/tags">...<span>28</span></a></li>
 		 
 		</ul>
 	</div>
@@ -516,23 +516,23 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2016/02/19/tips-of-using-linqpad/" ><i class="fa fa-file-o"></i>tips of using linqpad...</a>
+        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
       </li>
     
       <li>
-        <a href="/2016/02/14/lazy-initialize-in-net/" ><i class="fa fa-file-o"></i>lazy initialize in .net...</a>
+        <a href="/2016/04/06/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
       </li>
     
       <li>
-        <a href="/2016/02/03/work-comfortable-on-mac/" ><i class="fa fa-file-o"></i>work comfortable on mac...</a>
+        <a href="/2016/03/29/play-with-elgg/" ><i class="fa fa-file-o"></i>play with elgg...</a>
       </li>
     
       <li>
-        <a href="/2016/02/03/java-multithreading-guide/" ><i class="fa fa-file-o"></i>java multithreading guide...</a>
+        <a href="/2016/02/26/my-backlog/" ><i class="fa fa-file-o"></i>my backlog...</a>
       </li>
     
       <li>
-        <a href="/2016/01/29/net-based-applications-are-slow-to-load/" ><i class="fa fa-file-o"></i>.net based applications are...</a>
+        <a href="/2016/02/21/a-better-way-to-secure-your-wcf-services/" ><i class="fa fa-file-o"></i>a better way to secure your...</a>
       </li>
     
   </ul>

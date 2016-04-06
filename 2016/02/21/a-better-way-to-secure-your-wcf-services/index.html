@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>a better way to secure your wcf services | Rocking the world</title>
+  <meta name="author" content="stephan">
+  
+  <meta name="description" content="using inspectors, you could add headers to the wcf message, and then you could do authentication.12345678910111213141516171819202122232425262728293031">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="a better way to secure your wcf services"/>
+  <meta property="og:site_name" content="Rocking the world"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.pn" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Rocking the world</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> a better way to secure your wcf services</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h2 id="using_inspectors,_you_could_add_headers_to_the_wcf_message,_and_then_you_could_do_authentication-">using inspectors, you could add headers to the wcf message, and then you could do authentication.</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> Inspect client messages : add GUID in headers</span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">internal</span> <span class="keyword">class</span> <span class="title">CProcessAuthenticationClientInspector</span> : <span class="title">IClientMessageInspector</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">region</span> IClientMessageInspector Membres</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AfterReceiveReply</span>(<span class="params"><span class="keyword">ref</span> System.ServiceModel.Channels.Message reply, <span class="keyword">object</span> correlationState</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">object</span> <span class="title">BeforeSendRequest</span>(<span class="params"><span class="keyword">ref</span> System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        request.Headers.Add(MessageHeader.CreateHeader(<span class="string">"ProcessAuth"</span>, <span class="string">"http://schemas.YOURCOMPANY.com/YOURAPPID"</span>, CProcessAuthenticationBehavior._authToken));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">endregion</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> Inspect server messages : Check GUID</span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">internal</span> <span class="keyword">class</span> <span class="title">CProcessAuthenticationDispatchInspector</span> : <span class="title">IDispatchMessageInspector</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">region</span> IDispatchMessageInspector Membres</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">object</span> <span class="title">AfterReceiveRequest</span>(<span class="params"><span class="keyword">ref</span> Message request, System.ServiceModel.IClientChannel channel, System.ServiceModel.InstanceContext instanceContext</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        Guid token = OperationContext.Current.IncomingMessageHeaders.GetHeader&lt;Guid&gt;(<span class="string">"ProcessAuth"</span>, <span class="string">"http://schemas.YOURCOMPANY.com/YOURAPPID"</span>);</span><br><span class="line">        <span class="keyword">if</span> (token != CProcessAuthenticationBehavior._authToken)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Invalid process"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">BeforeSendReply</span>(<span class="params"><span class="keyword">ref</span> Message reply, <span class="keyword">object</span> correlationState</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">endregion</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> Add inspectors on both client and server messages</span></span><br><span class="line"><span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CProcessAuthenticationBehavior</span> : <span class="title">IEndpointBehavior</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> Authentification token known by both sides of the pipe</span></span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;/summary&gt;</span></span></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">static</span> Guid _authToken = Guid.NewGuid();</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">region</span> IEndpointBehavior Membres</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">AddBindingParameters</span>(<span class="params">ServiceEndpoint endpoint, System.ServiceModel.Channels.BindingParameterCollection bindingParameters</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ApplyClientBehavior</span>(<span class="params">ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.ClientRuntime clientRuntime</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        clientRuntime.MessageInspectors.Add(<span class="keyword">new</span> CProcessAuthenticationClientInspector());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ApplyDispatchBehavior</span>(<span class="params">ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        endpointDispatcher.DispatchRuntime.MessageInspectors.Add(<span class="keyword">new</span> CProcessAuthenticationDispatchInspector());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Validate</span>(<span class="params">ServiceEndpoint endpoint</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="preprocessor">#<span class="keyword">endregion</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>And then you just need to add your endpoint behaviour to your endpoint on both sides :</p>
+<p>client :<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ChannelFactory&lt;TInterface&gt; factory;</span><br><span class="line">factory = <span class="keyword">new</span> ChannelFactory&lt;TInterface&gt;(BuildLocalBinding(), <span class="string">"net.pipe://localhost/foo"</span>);</span><br><span class="line">factory.Endpoint.Behaviors.Add(<span class="keyword">new</span> CProcessAuthenticationBehavior());</span><br></pre></td></tr></table></figure></p>
+<p>server :<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ServiceHost svcHost = <span class="keyword">new</span> System.ServiceModel.ServiceHost(imlpementationType);</span><br><span class="line">svcHost.AddServiceEndpoint(interfaceType, binding, <span class="string">"net.pipe://localhost/foo"</span>);</span><br><span class="line">svcHost.Description.Endpoints[<span class="number">0</span>].Behaviors.Add(<span class="keyword">new</span> CProcessAuthenticationBehavior());</span><br><span class="line">Well... <span class="keyword">this</span> may be done <span class="keyword">in</span> config, but I<span class="string">'ll let you dig :)</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="even_more">even more</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line">  using System;</span><br><span class="line">    using System.Linq;</span><br><span class="line">    using System.ServiceModel;</span><br><span class="line">    using System.ServiceModel.Channels;</span><br><span class="line">    using System.ServiceModel.Description;</span><br><span class="line">    using System.ServiceModel.Dispatcher;</span><br><span class="line"></span><br><span class="line">    internal class SecurityInspectors : IClientMessageInspector, IDispatchMessageInspector</span><br><span class="line">    &#123;</span><br><span class="line">        static readonly string HEADER_NAME = "token";</span><br><span class="line">        static readonly string HEADER_NS = "token-ns";</span><br><span class="line">        void IClientMessageInspector.AfterReceiveReply(ref Message reply, object correlationState)</span><br><span class="line">        &#123;</span><br><span class="line">            Verify(reply);</span><br><span class="line">        &#125;</span><br><span class="line">        object IClientMessageInspector.BeforeSendRequest(ref Message request, IClientChannel channel)</span><br><span class="line">        &#123;</span><br><span class="line">            // chanlenging provider</span><br><span class="line">            ApplyChallenge(ref request);</span><br><span class="line">            return null;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        object IDispatchMessageInspector.AfterReceiveRequest(ref Message request, IClientChannel channel, InstanceContext instanceContext)</span><br><span class="line">        &#123;</span><br><span class="line">            Verify(request);</span><br><span class="line">            return null;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        void IDispatchMessageInspector.BeforeSendReply(ref Message reply, object correlationState)</span><br><span class="line">        &#123;</span><br><span class="line">            // chanlenging client</span><br><span class="line">            ApplyChallenge(ref reply);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private static void Verify(Message message)</span><br><span class="line">        &#123;</span><br><span class="line">            if (!message.Headers.Any(h =&gt; h.Name == HEADER_NAME &amp;&amp; h.Namespace == HEADER_NS))</span><br><span class="line">                throw new AppAuthenticationException(new FaultReason("API was called by an untrust application"));</span><br><span class="line"></span><br><span class="line">            if (message.Headers.GetHeader&lt;string&gt;(HEADER_NAME, HEADER_NS) != HashSalt())</span><br><span class="line">                throw new AppAuthenticationException(new FaultReason("API was called by an untrust application"));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private static void ApplyChallenge(ref Message message)</span><br><span class="line">        &#123;</span><br><span class="line">            var token = MessageHeader.CreateHeader(HEADER_NAME, HEADER_NS, HashSalt());</span><br><span class="line">            if (message.Headers.Any(h =&gt; h.Name == token.Name))</span><br><span class="line">            &#123;</span><br><span class="line">                message.Headers.RemoveAll(token.Name, token.Namespace);</span><br><span class="line">            &#125;</span><br><span class="line">            message.Headers.Add(token);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private static string HashSalt()</span><br><span class="line">        &#123;</span><br><span class="line">            /// do some magic here to generate a device specific ex： the hash of st</span><br><span class="line">            return GetSalt() + "sff";</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private static string GetSalt()</span><br><span class="line">        &#123;</span><br><span class="line">            return "aaaaabb";</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public class AppAuthenticationException : FaultException</span><br><span class="line">    &#123;</span><br><span class="line">        public AppAuthenticationException(FaultReason reason = null, FaultCode code = null)</span><br><span class="line">            : base(reason, code)</span><br><span class="line">        &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /// &lt;summary&gt;</span><br><span class="line">    /// This is a wcf operation contract attribute.</span><br><span class="line">    /// It could be attached to an operation contract, will apply two way authentication, and make sure</span><br><span class="line">    /// the wcf service and the client application is both trusted.</span><br><span class="line">    /// for invalid access, there will be a exception `AppAuthenticationException` thrown.</span><br><span class="line">    /// &lt;/summary&gt;</span><br><span class="line">    public class AuthenticationRequiredAttribute : Attribute, IEndpointBehavior, IOperationBehavior</span><br><span class="line">    &#123;</span><br><span class="line">        public AuthenticationRequiredAttribute()</span><br><span class="line">        &#123;</span><br><span class="line">#if DEBUG</span><br><span class="line">#else</span><br><span class="line">            var cert1 = System.Reflection.Assembly.GetEntryAssembly().ManifestModule.GetSignerCertificate();</span><br><span class="line">            var cert2 = this.GetType().Assembly.ManifestModule.GetSignerCertificate();</span><br><span class="line">            if (cert2 == null || </span><br><span class="line">                cert2 == null || </span><br><span class="line">                cert1.GetCertHashString() != cert2.GetCertHashString())</span><br><span class="line">                throw new AppAuthenticationException();</span><br><span class="line">#endif</span><br><span class="line">        &#125;</span><br><span class="line">        #region IEndpointBehavior Members  </span><br><span class="line">        public void AddBindingParameters(ServiceEndpoint endpoint, BindingParameterCollection bindingParameters) &#123; &#125;</span><br><span class="line">        public void ApplyClientBehavior(ServiceEndpoint endpoint, ClientRuntime clientRuntime)</span><br><span class="line">        &#123;</span><br><span class="line">            clientRuntime.MessageInspectors.Add(new SecurityInspectors());</span><br><span class="line">        &#125;</span><br><span class="line">        public void ApplyDispatchBehavior(ServiceEndpoint endpoint, EndpointDispatcher endpointDispatcher)</span><br><span class="line">        &#123;</span><br><span class="line">            endpointDispatcher.DispatchRuntime.MessageInspectors.Add(new SecurityInspectors());</span><br><span class="line">        &#125;</span><br><span class="line">        public void Validate(ServiceEndpoint endpoint) &#123; &#125;</span><br><span class="line">        #endregion</span><br><span class="line"></span><br><span class="line">        #region IOperationBehavior Members  </span><br><span class="line">        public void AddBindingParameters(OperationDescription operationDescription, BindingParameterCollection bindingParameters) &#123; &#125;</span><br><span class="line">        public void ApplyClientBehavior(OperationDescription operationDescription, ClientOperation clientOperation)</span><br><span class="line">        &#123;</span><br><span class="line">            clientOperation.Parent.MessageInspectors.Add(new SecurityInspectors());</span><br><span class="line">        &#125;</span><br><span class="line">        public void ApplyDispatchBehavior(OperationDescription operationDescription, DispatchOperation dispatchOperation)</span><br><span class="line">        &#123;</span><br><span class="line">            dispatchOperation.Parent.MessageInspectors.Add(new SecurityInspectors());</span><br><span class="line">        &#125;</span><br><span class="line">        public void Validate(OperationDescription operationDescription) &#123; &#125;</span><br><span class="line">        #endregion</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>usage, just add attribute on the contract, no changes on the client.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[ServiceContract]</span><br><span class="line"><span class="keyword">interface</span> <span class="title">IService</span></span><br><span class="line">&#123;</span><br><span class="line">    [OperationContract]</span><br><span class="line">    [AuthenticationRequired]</span><br><span class="line">    <span class="function"><span class="keyword">string</span> <span class="title">SayHelloTo</span>(<span class="params"><span class="keyword">string</span> name</span>)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+	  <!--
+	  
+	  	<p class="bg-info">
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-03-29</span>
+		</p>
+  	  	
+  	  --> 
+  	   
+	</div>
+
+	<div>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/02/26/my-backlog/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/02/19/tips-of-using-linqpad/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/02/21/a-better-way-to-secure-your-wcf-services/" data-title="a better way to secure your wcf services" data-url="http://catwarrior.github.io/2016/02/21/a-better-way-to-secure-your-wcf-services/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-02-21 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/coding/">coding<span>23</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/net/">.net<span>6</span></a></li> <li><a href="/tags/wcf/">wcf<span>2</span></a></li> <li><a href="/tags/windows/">windows<span>8</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'catwarrior' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 stephan
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
