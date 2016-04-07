@@ -102,6 +102,9 @@ cecil - Modify .NET binaries
 ## automation
 [FluentAutomation](https://github.com/stirno/FluentAutomation) - Simple Fluent API for UI Automation http://fluent.stirno.com
 
+## free tools on MAC osx
+http://xclient.info
+
 ## Web performance
 ### tools
 wrk
