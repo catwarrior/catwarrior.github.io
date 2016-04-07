@@ -109,3 +109,6 @@ and with given mysql password.
 ``` bash
 docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -it fan6/mysql
 ```
+
+## Uderstanding ELGG
+[Data model](http://learn.elgg.org/en/2.0/design/database.html)
