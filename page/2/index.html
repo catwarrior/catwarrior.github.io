@@ -106,6 +106,38 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2016-01-29 </div>
+			<div class="article-title"><a href="/2016/01/29/net-based-applications-are-slow-to-load/" >.net based applications are slow to load</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><a href="http://austintovey.blogspot.com/2012/01/net-bases-applications-are-slow-to-load.html" target="_blank" rel="external">.NET bases applications are slow to load or certain in-app tasks are slow</a></p>
+<p>This behaviour will occur with any .NET 1.1 and 2.0 assembly that is authenticode-signed, not only Measurement Studio assemblies. Digital signing is also referred to as code signing. Code signing a .NET library is strongly recommended by Microsoft, and Measurement Studio signs all of our ActiveX and .NET components.</p>
+<p>Code signing of assemblies makes components tamper-proof and ensures that you know the identity of the component publisher.</p>
+<p>The reason why this problem is occurring is because of the mechanism used by the .NET Common Language Runtime (CLR) to verify code-signed .NET assemblies. Part of the verification process requires an online look-up to check whether the certificate with which the assembly is signed has been revoked and is no longer valid. Windows does this by downloading a CRL (Certificate Revocation List). The first time a code-signed assembly is loaded by the .NET CLR, the CRL is downloaded from the certificate provider’s server and cached on the system.</p>
+<p>When the .NET CLR loads a code-signed assembly and is unable to reach the CRL distribution point, it records the failure as an inability to provide the assembly evidence that it was code-signed. So the assembly is allowed to load, but is not marked as being digitally signed. There is a 15 second delay for CRL retrievals. This is how long the CLR will keep on re-trying to download the CRL before it finally times out. So the delay in loading the .NET assembly occurs because Windows is unable to download the CRL and keeps trying to download it for 15 seconds before timing out.</p>
+<p>This behavior is by design.</p>
+<p>The .NET CLR will not indicate any error or throw any security exception when verifying a signed assembly if the CRL distribution point cannot be reached. An error here from WinVerifyTrust(), the API used by the .NET CLR to verify a code signed assembly, prevents the assembly from being marked as code signed. Note that this does not apply to assemblies loaded thru the Internet Explorer hosting interface.</p>
+<p>You could manually download the CRL and install it on your system. But the CRL is valid only for 10-15 days, so unless your system is able to update the file after this time, you will run into the same problem again.</p>
+<p>Microsoft recommends disabling CRL checking as a workaround by disabling this option in Internet Explorer. Use the following steps to disable the CRL checking in Internet Explorer:<br>Select Start»Control Panel.<br>Double-click Internet Options.<br>Select the Advanced tab.<br>In the Security section, uncheck the Check for publisher’s certificate revocation option.<br>By disabling the CRL checking using the Internet Options, you are not exposing yourself to a security threat because this check is not working. The reason why this problem is showing up is because your network settings are not allowing Windows to access the CRL.</p>
+<p>In addition, it is possible to programmatically set the CRL verification. When the Check for publisher’s certificate revocation is unchecked, a setting in the registry is changed. To turn off CRL verification, set HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State  from 0x00023c00 to 0x00023e00. To turn CRL Checking on again, reset the State key to 0x00023c00</p>
+<p><a href="http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted" target="_blank" rel="external">http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted</a><br><a href="http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/" target="_blank" rel="external">http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/</a><br><a href="http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s" target="_blank" rel="external">http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s</a></p>
+
+	
+	</div>
+  <a type="button" href="/2016/01/29/net-based-applications-are-slow-to-load/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2016-01-27 </div>
 			<div class="article-title"><a href="/2016/01/27/notes-of-asp-net-core-1-0/" >notes of asp.net core 1.0 &amp; azure</a></div>						
 		</h3>
@@ -355,46 +387,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-11-23 </div>
-			<div class="article-title"><a href="/2015/11/23/10-tools-that-change-your-life/" >10 tools that change your life</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<blockquote><p>“Productivity is being able to do things that you were never able to do before.”</p>
-<footer><strong>Franz Kafka</strong></footer></blockquote>
-<p>引自 <a href="http://zhuanlan.zhihu.com/always-a-tool/19662365" target="_blank" rel="external">知乎</a> <a href="http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx" target="_blank" rel="external">UltimateDeveloperAndPowerUsersToolListForWindows</a></p>
-<ul>
-<li><a href="http://www.chocolatey.org/" target="_blank" rel="external">Chocolatey</a> - 名字很奇特，但它可是 Windows 上的 apt-get。一旦拥有，别无所求。现在我想装软件的时候，会首先想到它而不是 Google。刚刚我还在用 ‘cinst filezilla’ 和 ‘cinst winscp’ 来安装我想要的东西呢。想想看，利用它你就可以把「装机」变成一个极其简单的事情。不过自己写脚本还是太复杂，对于装机，你应该用……<ul>
-<li><a href="http://boxstarter.org/" target="_blank" rel="external">Boxstarter</a> - Matt Wrock 利用 Chocolatey 和 Nuget 构建了这个神奇的东西。它可以大幅简化你在更新电脑时候的工作，也可以在远程机器或者虚拟机上进行无人值守的环境部署。</li>
-</ul>
-</li>
-<li><a href="http://codesector.com/teracopy" target="_blank" rel="external">TeraCopy</a> - 大多数时候我都用 Windows 8.1 自带的复制，不过如果我真要搬运一大堆东西的话我会用 TeraCopy。正如其名它做的事情就是复制，而且在速度上，无出其右。</li>
-<li><a href="http://nimbletext.com/" target="_blank" rel="external">NimbleText</a> - 正则表达式很难写，我也学不会。NumbleText 则可以让你轻松地处理大量文字。</li>
-<li><a href="https://github.com/bmatzelle/gow" target="_blank" rel="external">GOW Gnu on Windows</a> - 当你只需要 *nix 工具的时候装 Cygwin 未免小题大做。 Gow 就是 130 个编译成原生 Windows EXE 的 Unix 命令行工具，仅此而已。</li>
-<li><a href="http://justgetflux.com/" target="_blank" rel="external">F.lux</a> - 说实话，一开始我觉得这玩意挺蠢的，但是再用完几天之后我就收回了那些想法。F.lux 会随着每天时间的变化来调整显示器色温，在晚上就能让显示器色调更暖。对于一个整天对着三个巨屏的人来说这是福利。自从用来 F.lux 我再也不头痛了，眼酸的症状也缓解了很多。试试看，你会喜欢上的。</li>
-<li><a href="http://www.autohotkey.com/" target="_blank" rel="external">AutoHotKey</a> - 这个开源小东西碉堡了。你可以吧复杂的工作变成简单的快捷键，非程序员的变成利器。它可以用极其简单的方法来自动化 Windows 操作，堪称 Windows 平台的 Applescript。<ul>
-<li>别忘了<a href="http://www.autohotkey.com/forum/topic21703.html" target="_blank" rel="external">Window Pad</a> - 超赞的好东西，完全是用 AHK 写成的！</li>
-</ul>
-</li>
-<li><a href="http://www.getpaint.net/index.html" target="_blank" rel="external">Paint.NET</a> - Windows 应该 内置 的画图程序，基于 .NET 平台，用免费的价格换取 Photoshop 80% 的能力。目前 Paint.NET 正在积极开发它的第四版！</li>
-<li><a href="http://download.live.com/writer" target="_blank" rel="external">Windows Live Writer</a> - 如果你有博客，那它是胃液素神器。它还有一个不错的 插件库。它应该停止更新了，但生命力依旧旺盛。</li>
-</ul>
-
-	
-	</div>
-  <a type="button" href="/2015/11/23/10-tools-that-change-your-life/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -445,7 +437,7 @@
 		
 			<li><a href="/categories/reading/backlog/">backlog<span>1</span></a></li>
 		
-			<li><a href="/categories/coding/">coding<span>23</span></a></li>
+			<li><a href="/categories/coding/">coding<span>24</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
@@ -462,45 +454,45 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
+			<li><a href="/tags/git/">git<span>3</span></a></li>
 		
-			<li><a href="/tags/bestpractice/">bestpractice<span>1</span></a></li>
+			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
+		
+			<li><a href="/tags/social/">social<span>1</span></a></li>
 		
 			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
 		
-			<li><a href="/tags/java/">java<span>2</span></a></li>
-		
-			<li><a href="/tags/exception/">exception<span>1</span></a></li>
-		
-			<li><a href="/tags/tips/">tips<span>13</span></a></li>
-		
-			<li><a href="/tags/net/">.net<span>6</span></a></li>
-		
-			<li><a href="/tags/web/">web<span>1</span></a></li>
-		
-			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
-		
-			<li><a href="/tags/words/">words<span>2</span></a></li>
-		
-			<li><a href="/tags/elgg/">elgg<span>1</span></a></li>
-		
-			<li><a href="/tags/c/">c#<span>1</span></a></li>
-		
-			<li><a href="/tags/wcf/">wcf<span>2</span></a></li>
+			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
 		
 			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
 		
-			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
+			<li><a href="/tags/msi/">msi<span>1</span></a></li>
 		
-			<li><a href="/tags/svn/">svn<span>1</span></a></li>
+			<li><a href="/tags/elgg/">elgg<span>1</span></a></li>
 		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
+			<li><a href="/tags/words/">words<span>2</span></a></li>
 		
-			<li><a href="/tags/mac/">mac<span>1</span></a></li>
+			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
 		
 			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
 		
-			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
+			<li><a href="/tags/java/">java<span>2</span></a></li>
+		
+			<li><a href="/tags/windows/">windows<span>8</span></a></li>
+		
+			<li><a href="/tags/tools/">tools<span>4</span></a></li>
+		
+			<li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/npm/">npm<span>1</span></a></li>
+		
+			<li><a href="/tags/svn/">svn<span>1</span></a></li>
+		
+			<li><a href="/tags/php/">php<span>2</span></a></li>
+		
+			<li><a href="/tags/web/">web<span>2</span></a></li>
 		
 		
 		   <li><a href="/tags">...<span>28</span></a></li>
@@ -516,11 +508,15 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
+        <a href="/2016/04/07/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
       </li>
     
       <li>
-        <a href="/2016/04/06/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
+        <a href="/2016/04/06/play-with-php/" ><i class="fa fa-file-o"></i>play with php...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
       </li>
     
       <li>
@@ -529,10 +525,6 @@
     
       <li>
         <a href="/2016/02/26/my-backlog/" ><i class="fa fa-file-o"></i>my backlog...</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/21/a-better-way-to-secure-your-wcf-services/" ><i class="fa fa-file-o"></i>a better way to secure your...</a>
       </li>
     
   </ul>

@@ -106,36 +106,8 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
-			<div class="date"> 2016-04-06 </div>
-			<div class="article-title"><a href="/2016/04/06/using-git-svn-together/" >using git svn together</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="external">offical document</a></p>
-<h3 id="clone">clone</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span>  https://<span class="number">10.100</span>.xx.xx/svn/xxx/ -T trunk -b branches -t tags</span><br></pre></td></tr></table></figure>
-<p>-T trunk -b branches -t tags 告诉 Git 该 Subversion 仓库遵循了基本的分支和标签命名法则。如果你的主干(译注：trunk，相当于非分布式版本控制里的master分支，代表开发的主线），分支或者标签以不同的方式命名，则应做出相应改变。由于该法则的常见性，可以使用 -s 来代替整条命令，它意味着标准布局（s 是 Standard layout 的首字母），也就是前面选项的内容。下面的命令有相同的效果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span> file:///tmp/<span class="built_in">test</span>-svn <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
-<p>only clone from last serveral revsion<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn <span class="built_in">clone</span> -r486:HEAD https://<span class="number">10.100</span>.xx.xx/svn/xxx/</span><br></pre></td></tr></table></figure></p>
-<h3 id="commit">commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am <span class="string">'Adding git-svn instructions to the README'</span></span><br></pre></td></tr></table></figure>
-<h3 id="rebase">rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn rebase</span><br></pre></td></tr></table></figure>
-<h3 id="push">push</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn dcommit</span><br></pre></td></tr></table></figure>
-
-	
-	</div>
-  <a type="button" href="/2016/04/06/using-git-svn-together/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-04-06 </div>
-			<div class="article-title"><a href="/2016/04/06/side-by-side/" ></a></div>						
+			<div class="date"> 2016-04-07 </div>
+			<div class="article-title"><a href="/2016/04/07/side-by-side/" ></a></div>						
 		</h3>
 	
 
@@ -180,12 +152,64 @@
 <h1 id="Fsharp">Fsharp</h1><p><code>paket</code> <code>fake</code> <code>Argu - cli argument parsing</code><br><a href="https://github.com/fsprojects" target="_blank" rel="external">https://github.com/fsprojects</a><br><a href="http://fssnip.net/" target="_blank" rel="external">http://fssnip.net/</a></p>
 <h1 id="Install_all_stuff_with_one_click">Install all stuff with one click</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt</span><br></pre></td></tr></table></figure>
 <h1 id="Windows_command">Windows command</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#Create directory junction </span></span><br><span class="line">System.Diagnostics.Process.Start(<span class="string">"cmd.exe"</span>, <span class="string">"/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\""</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="Shell">Shell</h1><p>pip in shell via <code>grep</code> <code>awk</code> <code>xargs</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker stop</span><br><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker rm</span><br><span class="line">docker images|grep none|awk <span class="string">'&#123;print $3 &#125;'</span>|xargs docker rmi</span><br></pre></td></tr></table></figure></p>
 <h1 id="windows_installer">windows installer</h1><p><code>log</code> <a href="http://www.msifaq.com/a/1022.htm" target="_blank" rel="external">http://www.msifaq.com/a/1022.htm</a></p>
 <h1 id="Play_with_router">Play with router</h1><p><a href="https://blog.phpgao.com/xiaomi_router_python.html" target="_blank" rel="external">install python on openrt</a><br><a href="http://www.syncy.cn/" target="_blank" rel="external">sync with baidupan</a></p>
 
 	
 	</div>
-  <a type="button" href="/2016/04/06/side-by-side/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2016/04/07/side-by-side/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-04-06 </div>
+			<div class="article-title"><a href="/2016/04/06/play-with-php/" >play with php</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="resource">resource</h3><p><a href="https://packagist.org/" target="_blank" rel="external">The PHP Package Repository
+</a> find before create your own<br><a href="http://www.phpcomposer.com/" target="_blank" rel="external">CN image</a></p>
+
+	
+	</div>
+  <a type="button" href="/2016/04/06/play-with-php/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-04-06 </div>
+			<div class="article-title"><a href="/2016/04/06/using-git-svn-together/" >using git svn together</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="external">offical document</a></p>
+<h3 id="clone">clone</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span>  https://<span class="number">10.100</span>.xx.xx/svn/xxx/ -T trunk -b branches -t tags</span><br></pre></td></tr></table></figure>
+<p>-T trunk -b branches -t tags 告诉 Git 该 Subversion 仓库遵循了基本的分支和标签命名法则。如果你的主干(译注：trunk，相当于非分布式版本控制里的master分支，代表开发的主线），分支或者标签以不同的方式命名，则应做出相应改变。由于该法则的常见性，可以使用 -s 来代替整条命令，它意味着标准布局（s 是 Standard layout 的首字母），也就是前面选项的内容。下面的命令有相同的效果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span> file:///tmp/<span class="built_in">test</span>-svn <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
+<p>only clone from last serveral revsion<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn <span class="built_in">clone</span> -r486:HEAD https://<span class="number">10.100</span>.xx.xx/svn/xxx/</span><br></pre></td></tr></table></figure></p>
+<h3 id="commit">commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am <span class="string">'Adding git-svn instructions to the README'</span></span><br></pre></td></tr></table></figure>
+<h3 id="rebase">rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn rebase</span><br></pre></td></tr></table></figure>
+<h3 id="push">push</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn dcommit</span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2016/04/06/using-git-svn-together/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -418,38 +442,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-01-29 </div>
-			<div class="article-title"><a href="/2016/01/29/net-based-applications-are-slow-to-load/" >.net based applications are slow to load</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p><a href="http://austintovey.blogspot.com/2012/01/net-bases-applications-are-slow-to-load.html" target="_blank" rel="external">.NET bases applications are slow to load or certain in-app tasks are slow</a></p>
-<p>This behaviour will occur with any .NET 1.1 and 2.0 assembly that is authenticode-signed, not only Measurement Studio assemblies. Digital signing is also referred to as code signing. Code signing a .NET library is strongly recommended by Microsoft, and Measurement Studio signs all of our ActiveX and .NET components.</p>
-<p>Code signing of assemblies makes components tamper-proof and ensures that you know the identity of the component publisher.</p>
-<p>The reason why this problem is occurring is because of the mechanism used by the .NET Common Language Runtime (CLR) to verify code-signed .NET assemblies. Part of the verification process requires an online look-up to check whether the certificate with which the assembly is signed has been revoked and is no longer valid. Windows does this by downloading a CRL (Certificate Revocation List). The first time a code-signed assembly is loaded by the .NET CLR, the CRL is downloaded from the certificate provider’s server and cached on the system.</p>
-<p>When the .NET CLR loads a code-signed assembly and is unable to reach the CRL distribution point, it records the failure as an inability to provide the assembly evidence that it was code-signed. So the assembly is allowed to load, but is not marked as being digitally signed. There is a 15 second delay for CRL retrievals. This is how long the CLR will keep on re-trying to download the CRL before it finally times out. So the delay in loading the .NET assembly occurs because Windows is unable to download the CRL and keeps trying to download it for 15 seconds before timing out.</p>
-<p>This behavior is by design.</p>
-<p>The .NET CLR will not indicate any error or throw any security exception when verifying a signed assembly if the CRL distribution point cannot be reached. An error here from WinVerifyTrust(), the API used by the .NET CLR to verify a code signed assembly, prevents the assembly from being marked as code signed. Note that this does not apply to assemblies loaded thru the Internet Explorer hosting interface.</p>
-<p>You could manually download the CRL and install it on your system. But the CRL is valid only for 10-15 days, so unless your system is able to update the file after this time, you will run into the same problem again.</p>
-<p>Microsoft recommends disabling CRL checking as a workaround by disabling this option in Internet Explorer. Use the following steps to disable the CRL checking in Internet Explorer:<br>Select Start»Control Panel.<br>Double-click Internet Options.<br>Select the Advanced tab.<br>In the Security section, uncheck the Check for publisher’s certificate revocation option.<br>By disabling the CRL checking using the Internet Options, you are not exposing yourself to a security threat because this check is not working. The reason why this problem is showing up is because your network settings are not allowing Windows to access the CRL.</p>
-<p>In addition, it is possible to programmatically set the CRL verification. When the Check for publisher’s certificate revocation is unchecked, a setting in the registry is changed. To turn off CRL verification, set HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State  from 0x00023c00 to 0x00023e00. To turn CRL Checking on again, reset the State key to 0x00023c00</p>
-<p><a href="http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted" target="_blank" rel="external">http://stackoverflow.com/questions/6042555/why-my-net-application-horribly-slow-to-start-after-the-machine-is-rebooted</a><br><a href="http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/" target="_blank" rel="external">http://stackoverflow.com/questions/1618596/why-are-signed-assemblies-slow-to-load/</a><br><a href="http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s" target="_blank" rel="external">http://www.actiprosoftware.com/support/kb/article/20001/code-signed-assemblies-can-make-application-s</a></p>
-
-	
-	</div>
-  <a type="button" href="/2016/01/29/net-based-applications-are-slow-to-load/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -500,7 +492,7 @@
 		
 			<li><a href="/categories/reading/backlog/">backlog<span>1</span></a></li>
 		
-			<li><a href="/categories/coding/">coding<span>23</span></a></li>
+			<li><a href="/categories/coding/">coding<span>24</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
@@ -517,45 +509,45 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
+			<li><a href="/tags/php/">php<span>2</span></a></li>
+		
 			<li><a href="/tags/svn/">svn<span>1</span></a></li>
 		
 			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
 		
-			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
 		
 			<li><a href="/tags/c/">c#<span>1</span></a></li>
 		
-			<li><a href="/tags/windows/">windows<span>8</span></a></li>
-		
-			<li><a href="/tags/wmi/">wmi<span>1</span></a></li>
-		
-			<li><a href="/tags/social/">social<span>1</span></a></li>
-		
 			<li><a href="/tags/elgg/">elgg<span>1</span></a></li>
-		
-			<li><a href="/tags/wcf/">wcf<span>2</span></a></li>
-		
-			<li><a href="/tags/web/">web<span>1</span></a></li>
-		
-			<li><a href="/tags/tools/">tools<span>4</span></a></li>
-		
-			<li><a href="/tags/msi/">msi<span>1</span></a></li>
-		
-			<li><a href="/tags/mac/">mac<span>1</span></a></li>
-		
-			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
 		
 			<li><a href="/tags/bestpractice/">bestpractice<span>1</span></a></li>
 		
+			<li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
+		
 			<li><a href="/tags/java/">java<span>2</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
 		
 			<li><a href="/tags/javascript/">javascript<span>1</span></a></li>
 		
-			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
+			<li><a href="/tags/web/">web<span>2</span></a></li>
+		
+			<li><a href="/tags/tools/">tools<span>4</span></a></li>
+		
+			<li><a href="/tags/net/">.net<span>6</span></a></li>
+		
+			<li><a href="/tags/wcf/">wcf<span>2</span></a></li>
+		
+			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
+		
+			<li><a href="/tags/social/">social<span>1</span></a></li>
+		
+			<li><a href="/tags/msi/">msi<span>1</span></a></li>
+		
+			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
 		
 		
 		   <li><a href="/tags">...<span>28</span></a></li>
@@ -571,11 +563,15 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
+        <a href="/2016/04/07/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
       </li>
     
       <li>
-        <a href="/2016/04/06/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
+        <a href="/2016/04/06/play-with-php/" ><i class="fa fa-file-o"></i>play with php...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
       </li>
     
       <li>
@@ -584,10 +580,6 @@
     
       <li>
         <a href="/2016/02/26/my-backlog/" ><i class="fa fa-file-o"></i>my backlog...</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/21/a-better-way-to-secure-your-wcf-services/" ><i class="fa fa-file-o"></i>a better way to secure your...</a>
       </li>
     
   </ul>

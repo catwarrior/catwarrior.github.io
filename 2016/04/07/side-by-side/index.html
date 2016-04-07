@@ -143,6 +143,7 @@
 <h1 id="Fsharp">Fsharp</h1><p><code>paket</code> <code>fake</code> <code>Argu - cli argument parsing</code><br><a href="https://github.com/fsprojects" target="_blank" rel="external">https://github.com/fsprojects</a><br><a href="http://fssnip.net/" target="_blank" rel="external">http://fssnip.net/</a></p>
 <h1 id="Install_all_stuff_with_one_click">Install all stuff with one click</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt</span><br></pre></td></tr></table></figure>
 <h1 id="Windows_command">Windows command</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#Create directory junction </span></span><br><span class="line">System.Diagnostics.Process.Start(<span class="string">"cmd.exe"</span>, <span class="string">"/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\""</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="Shell">Shell</h1><p>pip in shell via <code>grep</code> <code>awk</code> <code>xargs</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker stop</span><br><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker rm</span><br><span class="line">docker images|grep none|awk <span class="string">'&#123;print $3 &#125;'</span>|xargs docker rmi</span><br></pre></td></tr></table></figure></p>
 <h1 id="windows_installer">windows installer</h1><p><code>log</code> <a href="http://www.msifaq.com/a/1022.htm" target="_blank" rel="external">http://www.msifaq.com/a/1022.htm</a></p>
 <h1 id="Play_with_router">Play with router</h1><p><a href="https://blog.phpgao.com/xiaomi_router_python.html" target="_blank" rel="external">install python on openrt</a><br><a href="http://www.syncy.cn/" target="_blank" rel="external">sync with baidupan</a></p>
 
@@ -150,7 +151,7 @@
 	  <!--
 	  
 	  	<p class="bg-info">
-	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-04-06</span>
+	  		<i class="fa fa-clock-o"></i> <span class="color:#ee0000;"> updated 2016-04-07</span>
 		</p>
   	  	
   	  --> 
@@ -166,14 +167,14 @@
 	<div class="pagination">
 <ul class="pagination">
 	 
-				
-    	<li class="prev"><a href="/2016/04/06/using-git-svn-together/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
-  		
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+        
 
         <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
-		   <li class="next"><a href="/2016/03/29/play-with-elgg/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+		   <li class="next"><a href="/2016/04/06/play-with-php/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
 	
 </ul>
@@ -188,7 +189,7 @@
   <h2 class="title">Comments</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2016/04/06/side-by-side/" data-title="" data-url="http://catwarrior.github.io/2016/04/06/side-by-side/"></div>  
+  	 <div class="ds-thread" data-thread-key="2016/04/07/side-by-side/" data-title="" data-url="http://catwarrior.github.io/2016/04/07/side-by-side/"></div>  
   
 </section>
 
@@ -202,7 +203,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2016-04-06 
+	2016-04-07 
 	</div>
 	
 

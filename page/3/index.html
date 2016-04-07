@@ -106,6 +106,46 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2015-11-23 </div>
+			<div class="article-title"><a href="/2015/11/23/10-tools-that-change-your-life/" >10 tools that change your life</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<blockquote><p>“Productivity is being able to do things that you were never able to do before.”</p>
+<footer><strong>Franz Kafka</strong></footer></blockquote>
+<p>引自 <a href="http://zhuanlan.zhihu.com/always-a-tool/19662365" target="_blank" rel="external">知乎</a> <a href="http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx" target="_blank" rel="external">UltimateDeveloperAndPowerUsersToolListForWindows</a></p>
+<ul>
+<li><a href="http://www.chocolatey.org/" target="_blank" rel="external">Chocolatey</a> - 名字很奇特，但它可是 Windows 上的 apt-get。一旦拥有，别无所求。现在我想装软件的时候，会首先想到它而不是 Google。刚刚我还在用 ‘cinst filezilla’ 和 ‘cinst winscp’ 来安装我想要的东西呢。想想看，利用它你就可以把「装机」变成一个极其简单的事情。不过自己写脚本还是太复杂，对于装机，你应该用……<ul>
+<li><a href="http://boxstarter.org/" target="_blank" rel="external">Boxstarter</a> - Matt Wrock 利用 Chocolatey 和 Nuget 构建了这个神奇的东西。它可以大幅简化你在更新电脑时候的工作，也可以在远程机器或者虚拟机上进行无人值守的环境部署。</li>
+</ul>
+</li>
+<li><a href="http://codesector.com/teracopy" target="_blank" rel="external">TeraCopy</a> - 大多数时候我都用 Windows 8.1 自带的复制，不过如果我真要搬运一大堆东西的话我会用 TeraCopy。正如其名它做的事情就是复制，而且在速度上，无出其右。</li>
+<li><a href="http://nimbletext.com/" target="_blank" rel="external">NimbleText</a> - 正则表达式很难写，我也学不会。NumbleText 则可以让你轻松地处理大量文字。</li>
+<li><a href="https://github.com/bmatzelle/gow" target="_blank" rel="external">GOW Gnu on Windows</a> - 当你只需要 *nix 工具的时候装 Cygwin 未免小题大做。 Gow 就是 130 个编译成原生 Windows EXE 的 Unix 命令行工具，仅此而已。</li>
+<li><a href="http://justgetflux.com/" target="_blank" rel="external">F.lux</a> - 说实话，一开始我觉得这玩意挺蠢的，但是再用完几天之后我就收回了那些想法。F.lux 会随着每天时间的变化来调整显示器色温，在晚上就能让显示器色调更暖。对于一个整天对着三个巨屏的人来说这是福利。自从用来 F.lux 我再也不头痛了，眼酸的症状也缓解了很多。试试看，你会喜欢上的。</li>
+<li><a href="http://www.autohotkey.com/" target="_blank" rel="external">AutoHotKey</a> - 这个开源小东西碉堡了。你可以吧复杂的工作变成简单的快捷键，非程序员的变成利器。它可以用极其简单的方法来自动化 Windows 操作，堪称 Windows 平台的 Applescript。<ul>
+<li>别忘了<a href="http://www.autohotkey.com/forum/topic21703.html" target="_blank" rel="external">Window Pad</a> - 超赞的好东西，完全是用 AHK 写成的！</li>
+</ul>
+</li>
+<li><a href="http://www.getpaint.net/index.html" target="_blank" rel="external">Paint.NET</a> - Windows 应该 内置 的画图程序，基于 .NET 平台，用免费的价格换取 Photoshop 80% 的能力。目前 Paint.NET 正在积极开发它的第四版！</li>
+<li><a href="http://download.live.com/writer" target="_blank" rel="external">Windows Live Writer</a> - 如果你有博客，那它是胃液素神器。它还有一个不错的 插件库。它应该停止更新了，但生命力依旧旺盛。</li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2015/11/23/10-tools-that-change-your-life/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2015-11-19 </div>
 			<div class="article-title"><a href="/2015/11/19/void-to-input-username-and-password-when-using-git/" >void to input username and password when using git</a></div>						
 		</h3>
@@ -353,29 +393,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2015-10-27 </div>
-			<div class="article-title"><a href="/2015/10/27/share-source-file-in-net/" >Share source file in .Net</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<figure class="highlight"><figcaption><span>#</span><a href="http://stackoverflow.com/questions/1116465/how-do-you-share-code-between-projects-solutions-in-visual-studio" target="_blank" rel="external">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Compile Include="..\MySisterProject\**\*.cs"&gt;</span><br><span class="line">  &lt;Link&gt;_Inlined\MySisterProject\%(RecursiveDir)%(Filename)%(Extension)&lt;/Link&gt;</span><br><span class="line">  &lt;Visible&gt;false&lt;/Visible&gt;</span><br><span class="line">&lt;/Compile&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="linq_samples">linq samples</h2><p><a href="http://blog.csdn.net/smartsmile2012/article/details/44873251" target="_blank" rel="external">101 linq sample</a></p>
-
-	
-	</div>
-  <a type="button" href="/2015/10/27/share-source-file-in-net/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -426,7 +443,7 @@
 		
 			<li><a href="/categories/reading/backlog/">backlog<span>1</span></a></li>
 		
-			<li><a href="/categories/coding/">coding<span>23</span></a></li>
+			<li><a href="/categories/coding/">coding<span>24</span></a></li>
 		
 			<li><a href="/categories/life/">life<span>2</span></a></li>
 		
@@ -443,45 +460,45 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
-		
-			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+			<li><a href="/tags/mac/">mac<span>1</span></a></li>
 		
 			<li><a href="/tags/svn/">svn<span>1</span></a></li>
 		
-			<li><a href="/tags/msi/">msi<span>1</span></a></li>
+			<li><a href="/tags/web/">web<span>2</span></a></li>
 		
-			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
+			<li><a href="/tags/tools/">tools<span>4</span></a></li>
 		
-			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
-		
-			<li><a href="/tags/php/">php<span>1</span></a></li>
-		
-			<li><a href="/tags/npm/">npm<span>1</span></a></li>
-		
-			<li><a href="/tags/net/">.net<span>6</span></a></li>
+			<li><a href="/tags/linqpad/">linqpad<span>1</span></a></li>
 		
 			<li><a href="/tags/c/">c#<span>1</span></a></li>
 		
-			<li><a href="/tags/java/">java<span>2</span></a></li>
-		
-			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
-		
-			<li><a href="/tags/web/">web<span>1</span></a></li>
-		
-			<li><a href="/tags/mac/">mac<span>1</span></a></li>
-		
-			<li><a href="/tags/ohters/">ohters<span>1</span></a></li>
-		
-			<li><a href="/tags/javascript/">javascript<span>1</span></a></li>
-		
-			<li><a href="/tags/windows/">windows<span>8</span></a></li>
-		
-			<li><a href="/tags/wmi/">wmi<span>1</span></a></li>
+			<li><a href="/tags/dailywork/">dailywork<span>6</span></a></li>
 		
 			<li><a href="/tags/tips/">tips<span>13</span></a></li>
 		
+			<li><a href="/tags/powershell/">powershell<span>2</span></a></li>
+		
+			<li><a href="/tags/git/">git<span>3</span></a></li>
+		
+			<li><a href="/tags/elgg/">elgg<span>1</span></a></li>
+		
+			<li><a href="/tags/stuff/">stuff<span>2</span></a></li>
+		
 			<li><a href="/tags/words/">words<span>2</span></a></li>
+		
+			<li><a href="/tags/net/">.net<span>6</span></a></li>
+		
+			<li><a href="/tags/social/">social<span>1</span></a></li>
+		
+			<li><a href="/tags/javascript/">javascript<span>1</span></a></li>
+		
+			<li><a href="/tags/exception/">exception<span>1</span></a></li>
+		
+			<li><a href="/tags/nodejs/">nodejs<span>3</span></a></li>
+		
+			<li><a href="/tags/asp-net/">asp.net<span>2</span></a></li>
+		
+			<li><a href="/tags/npm/">npm<span>1</span></a></li>
 		
 		
 		   <li><a href="/tags">...<span>28</span></a></li>
@@ -497,11 +514,15 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
+        <a href="/2016/04/07/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
       </li>
     
       <li>
-        <a href="/2016/04/06/side-by-side/" ><i class="fa fa-file-o"></i>...</a>
+        <a href="/2016/04/06/play-with-php/" ><i class="fa fa-file-o"></i>play with php...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/06/using-git-svn-together/" ><i class="fa fa-file-o"></i>using git svn together...</a>
       </li>
     
       <li>
@@ -510,10 +531,6 @@
     
       <li>
         <a href="/2016/02/26/my-backlog/" ><i class="fa fa-file-o"></i>my backlog...</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/21/a-better-way-to-secure-your-wcf-services/" ><i class="fa fa-file-o"></i>a better way to secure your...</a>
       </li>
     
   </ul>

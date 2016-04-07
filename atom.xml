@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://catwarrior.github.io/"/>
-  <updated>2016-04-06T04:29:03.073Z</updated>
+  <updated>2016-04-07T09:31:40.958Z</updated>
   <id>http://catwarrior.github.io/</id>
   
   <author>
@@ -15,41 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[using git svn together]]></title>
-    <link href="http://catwarrior.github.io/2016/04/06/using-git-svn-together/"/>
-    <id>http://catwarrior.github.io/2016/04/06/using-git-svn-together/</id>
-    <published>2016-04-06T04:16:26.000Z</published>
-    <updated>2016-04-06T04:29:03.073Z</updated>
-    <content type="html"><![CDATA[<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="external">offical document</a></p>
-<h3 id="clone">clone</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span>  https://<span class="number">10.100</span>.xx.xx/svn/xxx/ -T trunk -b branches -t tags</span><br></pre></td></tr></table></figure>
-<p>-T trunk -b branches -t tags 告诉 Git 该 Subversion 仓库遵循了基本的分支和标签命名法则。如果你的主干(译注：trunk，相当于非分布式版本控制里的master分支，代表开发的主线），分支或者标签以不同的方式命名，则应做出相应改变。由于该法则的常见性，可以使用 -s 来代替整条命令，它意味着标准布局（s 是 Standard layout 的首字母），也就是前面选项的内容。下面的命令有相同的效果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span> file:///tmp/<span class="built_in">test</span>-svn <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
-<p>only clone from last serveral revsion<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn <span class="built_in">clone</span> -r486:HEAD https://<span class="number">10.100</span>.xx.xx/svn/xxx/</span><br></pre></td></tr></table></figure></p>
-<h3 id="commit">commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am <span class="string">'Adding git-svn instructions to the README'</span></span><br></pre></td></tr></table></figure>
-<h3 id="rebase">rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn rebase</span><br></pre></td></tr></table></figure>
-<h3 id="push">push</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn dcommit</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="]]>
-    </summary>
-    
-      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
-    
-      <category term="git" scheme="http://catwarrior.github.io/tags/git/"/>
-    
-      <category term="svn" scheme="http://catwarrior.github.io/tags/svn/"/>
-    
-      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
-    
-      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
-    
-  </entry>
-  
-  <entry>
     <title></title>
-    <link href="http://catwarrior.github.io/2016/04/06/side-by-side/"/>
-    <id>http://catwarrior.github.io/2016/04/06/side-by-side/</id>
-    <published>2016-04-06T04:15:01.955Z</published>
-    <updated>2016-04-06T04:15:01.955Z</updated>
+    <link href="http://catwarrior.github.io/2016/04/07/side-by-side/"/>
+    <id>http://catwarrior.github.io/2016/04/07/side-by-side/</id>
+    <published>2016-04-07T09:31:40.958Z</published>
+    <updated>2016-04-07T09:31:40.958Z</updated>
     <content type="html"><![CDATA[<h1 id="Azure">Azure</h1><h2 id="Azure_website_whitelist">Azure website whitelist</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">system.webServer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">security</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">ipSecurity</span> <span class="attribute">allowUnlisted</span>=<span class="value">"false"</span> <span class="attribute">denyAction</span>=<span class="value">"NotFound"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">add</span> <span class="attribute">allowed</span>=<span class="value">"true"</span> <span class="attribute">ipAddress</span>=<span class="value">"60.247.xx.xx"</span> <span class="attribute">subnetMask</span>=<span class="value">"255.0.0.0"</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">ipSecurity</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">security</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="title">system.webServer</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="Azure_web_job-">Azure web job.</h2><p> SDK: <code>Microsoft.Azure.WebJobs</code> <code>Microsoft.Azure.WebJobs.Extensions</code></p>
 <h3 id="Sample:">Sample:</h3><p>entry point<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span><br><span class="line">        </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> config = <span class="keyword">new</span> JobHostConfiguration();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (config.IsDevelopment)</span><br><span class="line">            &#123;</span><br><span class="line">                config.UseDevelopmentSettings();</span><br><span class="line">            &#125;</span><br><span class="line">             </span><br><span class="line">            config.UseTimers(); <span class="comment">// timer trigger which is defined in SDK extensions.</span></span><br><span class="line"></span><br><span class="line">            JobHost host = <span class="keyword">new</span> JobHost(config);</span><br><span class="line">            host.RunAndBlock();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
@@ -86,12 +56,65 @@
 <h1 id="Fsharp">Fsharp</h1><p><code>paket</code> <code>fake</code> <code>Argu - cli argument parsing</code><br><a href="https://github.com/fsprojects" target="_blank" rel="external">https://github.com/fsprojects</a><br><a href="http://fssnip.net/" target="_blank" rel="external">http://fssnip.net/</a></p>
 <h1 id="Install_all_stuff_with_one_click">Install all stuff with one click</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt</span><br></pre></td></tr></table></figure>
 <h1 id="Windows_command">Windows command</h1><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#Create directory junction </span></span><br><span class="line">System.Diagnostics.Process.Start(<span class="string">"cmd.exe"</span>, <span class="string">"/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\""</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="Shell">Shell</h1><p>pip in shell via <code>grep</code> <code>awk</code> <code>xargs</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker stop</span><br><span class="line">docker ps <span class="operator">-a</span> | grep <span class="string">"Exited"</span> | awk <span class="string">'&#123;print $1 &#125;'</span>|xargs docker rm</span><br><span class="line">docker images|grep none|awk <span class="string">'&#123;print $3 &#125;'</span>|xargs docker rmi</span><br></pre></td></tr></table></figure></p>
 <h1 id="windows_installer">windows installer</h1><p><code>log</code> <a href="http://www.msifaq.com/a/1022.htm" target="_blank" rel="external">http://www.msifaq.com/a/1022.htm</a></p>
 <h1 id="Play_with_router">Play with router</h1><p><a href="https://blog.phpgao.com/xiaomi_router_python.html" target="_blank" rel="external">install python on openrt</a><br><a href="http://www.syncy.cn/" target="_blank" rel="external">sync with baidupan</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Azure">Azure</h1><h2 id="Azure_website_whitelist">Azure website whitelist</h2><figure class="highlight xml"><table><tr><td class="gu]]>
     </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[play with php]]></title>
+    <link href="http://catwarrior.github.io/2016/04/06/play-with-php/"/>
+    <id>http://catwarrior.github.io/2016/04/06/play-with-php/</id>
+    <published>2016-04-06T05:55:31.000Z</published>
+    <updated>2016-04-07T09:31:41.252Z</updated>
+    <content type="html"><![CDATA[<h3 id="resource">resource</h3><p><a href="https://packagist.org/" target="_blank" rel="external">The PHP Package Repository
+</a> find before create your own<br><a href="http://www.phpcomposer.com/" target="_blank" rel="external">CN image</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="resource">resource</h3><p><a href="https://packagist.org/" target="_blank" rel="external">The PHP Package Repository
+</a> find befor]]>
+    </summary>
+    
+      <category term="php" scheme="http://catwarrior.github.io/tags/php/"/>
+    
+      <category term="web" scheme="http://catwarrior.github.io/tags/web/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[using git svn together]]></title>
+    <link href="http://catwarrior.github.io/2016/04/06/using-git-svn-together/"/>
+    <id>http://catwarrior.github.io/2016/04/06/using-git-svn-together/</id>
+    <published>2016-04-06T04:16:26.000Z</published>
+    <updated>2016-04-07T09:31:41.222Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="external">offical document</a></p>
+<h3 id="clone">clone</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span>  https://<span class="number">10.100</span>.xx.xx/svn/xxx/ -T trunk -b branches -t tags</span><br></pre></td></tr></table></figure>
+<p>-T trunk -b branches -t tags 告诉 Git 该 Subversion 仓库遵循了基本的分支和标签命名法则。如果你的主干(译注：trunk，相当于非分布式版本控制里的master分支，代表开发的主线），分支或者标签以不同的方式命名，则应做出相应改变。由于该法则的常见性，可以使用 -s 来代替整条命令，它意味着标准布局（s 是 Standard layout 的首字母），也就是前面选项的内容。下面的命令有相同的效果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn <span class="built_in">clone</span> file:///tmp/<span class="built_in">test</span>-svn <span class="operator">-s</span></span><br></pre></td></tr></table></figure></p>
+<p>only clone from last serveral revsion<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn <span class="built_in">clone</span> -r486:HEAD https://<span class="number">10.100</span>.xx.xx/svn/xxx/</span><br></pre></td></tr></table></figure></p>
+<h3 id="commit">commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am <span class="string">'Adding git-svn instructions to the README'</span></span><br></pre></td></tr></table></figure>
+<h3 id="rebase">rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git svn rebase</span><br></pre></td></tr></table></figure>
+<h3 id="push">push</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git svn dcommit</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://git-scm.com/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion" target="_blank" rel="]]>
+    </summary>
+    
+      <category term="dailywork" scheme="http://catwarrior.github.io/tags/dailywork/"/>
+    
+      <category term="git" scheme="http://catwarrior.github.io/tags/git/"/>
+    
+      <category term="svn" scheme="http://catwarrior.github.io/tags/svn/"/>
+    
+      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
+    
+      <category term="coding" scheme="http://catwarrior.github.io/categories/coding/"/>
     
   </entry>
   
@@ -574,45 +597,6 @@
     <summary type="html">
     <![CDATA[<p>In the previous post we mentioned about <code>Chocolatey</code>, this time let’s do some more interest things which related to it.</p>
 <p]]>
-    </summary>
-    
-      <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
-    
-      <category term="tools" scheme="http://catwarrior.github.io/tags/tools/"/>
-    
-      <category term="life" scheme="http://catwarrior.github.io/categories/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[10 tools that change your life]]></title>
-    <link href="http://catwarrior.github.io/2015/11/23/10-tools-that-change-your-life/"/>
-    <id>http://catwarrior.github.io/2015/11/23/10-tools-that-change-your-life/</id>
-    <published>2015-11-23T04:00:24.000Z</published>
-    <updated>2015-11-23T08:05:04.375Z</updated>
-    <content type="html"><![CDATA[<blockquote><p>“Productivity is being able to do things that you were never able to do before.”</p>
-<footer><strong>Franz Kafka</strong></footer></blockquote>
-<p>引自 <a href="http://zhuanlan.zhihu.com/always-a-tool/19662365" target="_blank" rel="external">知乎</a> <a href="http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx" target="_blank" rel="external">UltimateDeveloperAndPowerUsersToolListForWindows</a></p>
-<ul>
-<li><a href="http://www.chocolatey.org/" target="_blank" rel="external">Chocolatey</a> - 名字很奇特，但它可是 Windows 上的 apt-get。一旦拥有，别无所求。现在我想装软件的时候，会首先想到它而不是 Google。刚刚我还在用 ‘cinst filezilla’ 和 ‘cinst winscp’ 来安装我想要的东西呢。想想看，利用它你就可以把「装机」变成一个极其简单的事情。不过自己写脚本还是太复杂，对于装机，你应该用……<ul>
-<li><a href="http://boxstarter.org/" target="_blank" rel="external">Boxstarter</a> - Matt Wrock 利用 Chocolatey 和 Nuget 构建了这个神奇的东西。它可以大幅简化你在更新电脑时候的工作，也可以在远程机器或者虚拟机上进行无人值守的环境部署。</li>
-</ul>
-</li>
-<li><a href="http://codesector.com/teracopy" target="_blank" rel="external">TeraCopy</a> - 大多数时候我都用 Windows 8.1 自带的复制，不过如果我真要搬运一大堆东西的话我会用 TeraCopy。正如其名它做的事情就是复制，而且在速度上，无出其右。</li>
-<li><a href="http://nimbletext.com/" target="_blank" rel="external">NimbleText</a> - 正则表达式很难写，我也学不会。NumbleText 则可以让你轻松地处理大量文字。</li>
-<li><a href="https://github.com/bmatzelle/gow" target="_blank" rel="external">GOW Gnu on Windows</a> - 当你只需要 *nix 工具的时候装 Cygwin 未免小题大做。 Gow 就是 130 个编译成原生 Windows EXE 的 Unix 命令行工具，仅此而已。</li>
-<li><a href="http://justgetflux.com/" target="_blank" rel="external">F.lux</a> - 说实话，一开始我觉得这玩意挺蠢的，但是再用完几天之后我就收回了那些想法。F.lux 会随着每天时间的变化来调整显示器色温，在晚上就能让显示器色调更暖。对于一个整天对着三个巨屏的人来说这是福利。自从用来 F.lux 我再也不头痛了，眼酸的症状也缓解了很多。试试看，你会喜欢上的。</li>
-<li><a href="http://www.autohotkey.com/" target="_blank" rel="external">AutoHotKey</a> - 这个开源小东西碉堡了。你可以吧复杂的工作变成简单的快捷键，非程序员的变成利器。它可以用极其简单的方法来自动化 Windows 操作，堪称 Windows 平台的 Applescript。<ul>
-<li>别忘了<a href="http://www.autohotkey.com/forum/topic21703.html" target="_blank" rel="external">Window Pad</a> - 超赞的好东西，完全是用 AHK 写成的！</li>
-</ul>
-</li>
-<li><a href="http://www.getpaint.net/index.html" target="_blank" rel="external">Paint.NET</a> - Windows 应该 内置 的画图程序，基于 .NET 平台，用免费的价格换取 Photoshop 80% 的能力。目前 Paint.NET 正在积极开发它的第四版！</li>
-<li><a href="http://download.live.com/writer" target="_blank" rel="external">Windows Live Writer</a> - 如果你有博客，那它是胃液素神器。它还有一个不错的 插件库。它应该停止更新了，但生命力依旧旺盛。</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote><p>“Productivity is being able to do things that you were never able to do before.”</p>
-<footer><strong>Franz Kafka</strong></fo]]>
     </summary>
     
       <category term="tips" scheme="http://catwarrior.github.io/tags/tips/"/>
