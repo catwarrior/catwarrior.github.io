@@ -62,6 +62,7 @@ tags:
 [Cheat sheets](http://coolshell.cn/articles/1566.html)
 [那些被称为神器的工具](http://www.zhihu.com/question/20772002)
 [Package manager for PHP](https://getcomposer.org)
+[pop tools on windows](http://www.zhihu.com/question/22919326)
 ### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
 [Azure cheat sheets](http://microsoftazurewebsitescheatsheet.info/)
