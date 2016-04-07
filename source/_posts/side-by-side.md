@@ -286,6 +286,15 @@ ENTRYPOINT ["/usr/bin/rethinkdb"]
 
 CMD ["--help"]
 ```
+## Ionic
+### generator
+[generator-ionic](https://github.com/diegonetto/generator-ionic)
+`npm` `yeoman` `grunt-cli` `bower`
+`npm install -g generator-ionic`
+http://robdvr.com/install-sass-compass-grunt/
+
+### codova
+`$ ios-sim showdevicetypes`
 
 # Linqpad
 [Some wonderful examples](http://linqpadsamples.codeplex.com/)
