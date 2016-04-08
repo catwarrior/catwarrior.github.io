@@ -112,4 +112,8 @@ docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345
 
 ## Uderstanding ELGG
 [Data model](http://learn.elgg.org/en/2.0/design/database.html)
+
 [Web services](http://learn.elgg.org/en/2.0/guides/web-services.html)
+
+[Helpers](http://learn.elgg.org/en/1.12/guides/helpers.html)
+
