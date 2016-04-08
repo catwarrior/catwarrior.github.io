@@ -117,3 +117,5 @@ docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345
 
 [Helpers](http://learn.elgg.org/en/1.12/guides/helpers.html)
 
+[Events](http://learn.elgg.org/en/1.12/guides/events-list.html)
+
