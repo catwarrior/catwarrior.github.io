@@ -21,6 +21,8 @@ tags:
 
 [Awesome .NET](https://github.com/catwarrior/awesome-dotnet)
 
+[Fsharp data access](http://fsharp.org/guides/data-access/)
+
 ## Tools
 [Chocolatey NuGet is a Machine Package Manager](http://chocolatey.org/)
 
