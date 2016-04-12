@@ -78,8 +78,6 @@ tags:
 
 [pop tools on windows](http://www.zhihu.com/question/22919326)
 
-[图书搜索](http://www.shoujikz.com/share-1074846/)
-
 ### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
 
@@ -153,3 +151,11 @@ stackservice
 ## Ioc container / libraries
 [SimpleInjector](https://github.com/simpleinjector/SimpleInjector)
 [Castle](https://github.com/castleproject)
+
+# books
+[图书搜索](http://www.shoujikz.com/share-1074846/)
+
+## CSS
+《CSS：The missing manual》 入门和提高的不二选择
+《CSS Secrets》 经典的案例，其它书难以媲美
+《CSS权威指南》（仅当工具书即可）
