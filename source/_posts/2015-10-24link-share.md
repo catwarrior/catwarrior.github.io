@@ -78,6 +78,8 @@ tags:
 
 [pop tools on windows](http://www.zhihu.com/question/22919326)
 
+[图书搜索](http://www.shoujikz.com/share-1074846/)
+
 ### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
 
