@@ -65,8 +65,12 @@ tags:
 [pop tools on windows](http://www.zhihu.com/question/22919326)
 ### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
+
 [Azure cheat sheets](http://microsoftazurewebsitescheatsheet.info/)
+
 [Using NLog For Diagnostic Logging In Windows Azure Cloud Services And Writing The Logs To Azure Table Storage](http://www.rhizohm.net/irhetoric/post/2015/11/06/Using-NLog-For-Diagnostic-Logging-In-Windows-Azure-Cloud-Services-And-Writing-The-Logs-To-Azure-Table-Storage.aspx)
+[CloudBerry Explorer for Microsoft Azure](CloudBerry Explorer for Microsoft Azure) – CloudBerry Explorer for Microsoft Azure is a freeware file manager for Microsoft Azure Blob Storage. It provides a user interface to Azure accounts, files and containers allowing you to browse, create and delete files and containers.
+
 # My tool box
 ## environment
 chocolatey
