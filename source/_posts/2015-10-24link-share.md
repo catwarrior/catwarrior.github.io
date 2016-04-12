@@ -8,11 +8,17 @@ tags:
 
 ## MS
 [ScottGu's Blog](http://weblogs.asp.net/scottgu)
+
 [F# for fun](http://fsharpforfunandprofit.com/)
+
 [F# offical](http://fsharp.org/about/learning.html)
+
 [Structuring a .NET Application For Easy Deployment](https://msdn.microsoft.com/en-us/library/ms973920.aspx)
+
 [MS Open Source](http://www.dotnetfoundation.org/projects)
+
 [.net core](http://dotnet.github.io/)
+
 [Awesome .NET](https://github.com/catwarrior/awesome-dotnet)
 
 ## Tools
@@ -23,18 +29,22 @@ tags:
 
 ## CPP
 [How to Program in C++](http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html)
+
 [Introduce C++](http://cs.fit.edu/~mmahoney/cse1502/introcpp.html)
 
 ## Happy internet
 [shadowsocks](https://portal.shadowsocks.com)
+
 [Shadowsocks + ChnRoute OpenWRT](https://cokebar.info/archives/664)
 
 ## Githubs
 [Google developers](https://github.com/google)
+
 ## Build
 `Fake` `Cake`
 ## Install
 [Squirrel.Windows](https://github.com/catwarrior/Squirrel.Windows)
+
 [Wix#](https://github.com/oleg-shilo/wixsharp)
 
 ### blogs
@@ -59,10 +69,15 @@ tags:
 
 ## Something may check later
 [GitHub上整理的一些工具](https://segmentfault.com/q/1010000002404545)
+
 [Cheat sheets](http://coolshell.cn/articles/1566.html)
+
 [那些被称为神器的工具](http://www.zhihu.com/question/20772002)
+
 [Package manager for PHP](https://getcomposer.org)
+
 [pop tools on windows](http://www.zhihu.com/question/22919326)
+
 ### azure stuff
 [Web Site Test Tools and Site Management Tools- More than 540 tools listed in 14 categories](http://www.softwareqatest.com/qatweb1.html)
 
