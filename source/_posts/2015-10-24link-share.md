@@ -156,6 +156,10 @@ stackservice
 [图书搜索](http://www.shoujikz.com/share-1074846/)
 
 ## CSS
-《CSS：The missing manual》 入门和提高的不二选择
-《CSS Secrets》 经典的案例，其它书难以媲美
-《CSS权威指南》（仅当工具书即可）
+ - 《CSS：The missing manual》 入门和提高的不二选择
+ - 《CSS Secrets》 经典的案例，其它书难以媲美
+ - 《CSS权威指南》（仅当工具书即可）
+ 
+## Javascript
+ - Eloquent Javascript 
+   一位hacker写的编程入门，书中向hacker，open source, free software的欣赏和痴迷比比皆是， 比如官网下边那个向emacs致敬的console。作者很聪明，这本书的目标读者，beginners, 是不会因为这些小细节而向他叫好的。他想要的，只是把在其中浸淫多年的，真正意义上的编程精神，传达给初学者们而已。 少见地打败了对应的HeadFirst系列（Headfirst Javascript)
