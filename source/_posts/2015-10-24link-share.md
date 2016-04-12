@@ -87,6 +87,10 @@ tags:
 
 [CloudBerry Explorer for Microsoft Azure](CloudBerry Explorer for Microsoft Azure) – CloudBerry Explorer for Microsoft Azure is a freeware file manager for Microsoft Azure Blob Storage. It provides a user interface to Azure accounts, files and containers allowing you to browse, create and delete files and containers.
 
+[storagetools](http://storagetools.azurewebsites.net/)
+
+[Complete-list-of-microsoft-azure-tools](http://scottge.net/2015/08/03/a-complete-list-of-microsoft-azure-tools/)
+
 # My tool box
 ## environment
 chocolatey
