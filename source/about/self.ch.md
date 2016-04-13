@@ -8,7 +8,7 @@
 #### 参与项目
 1. IGT赌场管理系统SmokeTest的设计与开发
    关键词：`Coded UI` `Python` `Jenkins` `NUnit` `VMware Labmanager`
-   分布式功能测试
+   
    使用VMware Labmanager及相应编程接口实现虚拟测试环境的自动部署
   
 2. 建立和完善软件开发的持续集成过程
@@ -40,7 +40,7 @@
     
   系统部署达千万台。
 
-4. PC消息通知系统的设计和开发
+4. 消息通知系统的设计和开发
 
    关键词：`Asp.net Web API` `AngularJS` `Sql server` `Azure` `Web job` `Caching` `Ioc` `Entityframework` `Linq` `International`
      
@@ -63,12 +63,15 @@
   
 
 ### 2009-3 至 2012-10 就职于 _北京腾联利德_
+ 关键词：`Asp.net` `SqlServer` `Windows mobile` `Windows CE`
 #### 参与项目
 1. 变电站巡视系统
 2. 国家电网现场标准化作业移动终端平台的设计开发
 3. 变电巡视系统的移动终端系统应用框架设计开发
 
+
 ### 2006-7 至 2009-3 就职于 _北京优仕东方数码_
+ 关键词：`Windows Form` `SqlServer` `Java/Linux/Apache/Oracle` 
 1. 消防产品质量监督跟踪管理系统客户端
 2. 基准作业流程设置
 
@@ -76,7 +79,7 @@
 2003-09 至 2006-07 就读于 新疆大学 生命科学专业
 
 ## 语言能力
-英语六级 熟练的听说读写能力，外派美国1年，能够顺利地和外国同事沟通交流。
+英语六级 熟练的听说读写能力，外派美国1年，能够顺利愉快地和外国同事沟通交流。
 
 ## 个人兴趣
 `读书` `骑单车` `摄影` `厨艺` `宅家里`
