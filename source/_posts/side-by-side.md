@@ -321,6 +321,7 @@ ex:
 `paket` `fake` `Argu - cli argument parsing`
 https://github.com/fsprojects
 http://fssnip.net/
+http://www.tryfsharp.org/
 
 # Install all stuff with one click
 ```bash
