@@ -304,6 +304,9 @@ http://robdvr.com/install-sass-compass-grunt/
 
 `emacs` `autohotkey`
 
+# Common lang
+[Practice on different langs: do small tasks](http://exercism.io/)
+
 # .Net
 [Common question for C#/.NET](http://www.c-sharpcorner.com/UploadFile/1492b1/C-Sharp-and-Asp-Net-question-and-answersall-in-one/)
 
