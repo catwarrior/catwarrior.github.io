@@ -322,6 +322,7 @@ ex:
 https://github.com/fsprojects
 http://fssnip.net/
 http://www.tryfsharp.org/
+http://c4fsharp.net/#fsharp-coding-dojos
 
 # Install all stuff with one click
 ```bash
