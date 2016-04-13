@@ -61,8 +61,13 @@
 5. 安装包的制作
    关键词：`Install shield` `MSI` `WIX` `WIX Sharp`
   
+### 2011-1 至 2012-12 创业公司 在中搜 孵化
+ 关键词：`LAMP` `进销存` `Andriod`
+#### 参与项目
+1. 进销存系统
+2. 微商Android客户端
 
-### 2009-3 至 2012-10 就职于 _北京腾联利德_
+### 2009-3 至 2011-10 就职于 _北京腾联利德_
  关键词：`Asp.net` `SqlServer` `Windows mobile` `Windows CE`
 #### 参与项目
 1. 变电站巡视系统
