@@ -62,13 +62,16 @@
    关键词：`Install shield` `MSI` `WIX` `WIX Sharp`
   
 ### 2011-10 至 2012-12 创业公司 在中搜 孵化
- 关键词：`LAMP` `进销存` `Andriod`
+ 关键词：`LAMP` `Andriod`
+         `进销存`
+
 #### 参与项目
 1. 进销存系统
 2. 微商Android客户端
 
 ### 2009-3 至 2011-10 就职于 _北京腾联利德_
  关键词：`Asp.net` `SqlServer` `Windows mobile` `Windows CE`
+ 
 #### 参与项目
 1. 变电站巡视系统
 2. 国家电网现场标准化作业移动终端平台的设计开发
@@ -77,6 +80,8 @@
 
 ### 2006-7 至 2009-3 就职于 _北京优仕东方数码_
  关键词：`Windows Form` `SqlServer` `Java/Linux/Apache/Oracle` 
+         `笔迹识别` `点阵` `USB数字证书`
+
 1. 消防产品质量监督跟踪管理系统客户端
 2. 基准作业流程设置
 
