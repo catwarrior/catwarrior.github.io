@@ -81,7 +81,7 @@
 
 ## 技术能力及爱好
 ### 最顺手的栈
-`Windows` `.NET` `C#` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
+`Windows` `.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
 ### 曾经使用过的
 LAMP
 ### 目前非常有兴趣的
