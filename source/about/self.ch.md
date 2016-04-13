@@ -21,9 +21,9 @@
      
 3. 一个基于插件架构的Windows基础服务，以及其插件的设计和开发
 
-   关键词：`.Net` `Plugin` `Host` `Windows Service` `Framework` `WCF` `Self host`
+   关键词：`.Net` `Plugin` `Host` `Windows Service` `Framework` `WCF` `Self host` `WMI` 
    
-   该系统使用.Net 4.0开发，最终由厂商（著名）预装到Windows机器, 为其他应用提供服务。
+   该系统使用在.Net 4.0上开发，最终由厂商预装到PC上, 为其他应用提供服务。
     
    Core team：7个开发， 其中我负责框架设计、实现、维护，其他人负责Plugin功能的实现。
       
@@ -97,8 +97,7 @@
 ## 技术能力及爱好
 ### 最顺手的栈
 `Windows` `.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
-### 曾经使用过的
-LAMP
+
 ### 目前非常有兴趣的
 #### Web栈：
 `Spring Boot` `Ruby on Rails` `MEAN` `ASP.NET core`
