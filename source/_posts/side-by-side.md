@@ -324,6 +324,9 @@ http://fssnip.net/
 http://www.tryfsharp.org/
 http://c4fsharp.net/#fsharp-coding-dojos
 
+## basic stuff
+`function specialization`
+
 # Install all stuff with one click
 ```bash
 START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/catwarrior/garage/master/install.txt
