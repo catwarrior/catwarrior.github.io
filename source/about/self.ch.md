@@ -3,6 +3,24 @@
 男
 1984/11
 
+## 技术能力及爱好
+### 最顺手的栈
+`Windows` `.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
+
+### 目前非常有兴趣的
+#### Web栈：
+`Spring Boot` `Ruby on Rails` `MEAN` `ASP.NET core`
+#### 语言
+`C#` `F#` `Javascript` `Ruby` `Python` `C++` `Scala`
+### 喜欢的书籍：
+`设计模式` `企业架构设计模式` `重构` `领域驱动设计` `重做`
+
+`Code Complete` `C# via CLR` 
+
+`黑客与画家` `松本行弘的程序世界` `Ruby元编程`
+
+`Javascript the good parts` `Javascript Ninja` `Javascript design patterns`
+
 ## 工作经历
 ### 2013-2 至今 就职于 _瞬联软件(CIeNET)_
 #### 参与项目
@@ -93,21 +111,3 @@
 
 ## 个人兴趣
 `读书` `骑单车` `摄影` `厨艺` `宅家里`
-
-## 技术能力及爱好
-### 最顺手的栈
-`Windows` `.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
-
-### 目前非常有兴趣的
-#### Web栈：
-`Spring Boot` `Ruby on Rails` `MEAN` `ASP.NET core`
-#### 语言
-`C#` `F#` `Javascript` `Ruby` `Python` `C++` `Scala`
-### 喜欢的书籍：
-`设计模式` `企业架构设计模式` `重构` `领域驱动设计` `重做`
-
-`Code Complete` `C# via CLR` 
-
-`黑客与画家` `松本行弘的程序世界` `Ruby元编程`
-
-`Javascript the good parts` `Javascript Ninja` `Javascript design patterns`
