@@ -3,6 +3,8 @@
 男
 1984/11
 
+Email: lishufan00@aliyun.com
+
 ## 技术能力及爱好
 ### 最顺手的栈
 `Windows` `.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` 以及各种开源库。
