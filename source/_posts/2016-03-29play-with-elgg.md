@@ -114,7 +114,11 @@ docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345
 
 Elgg docker image: https://hub.docker.com/r/keviocastro/elgg-docker/
 
+                   https://github.com/keviocastro/elgg-docker/tree/1.12
+                   
 Composer    image: https://hub.docker.com/r/composer/composer/
+
+  
 
 
 ## Uderstanding ELGG
