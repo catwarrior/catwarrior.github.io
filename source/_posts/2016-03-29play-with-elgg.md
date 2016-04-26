@@ -118,6 +118,45 @@ Elgg docker image: https://hub.docker.com/r/keviocastro/elgg-docker/
                    
 Composer    image: https://hub.docker.com/r/composer/composer/
 
+1. Clone your ellg project.
+2. Add a docker-composer.yml under the web folder.
+3. Run `docker-compose up -d`
+4. Run `docker exec web_web_1 /elgg-docker/elgg-install.sh`
+5. Now you could access the website.
+6. Use `docker-compose down`, shut down and remove the containers.
+
+### notes
+for docker2booter, make sure set the port forward setting via the vitual box.
+would be better pull the images before run docker-compose.
+
+### docker-compose.yml
+``` yml
+web:
+  image: keviocastro/elgg-docker:1.12
+  ports:
+    - "8000:80" #If you change the port, you must also change the environment variable ELGG_WWW_ROOT
+  links:
+    - mysql
+  volumes:
+    - .:/var/www/html/
+  environment:
+    MYSQL_USER: root
+    MYSQL_PASS: root-pass
+    ELGG_DB_NAME: fadfun
+    ELGG_USERNAME: admin
+    ELGG_PASSWORD: 111111
+    ELGG_WWW_ROOT: http://localhost:40080
+    ELGG_SITE_NAME: 6d
+    ELGG_SITE_EMAIL: lishufan00@aliyun.com
+    ELGG_DATA_ROOT: /media
+    ELGG_DISPLAY_NAME: admin
+    DEBUG: 1
+mysql:
+  image: mysql:5.6
+  environment:
+    MYSQL_DATABASE: fadfun
+    MYSQL_ROOT_PASSWORD: root-pass
+```
   
 
 
