@@ -126,8 +126,8 @@ Composer    image: https://hub.docker.com/r/composer/composer/
 6. Use `docker-compose down`, shut down and remove the containers.
 
 ### notes
-for docker2booter, make sure set the port forward setting via the vitual box.
-would be better pull the images before run docker-compose.
+1. For docker2booter, make sure set the port forward setting via the vitual box.
+2. Would be better pull the images before run docker-compose.
 
 ### docker-compose.yml
 ``` yml
