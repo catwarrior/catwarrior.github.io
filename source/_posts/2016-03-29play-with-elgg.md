@@ -110,6 +110,12 @@ and with given mysql password.
 docker run -p 3306:3306 -v ~/root/db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -it fan6/mysql
 ```
 
+## Dockerize elgg application
+
+Elgg docker image: https://hub.docker.com/r/keviocastro/elgg-docker/
+Composer    image: https://hub.docker.com/r/composer/composer/
+
+
 ## Uderstanding ELGG
 [Data model](http://learn.elgg.org/en/2.0/design/database.html)
 
