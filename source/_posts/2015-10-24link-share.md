@@ -49,7 +49,7 @@ tags:
 
 [Wix#](https://github.com/oleg-shilo/wixsharp)
 
-### blogs
+## blogs
 [yaozhenfa-cnblogs](http://www.cnblogs.com/yaozhenfa/p/functional_cache.html)
 
 ### wintellect jeffreyr
@@ -68,6 +68,9 @@ tags:
 
 ### 淘宝UED官方博客
 [taobao UED blog](http://ued.taobao.org/blog/2012/07/getting-started-with-markdown/)
+
+### 非常好的一个Software教程站点
+https://thinkster.io
 
 ## Something may check later
 [GitHub上整理的一些工具](https://segmentfault.com/q/1010000002404545)
@@ -125,6 +128,7 @@ docker
 ## open library
 cecil - Modify .NET binaries
 all pop librayies https://libraries.io/
+
 ## automation
 [FluentAutomation](https://github.com/stirno/FluentAutomation) - Simple Fluent API for UI Automation http://fluent.stirno.com
 
