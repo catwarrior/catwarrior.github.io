@@ -124,7 +124,7 @@ docker
 
 ## open library
 cecil - Modify .NET binaries
-
+all pop librayies https://libraries.io/
 ## automation
 [FluentAutomation](https://github.com/stirno/FluentAutomation) - Simple Fluent API for UI Automation http://fluent.stirno.com
 
