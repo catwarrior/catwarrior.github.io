@@ -6,3 +6,7 @@ http://mark-dot-net.blogspot.tw/2014/06/why-use-event-aggregator.html
 
 Guideline from MS
 https://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx
+
+## Cake build
+
+https://github.com/cake-build
