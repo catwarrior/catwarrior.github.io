@@ -23,6 +23,8 @@ tags:
 
 [Fsharp data access](http://fsharp.org/guides/data-access/)
 
+[Naming Suggestion](https://msdn.microsoft.com/en-us/library/ms229012(v=vs.110).aspx)
+
 ## Tools
 [Chocolatey NuGet is a Machine Package Manager](http://chocolatey.org/)
 
