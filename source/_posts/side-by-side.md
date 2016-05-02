@@ -286,6 +286,26 @@ ENTRYPOINT ["/usr/bin/rethinkdb"]
 
 CMD ["--help"]
 ```
+## Docker volumn
+For Mac Users
+
+If you are using docker-machine you need to use the IP address of your virtual machine running docker:
+``` bash
+docker-machine ls
+docker-machine ip <name-of-your-docker-machine>
+echo "192.168.99.100    dockerized-magento.local" >> /etc/hosts
+docker-machine performance
+```
+For faster sync between your host system and the docker machine image I recommend that you activate NFS support for virtualbox: github.com/adlogix/docker-machine-nfs
+``` bash
+docker-machine create --driver virtualbox nfsbox
+docker-machine-nfs nfsbox
+And to fix issues with filesystem permissions you can modify your NFS exports configuration:
+```
+open /etc/exports and replace -mapall=$uid:$gid with -maproot=0
+sudo nfsd restart
+Thanks to René Penner for figuring that out.
+
 ## Ionic
 ### generator
 [generator-ionic](https://github.com/diegonetto/generator-ionic)
