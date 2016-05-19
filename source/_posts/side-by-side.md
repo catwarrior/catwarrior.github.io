@@ -310,6 +310,14 @@ Thanks to René Penner for figuring that out.
 npm install should -D
 package.json: `test` mocha /*.test.js
 npm test
+``` simple start
+npm init
+
+// install dependencies
+npm i --save-dev mocha should
+
+./node_modules/.bin/mocha init folder_with_browser_tests
+```
 
 ## Ionic
 ### generator
