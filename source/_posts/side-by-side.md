@@ -306,6 +306,9 @@ open /etc/exports and replace -mapall=$uid:$gid with -maproot=0
 sudo nfsd restart
 Thanks to René Penner for figuring that out.
 
+## Docker for prodution
+http://blog.cloud66.com/9-crtitical-decisions-needed-to-run-docker-in-production/
+
 ## should.js
 npm install should -D
 package.json: `test` mocha /*.test.js
