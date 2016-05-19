@@ -306,6 +306,11 @@ open /etc/exports and replace -mapall=$uid:$gid with -maproot=0
 sudo nfsd restart
 Thanks to René Penner for figuring that out.
 
+## should.js
+npm install should -D
+package.json: `test` mocha /*.test.js
+npm test
+
 ## Ionic
 ### generator
 [generator-ionic](https://github.com/diegonetto/generator-ionic)
