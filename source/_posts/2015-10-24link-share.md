@@ -131,6 +131,9 @@ docker
 [zeal](https://zealdocs.org/)
 `dash` on mac osx
 
+host your document 
+https://readthedocs.org/
+
 ## open library
 cecil - Modify .NET binaries
 all pop librayies https://libraries.io/
