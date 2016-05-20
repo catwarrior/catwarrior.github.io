@@ -314,8 +314,8 @@ https://cr.console.aliyun.com
 ### Docker data persistance (How to deal with persistent storage (e.g. databases) in docker)
 https://blog.docker.com/2015/11/docker-1-9-production-ready-swarm-multi-host-networking/
 https://blog.docker.com/2016/02/compose-1-6/
-
 http://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker
+http://www.offermann.us/2013/12/tiny-docker-pieces-loosely-joined.html
 ## should.js
 npm install should -D
 package.json: `test` mocha /*.test.js
