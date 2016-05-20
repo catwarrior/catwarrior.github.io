@@ -306,6 +306,22 @@ open /etc/exports and replace -mapall=$uid:$gid with -maproot=0
 sudo nfsd restart
 Thanks to René Penner for figuring that out.
 
+## Docker machine
+
+``` bash 
+# create a new machine which will keep the images/containers isolated from host and other machines.
+docker-machine create --driver virtualbox <machine-name>
+
+# run docker command on given docker machine, directly
+docker $(docker-machine config <machine-name>) run busybox echo hello world
+
+# show the configuration on given docker machine.
+docker-machine config <machine-name>
+
+# switch to given docker machine.
+eval "$(docker-machine env <machine-name>)"
+```
+
 ## Docker for prodution
 http://blog.cloud66.com/9-crtitical-decisions-needed-to-run-docker-in-production/
 
