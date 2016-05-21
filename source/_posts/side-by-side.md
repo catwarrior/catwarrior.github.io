@@ -312,6 +312,9 @@ Thanks to René Penner for figuring that out.
 # create a new machine which will keep the images/containers isolated from host and other machines.
 docker-machine create --driver virtualbox <machine-name>
 
+# on linux, e.g. ubuntu
+sudo docker-machine create --generic-ssh-user=root --engine-registry-mirror=https://iakbs8nw.mirror.aliyuncs.com --generic-ip-address=x.x.x.x -d generic dev
+
 # run docker command on given docker machine, directly
 docker $(docker-machine config <machine-name>) run busybox echo hello world
 
