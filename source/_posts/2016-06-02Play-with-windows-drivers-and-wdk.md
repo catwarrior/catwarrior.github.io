@@ -6,5 +6,6 @@ Our explanation so far is oversimplified in several ways:
 - The one driver in the stack that communicates directly with the device is called the function driver; the drivers that perform auxiliary processing are called filter drivers.
 Some filter drivers observe and record information about I/O requests but do not actively participate in them. For example, certain filter drivers act as verifiers to make sure the other drivers in the stack are handling the I/O request correctly.
 We could expand our definition of driver by saying that a driver is any software component that observes or participates in the communication between the operating system and a device.
+
 ### We could expand our definition of driver by saying that a driver is any software component that observes or participates in the communication between the operating system and a device.
 https://msdn.microsoft.com/en-us/library/windows/hardware/ff554678(v=vs.85).aspx
