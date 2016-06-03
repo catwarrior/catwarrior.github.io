@@ -402,6 +402,10 @@ START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/cat
 #Create directory junction 
 System.Diagnostics.Process.Start("cmd.exe", "/C mklink /J \"C:\\ProgramData\\xxx\\.\" \"C:\\yyy\"");
 ```
+bat guide (very good)
+
+http://uule.iteye.com/blog/2076859
+
 
 # Shell
 pip in shell via `grep` `awk` `xargs`
