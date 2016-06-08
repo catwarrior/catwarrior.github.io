@@ -32,3 +32,8 @@ docker run -it --link amysqlbackup:mysql --rm mysql:5.6 sh -c 'exec mysql -h"$MY
 ``` bash
 docker run --rm -v $(pwd):/backup -v amysql-volume:/dbdata debian:jessie tar cvf /backup/backup.tar /dbdata
 ```
+- restore the data volumes
+``` bash
+docker run --rm -v $(pwd):/backup -v amysql-volume:/dbdata debian:jessie bash -c "cd /dbdata && tar xvf /backup/backup.tar --strip 1"
+```
+
