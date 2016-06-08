@@ -28,7 +28,7 @@ docker run --name amysqlbackup -v amysql-volume:/var/lib/mysql -e MYSQL_ROOT_PAS
 docker run -it --link amysqlbackup:mysql --rm mysql:5.6 sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
 ```
 
-- backup the database folder the host current folder.
+- backup the data volumes to the host current folder.
 ``` bash
 docker run --rm -v $(pwd):/backup -v amysql-volume:/dbdata debian:jessie tar cvf /backup/backup.tar /dbdata
 ```
