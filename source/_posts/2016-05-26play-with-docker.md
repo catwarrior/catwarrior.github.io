@@ -76,7 +76,7 @@ probably a custom image(based on nginx), with code in it.
 ```
 for dev
 ```
-docker run --name=fad -d -p 80:80 --link fad_php:phpfpm --volumes-from fad_data -v "$PWD":/usr/share/nginx/html nginx:stable
+docker run --name=fad -d -p 80:80 --link fad_php:phpfpm --volumes-from fad_data -v "$PWD":/usr/share/nginx/html -v "$PWD"/etc/default.conf:/etc/nginx/config.d/default.conf nginx:stable
 ```
 
 
