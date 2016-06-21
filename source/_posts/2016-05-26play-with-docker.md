@@ -59,7 +59,7 @@ fad_php
 
 ### Step1. create data container. `fad_data`
 ```
-docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d busybox echo ALL Fad Data
+docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d busybox echo ALL-Fad-Data
 ```
 ### Step2. create app container.(www root in it.)  `fad`
 ```
@@ -67,7 +67,7 @@ probably a custom image(based on nginx), with code in it.
 ```
 for dev
 ```
-docker run --name=fad -d -p 8080:80 --volumes-from fad_data -v "$PWD":/var/www/html php:5.6-fpm
+docker run --name=fad -d -p 80:80 --volumes-from fad_data -v "$PWD":/var/www/html nginx:stable
 ```
 ### Step3. create mysql container. `fad_mysql`
 ```
