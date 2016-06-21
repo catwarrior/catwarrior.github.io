@@ -65,6 +65,10 @@ docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d
 ```
 probably a custom image(based on nginx), with code in it.
 ```
+for dev
+```
+docker run --name=fad -d -p 8080:80 --volumes-from fad_data -v "$PWD":/var/www/html php:5.6-fpm
+```
 ### Step3. create mysql container. `fad_mysql`
 ```
 docker run --name=fad_mysql --volumes-from fad_data -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
