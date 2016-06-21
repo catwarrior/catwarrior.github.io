@@ -61,22 +61,25 @@ fad_php
 ```
 docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d busybox echo ALL-Fad-Data
 ```
-### Step2. create app container.(www root in it.)  `fad`
+### Step2. create mysql container. `fad_mysql`
+```
+docker run --name=fad_mysql --volumes-from fad_data -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
+```
+### Step3. create php container. `fad_php`
+```
+docker run --name=fad_php --link fad_mysql:mysql -d php:5.6-fpm
+```
+
+### Step4. create app container.(www root in it.)  `fad`
 ```
 probably a custom image(based on nginx), with code in it.
 ```
 for dev
 ```
-docker run --name=fad -d -p 80:80 --volumes-from fad_data -v "$PWD":/usr/share/nginx/html nginx:stable
+docker run --name=fad -d -p 80:80 --link fad_php:phpfpm --volumes-from fad_data -v "$PWD":/usr/share/nginx/html nginx:stable
 ```
-### Step3. create mysql container. `fad_mysql`
-```
-docker run --name=fad_mysql --volumes-from fad_data -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
-```
-### Step4. create php container. `fad_php`
-```
-docker run --name=fad_php --volumes-from fad --link fad_mysql:mysql -d php:5.6-fpm
-```
+
+
 
 ### Import database dump.
 ```
