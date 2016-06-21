@@ -52,9 +52,23 @@ data-volumns:
    /fad/log
    /var/lib/mysql
    
-### Step1.
+fad_data
+fad_app
+fad_mysql
+fad_php
+
+### Step1. create data container. `fad_data`
 ```
 docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d busybox echo ALL Fad Data
 ```
+### Step2. create app container.(www root in it.)  `fad_app`
+```
+probably a custom image(based on nginx), with code in it.
+```
+### Step3. create mysql container. `fad_mysql`
+```
+docker run --name=fad_mysql --volumes-from fad_data -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
+```
+
 
 
