@@ -78,3 +78,22 @@ docker run --name=fad_mysql --volumes-from fad_data -e MYSQL_ROOT_PASSWORD=root 
 docker run --name=fad_php --volumes-from fad --link fad_mysql:mysql -d php:5.6-fpm
 ```
 
+### Import database dump.
+```
+balabala
+```
+
+### Update settting in database to adopt new environment.
+
+http://learn.elgg.org/en/1.12/admin/backup-restore.html#creating-a-usable-backup-automatically
+``` sql
+
+UPDATE `elgg_datalists` SET `value` = "/usr/share/nginx/html/" WHERE `name` = "path";
+
+UPDATE `elgg_datalists` SET `value` = "/fad/web/data/" WHERE `name` = "dataroot";
+
+UPDATE `elgg_sites_entity` SET `url` = "http://mynewdomain.com";
+
+UPDATE elgg_metastrings set string = '/fad/web/data/' WHERE id = (SELECT value_id from elgg_metadata where name_id = (SELECT * FROM (SELECT id FROM elgg_metastrings WHERE string = 'filestore::dir_root') as ms2) LIMIT 1);
+
+```
