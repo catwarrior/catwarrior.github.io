@@ -67,7 +67,7 @@ probably a custom image(based on nginx), with code in it.
 ```
 for dev
 ```
-docker run --name=fad -d -p 80:80 --volumes-from fad_data -v "$PWD":/var/www/html nginx:stable
+docker run --name=fad -d -p 80:80 --volumes-from fad_data -v "$PWD":/usr/share/nginx/html nginx:stable
 ```
 ### Step3. create mysql container. `fad_mysql`
 ```
