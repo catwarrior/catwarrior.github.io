@@ -37,3 +37,24 @@ docker run --rm -v $(pwd):/backup -v amysql-volume:/dbdata debian:jessie tar cvf
 docker run --rm -v $(pwd):/backup -v amysql-volume:/dbdata debian:jessie bash -c "cd /dbdata && tar xvf /backup/backup.tar --strip 1"
 ```
 
+## Fadfun docker
+fad_backend
+   nginx + code.
+   
+   v: /fad/web/data
+      /fad/log
+      
+mysql
+   /var/lib/mysql
+
+data-volumns:
+   /fad/web/data
+   /fad/log
+   /var/lib/mysql
+   
+### Step1.
+```
+docker run --name=fad_data -v /var/lib/mysql -v /fad/web/data -v /fad/log -ti -d busybox echo ALL Fad Data
+```
+
+
