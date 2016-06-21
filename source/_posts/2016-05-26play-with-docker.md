@@ -80,7 +80,7 @@ docker run --name=fad_php --volumes-from fad --link fad_mysql:mysql -d php:5.6-f
 
 ### Import database dump.
 ```
-balabala
+docker run -it --link fad_mysql:mysql --rm -v "$PWD":/db mysql:5.6 sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD" 6d < /db/Dump20160515.sql'
 ```
 
 ### Update settting in database to adopt new environment.
