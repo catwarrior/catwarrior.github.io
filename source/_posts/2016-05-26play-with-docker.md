@@ -102,6 +102,10 @@ UPDATE elgg_metastrings set string = '/fad/web/data/' WHERE id = (SELECT value_i
 ```
 
 ### Nginx
+
+Tell you what is nginx.
+http://blog.martinfjordvald.com/2010/07/nginx-primer/
+
 /etc/nginx/nginx.conf
 /etc/nginx/conf.d/default.conf     - Centos
 /etc/nginx/sites-available/default - ubuntu
