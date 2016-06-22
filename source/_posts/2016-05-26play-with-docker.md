@@ -101,9 +101,13 @@ UPDATE elgg_metastrings set string = '/fad/web/data/' WHERE id = (SELECT value_i
 
 ```
 
+### Nginx
+/etc/nginx/nginx.conf
+/etc/nginx/conf.d/default.conf     - Centos
+/etc/nginx/sites-available/default - ubuntu
 
 ### Tips of docker
-mount host sourcelist to container - unbuntu
+mount host sourcelist to container - ubuntu
 ```
 -v /etc/apt/sources.list:/etc/apt/sources.list:ro
 ```
