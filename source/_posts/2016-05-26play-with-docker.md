@@ -100,3 +100,10 @@ UPDATE `elgg_sites_entity` SET `url` = "http://mynewdomain.com";
 UPDATE elgg_metastrings set string = '/fad/web/data/' WHERE id = (SELECT value_id from elgg_metadata where name_id = (SELECT * FROM (SELECT id FROM elgg_metastrings WHERE string = 'filestore::dir_root') as ms2) LIMIT 1);
 
 ```
+
+
+### Tips of docker
+mount host sourcelist to container - unbuntu
+```
+-v /etc/apt/sources.list:/etc/apt/sources.list:ro
+```
