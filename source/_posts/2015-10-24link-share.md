@@ -77,6 +77,9 @@ tags:
 ### 非常好的一个Software教程站点
 https://thinkster.io
 
+### diycode 收集了圈内博客站
+http://diycode.cc/sites
+
 ## Something may check later
 [GitHub上整理的一些工具](https://segmentfault.com/q/1010000002404545)
 
