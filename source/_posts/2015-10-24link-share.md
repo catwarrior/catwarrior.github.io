@@ -71,6 +71,9 @@ tags:
 ### Neal Ford
 [Neal Ford - a great software architecture](http://nealford.com/bio.html)
 
+### 王垠
+http://www.yinwang.org/
+
 ### 淘宝UED官方博客
 [taobao UED blog](http://ued.taobao.org/blog/2012/07/getting-started-with-markdown/)
 
