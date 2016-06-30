@@ -18,3 +18,14 @@ tags:
 [PHP resources](http://www.lxway.com/4058444812.htm)
 
 http://blackwood.io/porting-clojure-php-better-functional-programming/
+
+### frameworks
+
+#### Most popular
+Laravel
+symfony  
+
+#### Concepts
+Eloquent ORM
+
+
