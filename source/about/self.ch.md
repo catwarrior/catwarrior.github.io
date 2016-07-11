@@ -27,6 +27,7 @@ Email: lishufan00@aliyun.com
 ### 2013-2 至今 就职于 _瞬联软件(CIeNET)_
 #### 参与项目
 1. IGT赌场管理系统SmokeTest的设计与开发
+   
    相关技术：`Coded UI` `Python` `Jenkins` `NUnit` `VMware Labmanager`
    
    使用VMware Labmanager及相应编程接口实现虚拟测试环境的自动部署
