@@ -91,12 +91,17 @@ Email: lishufan00@aliyun.com
 2. 微商Android客户端
 
 ### 2009-3 至 2011-10 就职于 _北京腾联利德_
- 相关技术：`Asp.net Web Form` `SqlServer` `Windows mobile` `Windows CE`
+ 相关技术：`Asp.net Web Form` `Asp.net web service` `SqlServer` `Windows mobile` `Windows CE`
  
 #### 参与项目
 1. 变电站巡视系统
-2. 国家电网现场标准化作业移动终端平台的设计开发
-3. 变电巡视系统的移动终端系统应用框架设计开发
+变电站的业务系统的一个子系统。
+负责开发“数据移植平台”，制作“数据移植工具”，该工具之后广泛被用在不同数据源结构之间进行转换的场景；
+
+终端设备客户端的开发：语音提示，导航业务操作，RFID识别； 
+
+WEB端后台管理功能的开发：实现基本的CRUD功能，封装通用的控件；
+
 
 
 ### 2006-7 至 2009-3 就职于 _北京优仕东方数码_
