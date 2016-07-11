@@ -27,13 +27,13 @@ Email: lishufan00@aliyun.com
 ### 2013-2 至今 就职于 _瞬联软件(CIeNET)_
 #### 参与项目
 1. IGT赌场管理系统SmokeTest的设计与开发
-   关键词：`Coded UI` `Python` `Jenkins` `NUnit` `VMware Labmanager`
+   相关技术：`Coded UI` `Python` `Jenkins` `NUnit` `VMware Labmanager`
    
    使用VMware Labmanager及相应编程接口实现虚拟测试环境的自动部署
   
 2. 建立和完善软件开发的持续集成过程
 
-   关键词：`MSbuild` `Git` `Gerrit` `Jenkins`
+   相关技术：`MSbuild` `Git` `Gerrit` `Jenkins`
         
    在进行项目的同时，需要统一构建流程，于是尝试使用Jenkins作为持续集成的工具，实现了dailybuild，checkin build
 
@@ -41,7 +41,7 @@ Email: lishufan00@aliyun.com
      
 3. 一个基于插件架构的Windows基础服务，以及其插件的设计和开发
 
-   关键词：`.Net` `Plugin` `Host` `Windows Service` `Framework` `WCF` `Self host` `WMI` 
+   相关技术：`.Net` `Plugin` `Host` `Windows Service` `Framework` `WCF` `Self host` `WMI` 
    
    该系统使用在.Net 4.0上开发，最终由厂商预装到PC上, 为其他应用提供服务。
     
@@ -62,7 +62,7 @@ Email: lishufan00@aliyun.com
 
 4. 消息通知系统的设计和开发
 
-   关键词：`Asp.net Web API` `AngularJS` `Sql server` `Azure` `Web job` `Caching` `Ioc` `Entityframework` `Linq` `International`
+   相关技术：`Asp.net Web API` `AngularJS` `Sql server` `Azure` `Web job` `Caching` `Ioc` `Entityframework` `Linq` `International`
      
    系统分为2部分：
 
@@ -82,7 +82,7 @@ Email: lishufan00@aliyun.com
    关键词：`Install shield` `MSI` `WIX` `WIX Sharp`
   
 ### 2011-10 至 2012-12 创业公司 在中搜 孵化
- 关键词：`LAMP` `Andriod`
+ 相关技术：`LAMP` `Andriod`
          `进销存`
 
 #### 参与项目
@@ -90,7 +90,7 @@ Email: lishufan00@aliyun.com
 2. 微商Android客户端
 
 ### 2009-3 至 2011-10 就职于 _北京腾联利德_
- 关键词：`Asp.net` `SqlServer` `Windows mobile` `Windows CE`
+ 相关技术：`Asp.net Web Form` `SqlServer` `Windows mobile` `Windows CE`
  
 #### 参与项目
 1. 变电站巡视系统
@@ -99,7 +99,7 @@ Email: lishufan00@aliyun.com
 
 
 ### 2006-7 至 2009-3 就职于 _北京优仕东方数码_
- 关键词：`Windows Form` `SqlServer` `Java/Linux/Apache/Oracle` 
+ 相关技术：`Windows Form` `SqlServer` `Java/Linux/Apache/Oracle` 
          `笔迹识别` `点阵` `USB数字证书`
 
 1. 消防产品质量监督跟踪管理系统客户端
