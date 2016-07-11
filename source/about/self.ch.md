@@ -6,7 +6,7 @@
 Email: lishufan00@aliyun.com
 
 ## 技术能力
-`.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` `F#` `Linxu` `Docker`。
+`.NET` `C#` `Javascript` `Sql Server` `PowerShell` `WinDbg` `WCF` `ASP.NET Web API` `EF` `F#` `Linxu` `Docker`
 
 ## 喜欢的书籍：
 `设计模式` `企业架构设计模式` `重构` `领域驱动设计` `重做`
