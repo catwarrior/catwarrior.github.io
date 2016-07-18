@@ -431,6 +431,12 @@ cat logfile.txt | grep -v "IgnoreThis\|IgnoreThat" | less
 
 Google Protocol Buffers 
 
+# Play with nodejs
+
+http://www.zhihu.com/question/22246499
+
+https://github.com/nswbmw/
+
 # Play with router
 [install python on openrt](https://blog.phpgao.com/xiaomi_router_python.html)
 [sync with baidupan](http://www.syncy.cn/)
